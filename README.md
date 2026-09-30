@@ -8,6 +8,7 @@
 Data-driven SVG recreations of classic HP graphing calculators. Shared chassis geometry, keyboard layouts, typography, and model-specific finishes are described in reusable JSON and rendered into editable/outlined SVGs plus PNG previews.
 
 ## Gallery
+Built svg and png files are hosted on the [`artifact`](https://github.com/zyf722/hp-calcs-svg/tree/artifact) branch:
 
 <div align="center">
 <table>
