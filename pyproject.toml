@@ -1,0 +1,49 @@
+[project]
+name = "hpcalc-svg"
+version = "0.2.0"
+description = "Data-driven SVG builder for HP graphing calculators"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+authors = [{ name = "zyf722" }]
+license = "Apache-2.0"
+dependencies = [
+    "fonttools>=4.66,<5",
+    "pillow>=12.3,<13",
+    "pydantic==2.13.5",
+]
+
+[project.scripts]
+hpcalc-svg = "hpcalc_svg.cli:main"
+
+[tool.poetry]
+package-mode = true
+packages = [{ include = "hpcalc_svg" }]
+
+[build-system]
+requires = ["poetry-core>=2.0,<3"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "0.16.9"
+mypy = "2.3.1"
+
+[tool.ruff]
+output-format = "grouped"
+cache-dir = "Tools/.ruff_cache"
+
+[tool.ruff.lint]
+extend-select = ["I", "UP", "A", "N", "SIM", "RET", "PTH", "C4", "B", "RUF", "TID252"]
+ignore = ["B008", "E501", "UP045", "UP046", "SIM117", "RET504", "RUF001", "RUF002", "RUF003", "A002"]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_return_any = true
+warn_unused_ignores = true
+show_error_codes = true

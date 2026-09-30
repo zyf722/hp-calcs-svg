@@ -1,0 +1,203 @@
+name: Build calculator SVGs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hp-calcs-svg-build
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: home-docker
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Restore font cache
+        id: fonts-cache
+        uses: actions/cache/restore@v5
+        with:
+          path: |
+            ci-assets/Jost.zip
+            ci-assets/Gentium-7.000.zip
+          key: fonts-jost-3.5-gentium-7.000-v3
+
+      - name: Obtain fonts
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ci-assets
+          [[ -s ci-assets/Jost.zip ]] || curl --fail --location --retry 4 --retry-all-errors \
+            'https://github.com/indestructible-type/Jost/releases/download/3.5/Jost.zip' \
+            --output ci-assets/Jost.zip
+          [[ -s ci-assets/Gentium-7.000.zip ]] || curl --fail --location --retry 4 --retry-all-errors \
+            'https://software.sil.org/downloads/r/gentium/Gentium-7.000.zip' \
+            --output ci-assets/Gentium-7.000.zip
+
+      - name: Save font cache
+        if: steps.fonts-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v5
+        with:
+          path: |
+            ci-assets/Jost.zip
+            ci-assets/Gentium-7.000.zip
+          key: fonts-jost-3.5-gentium-7.000-v3
+
+      - name: Restore APT cache
+        id: apt-cache
+        uses: actions/cache/restore@v5
+        with:
+          path: ~/.cache/hpcalcs-apt
+          key: apt-noble-inkscape-noto-asana-gitlfs-v2
+
+      - name: Install renderer dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          apt_archives="$HOME/.cache/hpcalcs-apt"
+          mkdir -p "$apt_archives/partial"
+          chmod a+rwx "$apt_archives" "$apt_archives/partial"
+          sudo apt-get update
+          sudo apt-get -o Dir::Cache::archives="$apt_archives" \
+            -o APT::Keep-Downloaded-Packages=true \
+            install -y --no-install-recommends \
+            inkscape fonts-noto-core fonts-noto-extra fonts-oflb-asana-math git-lfs
+          sudo chown -R "$(id -u):$(id -g)" "$apt_archives"
+          chmod -R a+rX "$apt_archives"
+
+      - name: Save APT cache
+        if: steps.apt-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v5
+        with:
+          path: ~/.cache/hpcalcs-apt
+          key: apt-noble-inkscape-noto-asana-gitlfs-v2
+
+      - name: Restore Poetry cache
+        id: python-cache
+        uses: actions/cache/restore@v5
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/pypoetry
+          key: py313-poetry251-${{ hashFiles('pyproject.toml') }}
+
+      - name: Install project
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install 'poetry==2.5.1'
+          poetry install --no-interaction
+
+      - name: Save Poetry cache
+        if: steps.python-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v5
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/pypoetry
+          key: py313-poetry251-${{ hashFiles('pyproject.toml') }}
+
+      - name: Lint and type-check
+        shell: bash
+        run: |
+          set -euo pipefail
+          poetry run ruff check hpcalc_svg
+          poetry run mypy hpcalc_svg
+
+      - name: Resolve system fonts
+        shell: bash
+        run: |
+          set -euo pipefail
+          theta="$(find /usr/share/fonts -name 'NotoSans-SemiBoldItalic.ttf' -print -quit)"
+          math="$(find /usr/share/fonts -name 'NotoSansMath-Regular.ttf' -print -quit)"
+          radical="$(find /usr/share/fonts -name 'Asana-Math.otf' -print -quit)"
+          test -n "$theta" && test -n "$math" && test -n "$radical"
+          echo "THETA_FONT=$theta" >> "$GITHUB_ENV"
+          echo "MATH_FONT=$math" >> "$GITHUB_ENV"
+          echo "RADICAL_FONT=$radical" >> "$GITHUB_ENV"
+
+      - name: Build all models
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS=: read -r model out; do
+            poetry run hpcalc-svg build \
+              --design "design/$model.json" \
+              --assets ci-assets \
+              --theta-font "$THETA_FONT" \
+              --math-font "$MATH_FONT" \
+              --radical-font "$RADICAL_FONT" \
+              --out "$out"
+          done <<'EOF'
+          hp39gplus:output
+          hp39gs:output39gs
+          hp40gs:output40gs
+          hp48gii:output48
+          hp49gplus:output49
+          hp50g:output50
+          EOF
+
+      - name: Publish artifact branch
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          current_main="$(git ls-remote origin refs/heads/main | cut -f1)"
+          if [[ "$current_main" != "$GITHUB_SHA" ]]; then
+            echo "Skip stale publish: $GITHUB_SHA is not current main ($current_main)"
+            exit 0
+          fi
+
+          root="$PWD"
+          dir="$(mktemp -d)"
+          git worktree add --detach "$dir" HEAD
+          git -C "$dir" switch --orphan artifact
+          git -C "$dir" rm -rf --ignore-unmatch .
+          git -C "$dir" clean -fdx
+
+          mkdir -p \
+            "$dir/hp39gplus" "$dir/hp39gs" "$dir/hp40gs" \
+            "$dir/hp48gii" "$dir/hp49gplus" "$dir/hp50g"
+
+          cp "$root"/output/HP39gplus_{outlined,editable}.svg "$root/output/HP39gplus_preview.png" "$root/output/resolved_design.json" "$dir/hp39gplus/"
+          cp "$root"/output39gs/HP39gs_{outlined,editable}.svg "$root/output39gs/HP39gs_preview.png" "$root/output39gs/resolved_design.json" "$dir/hp39gs/"
+          cp "$root"/output40gs/HP40gs_{outlined,editable}.svg "$root/output40gs/HP40gs_preview.png" "$root/output40gs/resolved_design.json" "$dir/hp40gs/"
+          cp "$root"/output48/HP48gII_{outlined,editable}.svg "$root/output48/HP48gII_preview.png" "$root/output48/resolved_design.json" "$dir/hp48gii/"
+          cp "$root"/output49/HP49gplus_{outlined,editable}.svg "$root/output49/HP49gplus_preview.png" "$root/output49/resolved_design.json" "$dir/hp49gplus/"
+          cp "$root"/output50/HP50g_{outlined,editable}.svg "$root/output50/HP50g_preview.png" "$root/output50/resolved_design.json" "$dir/hp50g/"
+
+          cd "$dir"
+          git lfs install --local
+          echo '*.png filter=lfs diff=lfs merge=lfs -text' > .gitattributes
+          git add -A
+          git -c user.name=github-actions -c user.email=github-actions@github.com \
+            commit -m "Published calculator artifacts"
+          git push --force origin HEAD:artifact
+
+      - name: Upload build outputs
+        uses: actions/upload-artifact@v7
+        with:
+          name: hp-calcs-svg
+          path: |
+            output/
+            output39gs/
+            output40gs/
+            output48/
+            output49/
+            output50/
+          if-no-files-found: error

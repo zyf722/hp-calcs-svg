@@ -1,0 +1,194 @@
+{
+  "extends": [
+    "hp49gplus.json"
+  ],
+  "metadata": {
+    "name": "HP 50g",
+    "model_id": "hp50g",
+    "output_prefix": "HP50g"
+  },
+  "palette": {
+    "shell": "#202126",
+    "bezel": "#17181c",
+    "darktext": "#222126",
+    "alpha": "#e8c65a",
+    "cancel_text": "#74b7d5",
+    "key_white_text": "#f3f3f1",
+    "key_ivory_text": "#f3f3f1",
+    "legend_blue": "#f2f1ee",
+    "legend_red": "#ef936b",
+    "legend_yellow": "#e7cb59"
+  },
+  "gradients": {
+    "shell": [
+      "#34353a",
+      "#232429",
+      "#15161a"
+    ],
+    "face": [
+      "#45464b",
+      "#393a3f",
+      "#2d2e33"
+    ],
+    "ivory": [
+      "#66676c",
+      "#505157",
+      "#3f4046"
+    ],
+    "soft": [
+      "#77787e",
+      "#606167",
+      "#4c4d53"
+    ],
+    "navy": [
+      "#37383e",
+      "#292a30",
+      "#1d1e23"
+    ],
+    "orange": [
+      "#ff8a66",
+      "#eb6948",
+      "#cf4d34"
+    ],
+    "teal": [
+      "#f8f7f4",
+      "#e7e5e1",
+      "#cfccc7"
+    ],
+    "yellow": [
+      "#f5d873",
+      "#e9c456",
+      "#d6aa39"
+    ],
+    "black": [
+      "#303137",
+      "#222329",
+      "#17181d"
+    ],
+    "metal": [
+      "#f0efed",
+      "#d4d1d0",
+      "#a7a3a5",
+      "#e2dfdf"
+    ],
+    "badge": [
+      "#f0f0ee",
+      "#d8d8d6",
+      "#a7a9aa"
+    ],
+    "silverArrow": [
+      "#6b6268",
+      "#423b40",
+      "#80757d"
+    ]
+  },
+  "display": {
+    "bezel_fill": "#17181b",
+    "bezel_stroke": "#3c3d42",
+    "screen_stroke": "#66736f",
+    "bezel_stroke_width": 1.2,
+    "screen_stroke_width": 1.25
+  },
+  "logo": {
+    "badge_fill": "url(#badge)",
+    "badge_stroke": "#8d8e91",
+    "badge_stroke_width": 1.1,
+    "fill": "#18191b"
+  },
+  "header": {
+    "brand_text": "HP",
+    "brand_font": "JB",
+    "brand_model_gap": 9.5,
+    "model_text": "50g",
+    "subtitle": "Graphing Calculator",
+    "text_color": "#f2f2f0",
+    "triangle_color": "#f2f2f0",
+    "font_size": 27,
+    "triangle_after_last_char_positions": 1
+  },
+  "function_keys": {
+    "fill": "url(#soft)",
+    "stroke": "#23242a",
+    "stroke_width": 2.4,
+    "top_color": "#f2f1ee",
+    "label_color": "#f4f3f1",
+    "letter_color": "#e7cb59"
+  },
+  "nav": {
+    "recess_fill": "#292a2f",
+    "recess_stroke": "#191a1e",
+    "recess_rim_color": "#5b5c61",
+    "recess_rim_opacity": 0.16,
+    "soft_well": {
+      "shadow_fill": "#17181c",
+      "body_fill": "#313237",
+      "highlight_color": "#74757a",
+      "depth_color": "#141519",
+      "ambient_highlight_fill": "#55565b",
+      "ambient_shadow_fill": "#101115"
+    }
+  },
+  "keyboard": {
+    "kind_stroke": {
+      "ivory": "#24252a",
+      "navy": "#141519",
+      "alpha": "#9f7a28",
+      "teal": "#8d8a85",
+      "red": "#8f3d2e"
+    },
+    "kind_text": {
+      "ivory": "key_white_text",
+      "navy": "key_white_text",
+      "alpha": "darktext",
+      "teal": "darktext",
+      "red": "darktext"
+    },
+    "key_overrides": {
+      "leftblue": {
+        "glyph_paths": [
+          {
+            "d": "M16 10 V-3 H0",
+            "fill": "none",
+            "stroke_width": 4.6,
+            "stroke_linecap": "square",
+            "stroke_linejoin": "miter",
+            "stroke": "#343237",
+            "transform": "translate(148.88421 1195)"
+          },
+          {
+            "d": "M1 -10 L-16 -3 L1 4 Z",
+            "fill": "#343237",
+            "transform": "translate(148.88421 1195)"
+          }
+        ]
+      },
+      "rightred": {
+        "glyph_paths": [
+          {
+            "d": "M16 10 V-3 H0",
+            "fill": "none",
+            "stroke_width": 4.6,
+            "stroke_linecap": "square",
+            "stroke_linejoin": "miter",
+            "stroke": "#3b2521",
+            "transform": "translate(148.88421 1281) scale(-1 1)"
+          },
+          {
+            "d": "M1 -10 L-16 -3 L1 4 Z",
+            "fill": "#3b2521",
+            "transform": "translate(148.88421 1281) scale(-1 1)"
+          }
+        ]
+      },
+      "on": {
+        "below_color": "#74b7d5"
+      }
+    }
+  },
+  "path_overrides": {
+    "front-panel": {
+      "stroke": "#2c2d31",
+      "stroke_width": 1.1
+    }
+  }
+}

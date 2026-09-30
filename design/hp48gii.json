@@ -1,0 +1,204 @@
+{
+  "extends": [
+    "hp49gplus.json"
+  ],
+  "metadata": {
+    "name": "HP 48gII",
+    "model_id": "hp48gii",
+    "output_prefix": "HP48gII",
+    "native_lcd_pixels": [
+      131,
+      64
+    ]
+  },
+  "palette": {
+    "shell": "#29292d",
+    "bezel": "#c7ccce",
+    "glass": "#b8cbc7",
+    "alpha": "#0a6d59",
+    "cancel_text": "#1a1a1b",
+    "key_white_text": "#f4f4f3",
+    "legend_blue": "#1262ae",
+    "legend_red": "#c3222d",
+    "legend_yellow": "#148363",
+    "key_ivory_text": "#171719"
+  },
+  "gradients": {
+    "shell": [
+      "#4b4a4d",
+      "#2c2b2e",
+      "#171719"
+    ],
+    "face": [
+      "#f2f4f3",
+      "#dadddc",
+      "#b8bec0"
+    ],
+    "ivory": [
+      "#f1f1f0",
+      "#d7d9d9",
+      "#bfc2c2"
+    ],
+    "soft": [
+      "#eff0ef",
+      "#d5d8d8",
+      "#bcc0c1"
+    ],
+    "navy": [
+      "#343438",
+      "#242428",
+      "#17181c"
+    ],
+    "orange": [
+      "#ef3040",
+      "#d6192a",
+      "#b51120"
+    ],
+    "teal": [
+      "#297fc8",
+      "#1262ae",
+      "#0a498b"
+    ],
+    "yellow": [
+      "#16836b",
+      "#0b6654",
+      "#074b3d"
+    ],
+    "black": [
+      "#343438",
+      "#232327",
+      "#17181b"
+    ],
+    "metal": [
+      "#f4f5f4",
+      "#d9ddde",
+      "#aeb6b8",
+      "#e7e9e9"
+    ],
+    "badge": [
+      "#eef1f2",
+      "#d7dde0",
+      "#b3bcc0"
+    ],
+    "silverArrow": [
+      "#7a7f82",
+      "#45494d",
+      "#8e9497"
+    ]
+  },
+  "display": {
+    "bezel_fill": "#c5cacc",
+    "bezel_stroke": "#747a7c",
+    "bezel_stroke_width": 1.15,
+    "screen_stroke": "#6e7a78",
+    "screen_stroke_width": 1.15,
+    "screen_path": null,
+    "screen": [
+      109.473684,
+      181.868657,
+      506.863158,
+      290.546269,
+      18.610526
+    ]
+  },
+  "header": {
+    "x": 105,
+    "top_y": 86,
+    "second_y": 116,
+    "font_size": 29.6,
+    "triangle_y": [
+      66.5,
+      75.5
+    ],
+    "triangle_half_width": 6.4,
+    "brand_text": "hp",
+    "model_text": "48gII",
+    "subtitle": "graphing calculator",
+    "text_color": "#17191b",
+    "triangle_color": "#202326",
+    "triangle_x_offset": 0,
+    "model_tracking": -0.18,
+    "subtitle_tracking": -0.18,
+    "triangle_ink_anchor": true,
+    "triangle_char_index": 5
+  },
+  "function_keys": {
+    "fill": "url(#soft)",
+    "stroke": "#25272a",
+    "stroke_width": 2.25,
+    "top_size": 14.7,
+    "top_offset": 19,
+    "top_color": "#1262ae",
+    "label_size": 19.8,
+    "label_color": "#17191b",
+    "letter_size": 19.8,
+    "letter_color": "#168363"
+  },
+  "keyboard": {
+    "kind_fill": {
+      "ivory": "url(#ivory)",
+      "navy": "url(#navy)",
+      "shift": "url(#orange)",
+      "alpha": "url(#yellow)",
+      "teal": "url(#teal)",
+      "red": "url(#orange)"
+    },
+    "kind_stroke": {
+      "ivory": "#303235",
+      "navy": "#15161a",
+      "shift": "#8b1622",
+      "alpha": "#0a493d",
+      "teal": "#0c4779",
+      "red": "#8b1622"
+    },
+    "kind_text": {
+      "ivory": "key_ivory_text",
+      "navy": "key_white_text",
+      "shift": "key_white_text",
+      "alpha": "key_white_text",
+      "teal": "key_white_text",
+      "red": "key_white_text"
+    },
+    "key_overrides": {
+      "sto": {
+        "decorations": [
+          {
+            "path": "M246 769 L253 774 L246 779 Z",
+            "fill": "#17191b"
+          }
+        ]
+      },
+      "del": {
+        "glyph_paths": [
+          {
+            "d": "M556.832 868 L572.832 855 L572.832 862 L594.832 862 L594.832 874 L572.832 874 L572.832 881 Z",
+            "fill": "#17191b"
+          }
+        ]
+      }
+    }
+  },
+  "path_overrides": {
+    "outer-shell": {
+      "fill": "url(#shell)",
+      "stroke": "#161618",
+      "stroke_width": 2
+    },
+    "irda-recess": {
+      "fill": "#151619",
+      "stroke": "#0c0d10",
+      "stroke_width": 0.8
+    },
+    "irda-lower-rim": {
+      "stroke": "#45464b",
+      "stroke_width": 0.45,
+      "opacity": 0.35,
+      "fill": "none"
+    },
+    "front-panel": {
+      "fill": "url(#face)",
+      "stroke": "#9ca1a2",
+      "stroke_width": 1.25
+    }
+  }
+}

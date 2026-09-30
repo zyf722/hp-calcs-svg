@@ -1,0 +1,14 @@
+/output/
+/output_*/
+/ci-assets/
+.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.otf
+*.ttf
+Jost.zip
+Gentium-7.000.zip

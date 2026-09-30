@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "canvas": [
+      665,
+      1340
+    ]
+  },
+  "fonts": {
+    "JB": "OpenType/Jost-400-Book.otf",
+    "JS": "OpenType/Jost-600-Semi.otf",
+    "GS": "Gentium-7.000/Gentium-SemiBold.ttf",
+    "GSI": "Gentium-7.000/Gentium-SemiBoldItalic.ttf",
+    "NSI": "NotoSans-SemiBoldItalic.ttf",
+    "JM": "OpenType/Jost-500-Medium.otf"
+  },
+  "palette": {
+    "shell": "#2b5685",
+    "bezel": "#091a1c",
+    "darktext": "#162d30",
+    "shift": "#dc7042",
+    "alpha": "#143347",
+    "glass": "#c2d0ca",
+    "navy_border": "#08293e",
+    "key_ivory_text": "#162d30",
+    "key_white_text": "#eef5f5",
+    "cancel_text": "#ebf1f1"
+  },
+  "gradients": {
+    "shell": [
+      "#43648e",
+      "#31527d",
+      "#1a4268"
+    ],
+    "face": [
+      "#2d9cc7",
+      "#188db9",
+      "#0786b1"
+    ],
+    "ivory": [
+      "#f6fbf9",
+      "#e9f3ef",
+      "#d2e4e1"
+    ],
+    "soft": [
+      "#cfdeee",
+      "#b0c8e0",
+      "#88a9cf"
+    ],
+    "navy": [
+      "#06559b",
+      "#034581",
+      "#023666"
+    ],
+    "orange": [
+      "#f48b5b",
+      "#e36a39",
+      "#cd552c"
+    ],
+    "black": [
+      "#132428",
+      "#071315"
+    ],
+    "metal": [
+      "#f9fbfb",
+      "#e6edef",
+      "#c8d5da",
+      "#a2b5bc"
+    ],
+    "badge": [
+      "#fff",
+      "#f5f8f8",
+      "#cbd6d9"
+    ],
+    "silverArrow": [
+      "#8c9da4",
+      "#586d75",
+      "#8c9ba1"
+    ]
+  },
+  "display": {
+    "screen": [
+      100,
+      164,
+      463,
+      262,
+      17
+    ],
+    "bezel_stroke": "#335259",
+    "screen_stroke": "#8ba09f",
+    "bezel_stroke_width": 1.15,
+    "screen_stroke_width": 1.3,
+    "screen_fill": "#c2d0ca"
+  },
+  "function_keys": {
+    "centers": [
+      127,
+      209,
+      291,
+      373,
+      455,
+      535
+    ],
+    "y": 537,
+    "width": 58,
+    "height": 31,
+    "radius": 6.5,
+    "inset": 3.5,
+    "fill": "url(#soft)",
+    "stroke": "#092c3b",
+    "stroke_width": 2.5
+  },
+  "nav": {
+    "outer_radius": 24,
+    "face_radius": 22.45,
+    "arrow_half_width": 6.4,
+    "arrow_up": 7.3,
+    "arrow_down": 5.6,
+    "shadow_fill": "#13415a",
+    "outer_fill": "url(#metal)",
+    "outline": "#0b171d",
+    "outline_width": 1.6,
+    "glyph_fill": "url(#silverArrow)",
+    "glyph_stroke": "#45525b",
+    "glyph_stroke_width": 0.5,
+    "shadow_offset": [
+      0.7,
+      1.6
+    ],
+    "shadow_radius_extra": 1.4,
+    "shadow_opacity": 0.3,
+    "recess_fill": "#0a87ae",
+    "recess_stroke": "#0b6484",
+    "recess_stroke_width": 1,
+    "recess_shadow": "rgba(255,255,255,0.12)",
+    "recess_fill_opacity": 1,
+    "recess_stroke_opacity": 1,
+    "recess_rim_radius": 27.2,
+    "recess_rim_color": "#d7f6fc",
+    "recess_rim_opacity": 0.2,
+    "recess_rim_width": 0.95,
+    "soft_well": {
+      "shadow_fill": "#024d6b",
+      "shadow_opacity": 0.24,
+      "shadow_blur": "blur4",
+      "shadow_offset_y": 1.4,
+      "body_fill": "#005b7c",
+      "body_opacity": 0.31,
+      "body_blur": "blur2",
+      "highlight_color": "#ddfaff",
+      "highlight_opacity": 0.16,
+      "highlight_width": 3.2,
+      "highlight_blur": "blur2",
+      "highlight_dx": -0.5,
+      "highlight_dy": -1.2,
+      "depth_color": "#003f5a",
+      "depth_opacity": 0.22,
+      "depth_width": 3.2,
+      "depth_blur": "blur2",
+      "depth_dx": 0.5,
+      "depth_dy": 1.3,
+      "rim_color": "#daf7fc",
+      "rim_opacity": 0.1,
+      "rim_width": 1.8,
+      "rim_blur": "blur2",
+      "button_shadow_blur": "blur2",
+      "button_shadow_opacity": 0.19
+    }
+  },
+  "keyboard": {
+    "ink_offset_y": 0.4,
+    "radius": 8,
+    "outline_width": 2.7,
+    "kind_fill": {
+      "ivory": "url(#ivory)",
+      "navy": "url(#navy)",
+      "shift": "url(#orange)",
+      "alpha": "url(#black)"
+    },
+    "kind_text": {
+      "ivory": "key_ivory_text",
+      "navy": "key_white_text",
+      "shift": "key_white_text",
+      "alpha": "key_white_text"
+    },
+    "bottom_bulge": 2.65,
+    "dot_radius": 3.5,
+    "kind_stroke": {
+      "ivory": "#24444a",
+      "navy": "#0a2940",
+      "shift": "#7c401f",
+      "alpha": "#173136"
+    },
+    "lower_lip_inset": 3
+  },
+  "modifiers": {
+    "shift_band": {
+      "123": 1107,
+      "456": 1033,
+      "789": 958,
+      "fnB": 675.5,
+      "func": 753.5,
+      "trig": 822,
+      "math": 889,
+      "base": 1181
+    },
+    "alpha_band": {
+      "123": 1175,
+      "456": 1100,
+      "789": 1026,
+      "func": 816,
+      "trig": 883,
+      "math": 952,
+      "base": 1249
+    },
+    "shift_font": "JM",
+    "shift_size": 14,
+    "alpha_font": "JM",
+    "alpha_size": 15.2,
+    "space_size": 13.9,
+    "setup": {
+      "target": [
+        208.5,
+        597.5
+      ],
+      "size": 13.7,
+      "bracket": "M126 603 V597 H181 M237 597 H290 V603"
+    },
+    "angle": {
+      "vertex": [
+        494,
+        1037
+      ],
+      "arm_h": 11,
+      "arm_y": -8.8,
+      "sector_radius": 6.8,
+      "color_key": "shift"
+    },
+    "cancel": {
+      "target": [
+        139,
+        1251
+      ],
+      "size": 14.8
+    }
+  },
+  "logo": {
+    "asset": "third_party/wikimedia/HP_logo_2008.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:HP_logo_2008.svg"
+  }
+}
