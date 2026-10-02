@@ -1,0 +1,59 @@
+{
+  "extends": [
+    "hp50g.json"
+  ],
+  "metadata": {
+    "name": "HP 50g (Blue variant)",
+    "model_id": "hp50g-blue",
+    "output_prefix": "HP50gBlue"
+  },
+  "palette": {
+    "shell": "#1d4f86",
+    "bezel": "#b8d9e6",
+    "darktext": "#222126",
+    "alpha": "#e8c65a",
+    "cancel_text": "#74b7d5",
+    "key_white_text": "#f3f3f1",
+    "key_ivory_text": "#f3f3f1",
+    "legend_blue": "#e7f0f4",
+    "legend_red": "#ef936b",
+    "legend_yellow": "#e7cb59"
+  },
+  "gradients": {
+    "shell": [
+      "#2869a8",
+      "#16518c",
+      "#103b6c"
+    ],
+    "face": [
+      "#2671b0",
+      "#155b99",
+      "#104879"
+    ],
+    "navy": [
+      "#23649f",
+      "#15518a",
+      "#0e3c68"
+    ],
+    "black": [
+      "#303137",
+      "#222329",
+      "#17181d"
+    ],
+    "badge": [
+      "#f0f0ee",
+      "#d8d8d6",
+      "#a7a9aa"
+    ]
+  },
+  "display": {
+    "bezel_fill": "#8fa9ad",
+    "bezel_stroke": "#6f8588",
+    "screen_stroke": "#66736f"
+  },
+  "logo": {
+    "badge_fill": "url(#badge)",
+    "badge_stroke": "#8d8e91",
+    "fill": "#18191b"
+  }
+}
