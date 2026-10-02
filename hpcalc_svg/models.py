@@ -153,6 +153,7 @@ class ResolvedDesignModel(BaseModel):
             "hp48gii": (131, 64),
             "hp49gplus": (131, 80),
             "hp50g": (131, 80),
+            "hp50g-blue": (131, 80),
         }
         model_id = self.metadata.model_id
         if model_id in expected_lcd and self.metadata.native_lcd_pixels != expected_lcd[model_id]:

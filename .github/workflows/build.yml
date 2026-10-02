@@ -149,6 +149,7 @@ jobs:
           hp48gii:output48
           hp49gplus:output49
           hp50g:output50
+          hp50g-blue:output50blue
           EOF
 
       - name: Publish artifact branch
@@ -172,7 +173,7 @@ jobs:
 
           mkdir -p \
             "$dir/hp39gplus" "$dir/hp39gs" "$dir/hp40gs" \
-            "$dir/hp48gii" "$dir/hp49gplus" "$dir/hp50g"
+            "$dir/hp48gii" "$dir/hp49gplus" "$dir/hp50g" "$dir/hp50g-blue"
 
           cp "$root"/output/HP39gplus_{outlined,editable}.svg "$root/output/HP39gplus_preview.png" "$root/output/resolved_design.json" "$dir/hp39gplus/"
           cp "$root"/output39gs/HP39gs_{outlined,editable}.svg "$root/output39gs/HP39gs_preview.png" "$root/output39gs/resolved_design.json" "$dir/hp39gs/"
@@ -180,6 +181,7 @@ jobs:
           cp "$root"/output48/HP48gII_{outlined,editable}.svg "$root/output48/HP48gII_preview.png" "$root/output48/resolved_design.json" "$dir/hp48gii/"
           cp "$root"/output49/HP49gplus_{outlined,editable}.svg "$root/output49/HP49gplus_preview.png" "$root/output49/resolved_design.json" "$dir/hp49gplus/"
           cp "$root"/output50/HP50g_{outlined,editable}.svg "$root/output50/HP50g_preview.png" "$root/output50/resolved_design.json" "$dir/hp50g/"
+          cp "$root"/output50blue/HP50gBlue_{outlined,editable}.svg "$root/output50blue/HP50gBlue_preview.png" "$root/output50blue/resolved_design.json" "$dir/hp50g-blue/"
 
           cd "$dir"
           git lfs install --local
@@ -200,4 +202,5 @@ jobs:
             output48/
             output49/
             output50/
+            output50blue/
           if-no-files-found: error

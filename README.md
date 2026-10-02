@@ -42,6 +42,12 @@ Built svg and png files are hosted on the [`artifact`](https://github.com/zyf722
       <strong>HP 50g</strong>
     </td>
   </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <a href="https://github.com/zyf722/hp-calcs-svg/blob/artifact/hp50g-blue/HP50gBlue_outlined.svg"><img src="https://media.githubusercontent.com/media/zyf722/hp-calcs-svg/artifact/hp50g-blue/HP50gBlue_preview.png" width="260" alt="HP 50g (blue)"></a><br>
+      <strong>HP 50g (blue)</strong>
+    </td>
+  </tr>
 </table>
 </div>
 
@@ -71,7 +77,8 @@ design/
 ├── hp40gs.json
 ├── hp48gii.json
 ├── hp49gplus.json
-└── hp50g.json
+├── hp50g.json
+└── hp50g-blue.json
 ```
 
 Derived models use `extends` plus targeted `path_overrides`, `path_remove`, and keyboard `key_overrides` instead of copying parent geometry. Pydantic validates source descriptors and resolved designs before rendering.

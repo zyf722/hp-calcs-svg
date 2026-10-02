@@ -8,52 +8,158 @@
     "output_prefix": "HP50gBlue"
   },
   "palette": {
-    "shell": "#1d4f86",
-    "bezel": "#b8d9e6",
-    "darktext": "#222126",
-    "alpha": "#e8c65a",
-    "cancel_text": "#74b7d5",
-    "key_white_text": "#f3f3f1",
-    "key_ivory_text": "#f3f3f1",
-    "legend_blue": "#e7f0f4",
-    "legend_red": "#ef936b",
-    "legend_yellow": "#e7cb59"
+    "shell": "#e8ecec",
+    "bezel": "#b6d7da",
+    "darktext": "#302a2c",
+    "alpha": "#2a896b",
+    "cancel_text": "#30282b",
+    "key_white_text": "#f3f4f1",
+    "key_ivory_text": "#302a2c",
+    "legend_blue": "#b8d8e5",
+    "legend_red": "#d7d45d",
+    "legend_yellow": "#2b8c6c"
   },
   "gradients": {
     "shell": [
-      "#2869a8",
-      "#16518c",
-      "#103b6c"
+      "#f8f9f7",
+      "#e1e6e6",
+      "#bcc5c9"
     ],
     "face": [
-      "#2671b0",
-      "#155b99",
-      "#104879"
+      "#2c76b1",
+      "#1a5e9a",
+      "#104679"
+    ],
+    "screenBezel": [
+      "#c4e0e1",
+      "#afd2d4",
+      "#94bcc1"
+    ],
+    "ivory": [
+      "#f7f3f1",
+      "#e1dad7",
+      "#c8c0bd"
+    ],
+    "soft": [
+      "#f8f4f2",
+      "#e2dbd8",
+      "#c7bfbc"
     ],
     "navy": [
-      "#23649f",
-      "#15518a",
-      "#0e3c68"
+      "#f6f2f0",
+      "#ddd7d4",
+      "#c3bcba"
     ],
-    "black": [
-      "#303137",
-      "#222329",
-      "#17181d"
+    "orange": [
+      "#f6b45a",
+      "#e29439",
+      "#c56d24"
+    ],
+    "teal": [
+      "#d8f0ef",
+      "#add9dc",
+      "#82bdc4"
+    ],
+    "yellow": [
+      "#416d67",
+      "#2b5955",
+      "#193e3b"
+    ],
+    "metal": [
+      "#f3f2f0",
+      "#d8d4d3",
+      "#aaa5a7",
+      "#e5e1e1"
     ],
     "badge": [
-      "#f0f0ee",
-      "#d8d8d6",
-      "#a7a9aa"
+      "#f2f1ef",
+      "#dbd9d7",
+      "#aaa9a9"
+    ],
+    "silverArrow": [
+      "#756b70",
+      "#4a4146",
+      "#887b82"
     ]
   },
   "display": {
-    "bezel_fill": "#8fa9ad",
-    "bezel_stroke": "#6f8588",
-    "screen_stroke": "#66736f"
+    "bezel_fill": "url(#screenBezel)",
+    "bezel_stroke": "#77999d",
+    "screen_stroke": "#6c7775"
   },
   "logo": {
     "badge_fill": "url(#badge)",
-    "badge_stroke": "#8d8e91",
-    "fill": "#18191b"
+    "badge_stroke": "#999a9b",
+    "fill": "#2d292b"
+  },
+  "header": {
+    "text_color": "#302a2c",
+    "triangle_color": "#302a2c"
+  },
+  "function_keys": {
+    "fill": "url(#soft)",
+    "stroke": "#514548",
+    "top_color": "#b8d8e5",
+    "label_color": "#302a2c",
+    "letter_color": "#2b8c6c"
+  },
+  "nav": {
+    "recess_fill": "#15558e",
+    "recess_stroke": "#0d3d69",
+    "soft_well": {
+      "shadow_fill": "#0b365f",
+      "body_fill": "#1d5e98",
+      "highlight_color": "#79add0",
+      "depth_color": "#0b355e",
+      "ambient_highlight_fill": "#75aad0",
+      "ambient_shadow_fill": "#082f55"
+    }
+  },
+  "keyboard": {
+    "kind_stroke": {
+      "ivory": "#514548",
+      "navy": "#514548",
+      "alpha": "#183c39",
+      "teal": "#53868c",
+      "red": "#995324"
+    },
+    "kind_text": {
+      "ivory": "darktext",
+      "navy": "darktext",
+      "alpha": "key_white_text",
+      "teal": "darktext",
+      "red": "darktext"
+    },
+    "key_overrides": {
+      "sto": {
+        "decorations": [
+          {
+            "path": "M246 769 L253 774 L246 779 Z",
+            "fill": "#302a2c"
+          }
+        ]
+      },
+      "del": {
+        "glyph_paths": [
+          {
+            "d": "M556.832 868 L572.832 855 L572.832 862 L594.832 862 L594.832 874 L572.832 874 L572.832 881 Z",
+            "fill": "#302a2c"
+          }
+        ]
+      },
+      "on": {
+        "below_color": "#30282b"
+      }
+    }
+  },
+  "path_overrides": {
+    "outer-shell": {
+      "stroke": "#aebcc3",
+      "stroke_width": 1.7
+    },
+    "front-panel": {
+      "stroke": "#0d416f",
+      "stroke_width": 1.1
+    }
   }
 }
