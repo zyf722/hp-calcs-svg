@@ -1,0 +1,618 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 665 1340" width="665" height="1340" role="img" aria-label="HP 39gs faithful flat front view" data-source-sha256="b67284b151083c97b9e1992d94656b396a9d9515531b58d72694ee7aae32c413">
+  <title>HP 39gs front-view vector redraw</title>
+  <desc>Generated only from JSON design layers. Blank LCD. Jost*, Gentium, Noto Sans and Asana Math glyph sources.</desc>
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#79787b" />
+      <stop offset="0.5" stop-color="#5f5e61" />
+      <stop offset="1.0" stop-color="#454548" />
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#f6f4ef" />
+      <stop offset="0.5" stop-color="#e7e4df" />
+      <stop offset="1.0" stop-color="#d2d0cb" />
+    </linearGradient>
+    <linearGradient id="ivory" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#7c7b82" />
+      <stop offset="0.5" stop-color="#626168" />
+      <stop offset="1.0" stop-color="#4c4b52" />
+    </linearGradient>
+    <linearGradient id="soft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#d9d6ed" />
+      <stop offset="0.5" stop-color="#c4c0df" />
+      <stop offset="1.0" stop-color="#aaa4cf" />
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#f5f4f2" />
+      <stop offset="0.5" stop-color="#e3e2df" />
+      <stop offset="1.0" stop-color="#cbc9c6" />
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#51484d" />
+      <stop offset="0.5" stop-color="#393337" />
+      <stop offset="1.0" stop-color="#282629" />
+    </linearGradient>
+    <linearGradient id="black" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#528bc1" />
+      <stop offset="0.5" stop-color="#3776b5" />
+      <stop offset="1.0" stop-color="#255f99" />
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#f2f1ef" />
+      <stop offset="0.3333333333333333" stop-color="#d7d6d3" />
+      <stop offset="0.6666666666666666" stop-color="#b9b9b7" />
+      <stop offset="1.0" stop-color="#969796" />
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#f5f5f3" />
+      <stop offset="0.5" stop-color="#dedfdd" />
+      <stop offset="1.0" stop-color="#b9bcba" />
+    </linearGradient>
+    <linearGradient id="silverArrow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#3f343b" />
+      <stop offset="0.5" stop-color="#2d252a" />
+      <stop offset="1.0" stop-color="#51434b" />
+    </linearGradient>
+    <linearGradient id="fn39-blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#dcd8ee" />
+      <stop offset="0.5" stop-color="#c6c1e2" />
+      <stop offset="1.0" stop-color="#aca5d2" />
+    </linearGradient>
+    <filter id="blur2" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="2" />
+    </filter>
+    <filter id="blur4" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+    <filter id="blur6" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+  </defs>
+  <g id="housing">
+    <path d="M93 33 C171 27 250 27 332.5 28 C415 27 494 27 572 33 C611 34 630 48 633 79 C636 105 635 122 635 136 C635 254 636 483 636 645 C636 853 629 1059 610 1205 C608 1227 605 1240 599 1254 C588 1278 571 1294 535 1299 C449 1310 336 1315 332.5 1315 C329 1315 216 1310 130 1299 C94 1294 77 1278 66 1254 C60 1240 57 1227 55 1205 C36 1059 29 853 29 645 C29 483 30 254 30 136 C30 122 29 105 32 79 C35 48 54 34 93 33 Z" id="outer-shell" fill="url(#shell)" stroke="#4b4b4d" stroke-width="1.1" />
+    <path d="M155 34.4 C239 31.0 290 30.2 332.5 30.2 C375 30.2 426 31.0 510 34.4 L508.2 37.7 C420.5 35.6 375 35.0 332.5 35.0 C290 35.0 244.5 35.6 156.8 37.7 Z" id="irda-recess" fill="#353537" stroke="#262628" stroke-width="0.55" />
+    <path d="M156.5 37.8 C243 35.9 289 35.4 332.5 35.4 C376 35.4 422 35.9 508.5 37.8" id="irda-lower-rim" fill="none" stroke="#9b9b99" stroke-width="0.6" opacity="0.45" />
+    <path d="M76 53 C167 44 254 43 332.5 44 C411 43 498 44 589 53 C603 54 610 59 611 76 C615 119 612 248 607 357 C603 439 595 486 590 532 C587 583 587 633 591 686 C598 780 601 870 601 971 C601 1098 600 1195 587 1235 C579 1260 564 1278 534 1286 C490 1297 410 1300 332.5 1300 C255 1300 175 1297 131 1286 C101 1278 86 1260 78 1235 C65 1195 64 1098 64 971 C64 870 67 780 74 686 C78 633 78 583 75 532 C70 486 62 439 58 357 C53 248 50 119 54 76 C55 59 62 54 76 53 Z" id="front-panel" fill="url(#face)" stroke="#b9b8b4" stroke-width="1.15" />
+  </g>
+  <g id="display">
+    <path d="M85 68 C174 60 249 58.2 332.5 58.2 C416 58.2 491 60 580 68 C585.5 69.3 589.5 72.8 591.2 79.8 C595.4 145 597.2 229 596 320 C595 373 590 424 582 463 C581 479 576 490 565 494 C511 501 449 505 332.5 506 C216 505 154 501 100 494 C89 490 84 479 83 463 C75 424 70 373 69 320 C67.8 229 69.6 145 73.8 79.8 C75.5 72.8 79.5 69.3 85 68 Z" fill="#666b69" stroke="#414644" stroke-width="1.15" />
+    <rect x="100" y="164" width="463" height="262" rx="17" fill="#c2d0ca" stroke="#465448" stroke-width="1.3" />
+  </g>
+  <g id="hp-logo" data-source="https://commons.wikimedia.org/wiki/File:HP_logo_2008.svg">
+    <rect x="482.5" y="82" width="82" height="52" rx="5.5" fill="url(#badge)" stroke="#8d908f" stroke-width="1.1" />
+    <svg x="499" y="83" width="49" height="49" viewBox="0 0 1000 999.98" overflow="visible" preserveAspectRatio="xMidYMid meet">
+      <g transform="translate(-203.54 -212.7)">
+        <path d="m704.93 212.7-107.58 301.62 73.131 0.0229c52.68 0.0153 75.098 41.551 58.509 88.066l-106.97 299.91h-107.64l117.69-330h-55.422l-117.68 330h-108.57l241.48-677.11c-222.38 50.731-388.34 249.71-388.34 487.46 0 234.05 160.82 430.51 377.98 484.98l243.97-685.01h176.69c36.545 0 82.508 24.641 62.646 80.724l-99.203 280.11c-12.672 35.78-42.793 43.031-66.789 43.031h-108.62l-105.35 295.79c6.2031 0.2273 12.418 0.3834 18.672 0.3834 276.14 0 500-223.85 500-500-7e-4 -275.68-223.11-499.23-498.62-499.98zm208.15 358.81-102.47 287.64h54.567l102.49-287.64z" fill="#18191b" />
+      </g>
+    </svg>
+  </g>
+  <g id="header-print">
+    <g id="hp" data-role="header" data-label="HP" data-bbox="97.000,82.000,127.721,100.900" fill="#242529">
+      <text x="94.84000" y="100.90000" font-family="Jost*" font-weight="400" font-style="normal" font-size="27" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:400;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">HP</text>
+    </g>
+    <g id="model" data-role="header" data-label="39gs" data-bbox="138.221,82.000,189.266,107.380" fill="#242529">
+      <text x="136.60100" y="101.17000" font-family="Jost*" font-weight="400" font-style="normal" font-size="27" letter-spacing="-0.76" style="font-family:'Jost*';font-weight:400;font-style:normal;letter-spacing:-0.76px;font-feature-settings:'ss01' 1;" xml:space="preserve">39gs</text>
+    </g>
+    <g id="description" data-role="header" data-label="Graphing Calculator" data-bbox="97.000,111.000,320.785,138.270" fill="#242529">
+      <text x="95.92000" y="132.06000" font-family="Jost*" font-weight="400" font-style="normal" font-size="27" letter-spacing="-0.76" style="font-family:'Jost*';font-weight:400;font-style:normal;letter-spacing:-0.76px;font-feature-settings:'ss01' 1;" xml:space="preserve">Graphing Calculator</text>
+    </g>
+    <path d="M325.735 68.800 L319.335 79.000 H332.135 Z" fill="#242529" data-anchor="calculator-second-l" />
+  </g>
+  <g id="six-function-keys">
+    <g id="F1">
+      <rect x="98.0" y="537" width="58" height="31" rx="6.5" fill="url(#fn39-blue)" stroke="#092c3b" stroke-width="2.5" />
+    </g>
+    <g id="F2">
+      <rect x="180.0" y="537" width="58" height="31" rx="6.5" fill="url(#fn39-blue)" stroke="#092c3b" stroke-width="2.5" />
+    </g>
+    <g id="F3">
+      <rect x="262.0" y="537" width="58" height="31" rx="6.5" fill="url(#fn39-blue)" stroke="#092c3b" stroke-width="2.5" />
+    </g>
+    <g id="F4">
+      <rect x="344.0" y="537" width="58" height="31" rx="6.5" fill="url(#fn39-blue)" stroke="#092c3b" stroke-width="2.5" />
+    </g>
+    <g id="F5">
+      <rect x="426.0" y="537" width="58" height="31" rx="6.5" fill="url(#fn39-blue)" stroke="#092c3b" stroke-width="2.5" />
+    </g>
+    <g id="F6">
+      <rect x="506.0" y="537" width="58" height="31" rx="6.5" fill="url(#fn39-blue)" stroke="#092c3b" stroke-width="2.5" />
+    </g>
+  </g>
+  <g id="navigation">
+    <g id="recess">
+      <path d="M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z" fill="#646462" opacity="0.16" filter="url(#blur6)" transform="translate(0 2.2)" />
+      <path d="M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z" fill="#777773" opacity="0.06" filter="url(#blur6)" transform="translate(0.8 1.2)" />
+      <path d="M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z" fill="#c8c7c2" opacity="0.26" filter="url(#blur4)" />
+      <path d="M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z" fill="#ffffff" opacity="0.05" filter="url(#blur6)" transform="translate(-0.9 -1.1)" />
+      <path d="M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z" fill="none" stroke="#ffffff" stroke-width="4.8" opacity="0.09" filter="url(#blur6)" transform="translate(-0.8 -1.1)" />
+      <path d="M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z" fill="none" stroke="#6b6b68" stroke-width="5.4" opacity="0.11" filter="url(#blur6)" transform="translate(0.9 1.4)" />
+    </g>
+    <g id="up">
+      <circle cx="453.7" cy="622.6" r="25.4" fill="#13415a" opacity="0.18" filter="url(#blur2)" />
+      <circle cx="453" cy="621" r="24" fill="url(#metal)" stroke="#38383a" stroke-width="1.6" />
+      <path d="M453 613.7 L446.6 626.6 L459.4 626.6 Z" fill="url(#silverArrow)" stroke="#30262d" stroke-width="0.5" transform="rotate(0 453 621)" />
+    </g>
+    <g id="left">
+      <circle cx="392.7" cy="670.6" r="25.4" fill="#13415a" opacity="0.18" filter="url(#blur2)" />
+      <circle cx="392" cy="669" r="24" fill="url(#metal)" stroke="#38383a" stroke-width="1.6" />
+      <path d="M392 661.7 L385.6 674.6 L398.4 674.6 Z" fill="url(#silverArrow)" stroke="#30262d" stroke-width="0.5" transform="rotate(270 392 669)" />
+    </g>
+    <g id="right">
+      <circle cx="514.7" cy="670.6" r="25.4" fill="#13415a" opacity="0.18" filter="url(#blur2)" />
+      <circle cx="514" cy="669" r="24" fill="url(#metal)" stroke="#38383a" stroke-width="1.6" />
+      <path d="M514 661.7 L507.6 674.6 L520.4 674.6 Z" fill="url(#silverArrow)" stroke="#30262d" stroke-width="0.5" transform="rotate(90 514 669)" />
+    </g>
+    <g id="down">
+      <circle cx="453.7" cy="715.6" r="25.4" fill="#13415a" opacity="0.18" filter="url(#blur2)" />
+      <circle cx="453" cy="714" r="24" fill="url(#metal)" stroke="#38383a" stroke-width="1.6" />
+      <path d="M453 706.7 L446.6 719.6 L459.4 719.6 Z" fill="url(#silverArrow)" stroke="#30262d" stroke-width="0.5" transform="rotate(180 453 714)" />
+    </g>
+  </g>
+  <g id="keyboard">
+    <g id="key-symb" data-kind="ivory" data-center="127,628" data-main-center="127.00000" data-main-y="628.40000">
+      <path d="M106.500 607.000 H147.500 Q155.500 607.000 155.500 615.000 V640.000 C155.500 653.200 98.500 653.200 98.500 640.000 V615.000 Q98.500 607.000 106.500 607.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-symb" data-role="main" data-label="SYMB" data-bbox="106.680,622.564,147.320,634.236" fill="#f5f4f2">
+        <text x="106.15325" y="633.95675" font-family="Jost*" font-weight="600" font-style="normal" font-size="15.5" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">SYMB</text>
+      </g>
+    </g>
+    <g id="key-plot" data-kind="ivory" data-center="209,628" data-main-center="209.00000" data-main-y="628.40000">
+      <path d="M188.500 607.000 H229.500 Q237.500 607.000 237.500 615.000 V640.000 C237.500 653.200 180.500 653.200 180.500 640.000 V615.000 Q180.500 607.000 188.500 607.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-plot" data-role="main" data-label="PLOT" data-bbox="191.106,622.727,226.894,634.073" fill="#f5f4f2">
+        <text x="189.92800" y="633.79400" font-family="Jost*" font-weight="600" font-style="normal" font-size="15.5" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">PLOT</text>
+      </g>
+    </g>
+    <g id="key-num" data-kind="ivory" data-center="291,628" data-main-center="291.00000" data-main-y="628.40000">
+      <path d="M270.500 607.000 H311.500 Q319.500 607.000 319.500 615.000 V640.000 C319.500 653.200 262.500 653.200 262.500 640.000 V615.000 Q262.500 607.000 270.500 607.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-num" data-role="main" data-label="NUM" data-bbox="273.927,622.432,308.073,634.367" fill="#f5f4f2">
+        <text x="272.74925" y="633.82500" font-family="Jost*" font-weight="600" font-style="normal" font-size="15.5" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">NUM</text>
+      </g>
+    </g>
+    <g id="key-home" data-kind="ivory" data-center="127,706" data-main-center="127.00000" data-main-y="706.40000">
+      <path d="M106.500 685.000 H147.500 Q155.500 685.000 155.500 693.000 V718.000 C155.500 731.200 98.500 731.200 98.500 718.000 V693.000 Q98.500 685.000 106.500 685.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-home" data-role="main" data-label="HOME" data-bbox="105.846,700.828,148.154,711.972" fill="#f5f4f2">
+        <text x="104.72140" y="711.70580" font-family="Jost*" font-weight="600" font-style="normal" font-size="14.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">HOME</text>
+      </g>
+    </g>
+    <g id="key-aplet" data-kind="ivory" data-center="209,706" data-main-center="209.00000" data-main-y="706.40000">
+      <path d="M188.500 685.000 H229.500 Q237.500 685.000 237.500 693.000 V718.000 C237.500 731.200 180.500 731.200 180.500 718.000 V693.000 Q180.500 685.000 188.500 685.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-aplet" data-role="main" data-label="APLET" data-bbox="187.605,700.909,230.395,711.891" fill="#f5f4f2">
+        <text x="187.59060" y="711.89080" font-family="Jost*" font-weight="600" font-style="normal" font-size="14.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">APLET</text>
+      </g>
+    </g>
+    <g id="key-views" data-kind="ivory" data-center="291,706" data-main-center="291.00000" data-main-y="706.40000">
+      <path d="M270.500 685.000 H311.500 Q319.500 685.000 319.500 693.000 V718.000 C319.500 731.200 262.500 731.200 262.500 718.000 V693.000 Q262.500 685.000 270.500 685.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-views" data-role="main" data-label="VIEWS" data-bbox="267.607,700.650,314.393,712.150" fill="#f5f4f2">
+        <text x="267.59260" y="711.52820" font-family="Jost*" font-weight="600" font-style="normal" font-size="14.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">VIEWS</text>
+      </g>
+    </g>
+    <g id="key-vars" data-kind="ivory" data-center="136,786" data-main-center="136.00000" data-main-y="786.40000">
+      <path d="M106.500 764.500 H165.500 Q173.500 764.500 173.500 772.500 V798.500 C173.500 811.700 98.500 811.700 98.500 798.500 V772.500 Q98.500 764.500 106.500 764.500 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-vars" data-role="main" data-label="VARS" data-bbox="113.564,779.226,158.436,793.574" fill="#f5f4f2">
+        <text x="113.54545" y="792.80500" font-family="Jost*" font-weight="600" font-style="normal" font-size="18.3" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">VARS</text>
+      </g>
+    </g>
+    <g id="key-math" data-kind="ivory" data-center="234,786" data-main-center="234.00000" data-main-y="786.40000">
+      <path d="M204.500 764.500 H263.500 Q271.500 764.500 271.500 772.500 V798.500 C271.500 811.700 196.500 811.700 196.500 798.500 V772.500 Q196.500 764.500 204.500 764.500 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-math" data-role="main" data-label="MATH" data-bbox="209.560,779.611,258.440,793.189" fill="#f5f4f2">
+        <text x="208.90110" y="793.18930" font-family="Jost*" font-weight="600" font-style="normal" font-size="18.3" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">MATH</text>
+      </g>
+    </g>
+    <g id="key-deriv" data-kind="ivory" data-center="331.5,786" data-main-center="331.50000" data-main-y="786.40000">
+      <path d="M302.000 764.500 H361.000 Q369.000 764.500 369.000 772.500 V798.500 C369.000 811.700 294.000 811.700 294.000 798.500 V772.500 Q294.000 764.500 302.000 764.500 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-deriv" data-role="main" data-label="d/dx" data-bbox="308.658,776.867,354.342,795.933" fill="#f5f4f2">
+        <text x="307.98125" y="792.85750" font-family="Jost*" font-weight="600" font-style="normal" font-size="20.5" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">d/dx</text>
+      </g>
+    </g>
+    <g id="key-xt" data-kind="ivory" data-center="428.5,786" data-main-center="428.50000" data-main-y="786.40000">
+      <path d="M399.000 764.500 H458.000 Q466.000 764.500 466.000 772.500 V798.500 C466.000 811.700 391.000 811.700 391.000 798.500 V772.500 Q391.000 764.500 399.000 764.500 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-xt" data-role="main" data-label="X,T,θ" data-bbox="407.610,778.410,449.390,794.390" fill="#f5f4f2">
+        <text x="407.50610" y="791.41470" font-family="Jost*" font-weight="600" font-style="normal" font-size="17.3" letter-spacing="-0.16" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.16px;font-feature-settings:'ss01' 1;" xml:space="preserve">X,T,</text>
+        <text x="440.00610" y="791.41470" font-family="Noto Sans" font-weight="600" font-style="italic" font-size="17" letter-spacing="0" style="font-family:'Noto Sans';font-weight:600;font-style:italic;letter-spacing:0px;" xml:space="preserve">θ</text>
+      </g>
+    </g>
+    <g id="key-del" data-kind="ivory" data-center="526,786" data-main-center="526.00000" data-main-y="786.40000">
+      <path d="M496.500 764.500 H555.500 Q563.500 764.500 563.500 772.500 V798.500 C563.500 811.700 488.500 811.700 488.500 798.500 V772.500 Q488.500 764.500 496.500 764.500 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-del" data-role="main" data-label="DEL" data-bbox="509.302,779.575,542.698,793.225" fill="#f5f4f2">
+        <text x="507.81975" y="793.22500" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.5" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">DEL</text>
+      </g>
+    </g>
+    <g id="key-sin" data-kind="ivory" data-center="136,854.5" data-main-center="136.00000" data-main-y="854.90000">
+      <path d="M106.500 833.000 H165.500 Q173.500 833.000 173.500 841.000 V867.000 C173.500 880.200 98.500 880.200 98.500 867.000 V841.000 Q98.500 833.000 106.500 833.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-sin" data-role="main" data-label="SIN" data-bbox="120.774,847.393,151.226,862.408" fill="#f5f4f2">
+        <text x="120.11100" y="861.72500" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.5" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">SIN</text>
+      </g>
+    </g>
+    <g id="key-cos" data-kind="ivory" data-center="234,854.5" data-main-center="234.00000" data-main-y="854.90000">
+      <path d="M204.500 833.000 H263.500 Q271.500 833.000 271.500 841.000 V867.000 C271.500 880.200 196.500 880.200 196.500 867.000 V841.000 Q196.500 833.000 204.500 833.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-cos" data-role="main" data-label="COS" data-bbox="214.328,847.763,253.672,862.037" fill="#f5f4f2">
+        <text x="213.62600" y="861.68600" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.5" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">COS</text>
+      </g>
+    </g>
+    <g id="key-tan" data-kind="ivory" data-center="331.5,854.5" data-main-center="331.50000" data-main-y="854.90000">
+      <path d="M302.000 833.000 H361.000 Q369.000 833.000 369.000 841.000 V867.000 C369.000 880.200 294.000 880.200 294.000 867.000 V841.000 Q294.000 833.000 302.000 833.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-tan" data-role="main" data-label="TAN" data-bbox="313.603,847.324,349.397,862.476" fill="#f5f4f2">
+        <text x="313.48550" y="861.79325" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.5" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">TAN</text>
+      </g>
+    </g>
+    <g id="key-ln" data-kind="ivory" data-center="428.5,854.5" data-main-center="428.50000" data-main-y="854.90000">
+      <path d="M399.000 833.000 H458.000 Q466.000 833.000 466.000 841.000 V867.000 C466.000 880.200 391.000 880.200 391.000 867.000 V841.000 Q391.000 833.000 399.000 833.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-ln" data-role="main" data-label="LN" data-bbox="417.056,847.123,439.944,862.677" fill="#f5f4f2">
+        <text x="415.52080" y="861.97000" font-family="Jost*" font-weight="600" font-style="normal" font-size="20.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">LN</text>
+      </g>
+    </g>
+    <g id="key-log" data-kind="ivory" data-center="526,854.5" data-main-center="526.00000" data-main-y="854.90000">
+      <path d="M496.500 833.000 H555.500 Q563.500 833.000 563.500 841.000 V867.000 C563.500 880.200 488.500 880.200 488.500 867.000 V841.000 Q488.500 833.000 496.500 833.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-log" data-role="main" data-label="LOG" data-bbox="506.229,847.507,545.771,862.293" fill="#f5f4f2">
+        <text x="504.69413" y="861.92960" font-family="Jost*" font-weight="600" font-style="normal" font-size="20.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">LOG</text>
+      </g>
+    </g>
+    <g id="key-power2" data-kind="ivory" data-center="136,922.5" data-main-center="136.00000" data-main-y="922.90000">
+      <path d="M106.500 901.000 H165.500 Q173.500 901.000 173.500 909.000 V935.000 C173.500 948.200 98.500 948.200 98.500 935.000 V909.000 Q98.500 901.000 106.500 901.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-power2" data-role="main" data-label="X2" data-bbox="125.060,913.122,146.940,932.678" fill="#f5f4f2">
+        <text x="124.93240" y="932.67800" font-family="Jost*" font-weight="600" font-style="normal" font-size="21.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">X</text>
+        <text x="139.93240" y="921.67800" font-family="Jost*" font-weight="600" font-style="normal" font-size="12" letter-spacing="0" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:0px;font-feature-settings:'ss01' 1;" xml:space="preserve">2</text>
+      </g>
+    </g>
+    <g id="key-powery" data-kind="ivory" data-center="234,922.5" data-main-center="234.00000" data-main-y="922.90000">
+      <path d="M204.500 901.000 H263.500 Q271.500 901.000 271.500 909.000 V935.000 C271.500 948.200 196.500 948.200 196.500 935.000 V909.000 Q196.500 901.000 204.500 901.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-powery" data-role="main" data-label="XY" data-bbox="222.784,913.200,245.216,932.600" fill="#f5f4f2">
+        <text x="222.65640" y="932.60000" font-family="Jost*" font-weight="600" font-style="normal" font-size="21.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">X</text>
+        <text x="237.65640" y="921.60000" font-family="Jost*" font-weight="600" font-style="normal" font-size="12" letter-spacing="0" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:0px;font-feature-settings:'ss01' 1;" xml:space="preserve">Y</text>
+      </g>
+    </g>
+    <g id="key-openparen" data-kind="ivory" data-center="331.5,922.5" data-main-center="331.50000" data-main-y="922.90000">
+      <path d="M302.000 901.000 H361.000 Q369.000 901.000 369.000 909.000 V935.000 C369.000 948.200 294.000 948.200 294.000 935.000 V909.000 Q294.000 901.000 302.000 901.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-openparen" data-role="main" data-label="(" data-bbox="328.871,912.120,334.129,933.680" fill="#f5f4f2">
+        <text x="327.24300" y="929.28000" font-family="Jost*" font-weight="600" font-style="normal" font-size="22" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">(</text>
+      </g>
+    </g>
+    <g id="key-closeparen" data-kind="ivory" data-center="428.5,922.5" data-main-center="428.50000" data-main-y="922.90000">
+      <path d="M399.000 901.000 H458.000 Q466.000 901.000 466.000 909.000 V935.000 C466.000 948.200 391.000 948.200 391.000 935.000 V909.000 Q391.000 901.000 399.000 901.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-closeparen" data-role="main" data-label=")" data-bbox="425.882,912.120,431.118,933.680" fill="#f5f4f2">
+        <text x="425.46400" y="929.28000" font-family="Jost*" font-weight="600" font-style="normal" font-size="22" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">)</text>
+      </g>
+    </g>
+    <g id="key-divide" data-kind="navy" data-center="526,922.5" data-main-center="526.00000" data-main-y="922.90000">
+      <path d="M496.500 901.000 H555.500 Q563.500 901.000 563.500 909.000 V935.000 C563.500 948.200 488.500 948.200 488.500 935.000 V909.000 Q488.500 901.000 496.500 901.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-divide" data-role="main" data-label="÷" data-bbox="517.865,914.258,534.135,931.542" fill="#202124">
+        <text x="516.82150" y="931.77400" font-family="Jost*" font-weight="600" font-style="normal" font-size="29" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">÷</text>
+      </g>
+    </g>
+    <g id="key-comma" data-kind="ivory" data-center="136,993" data-main-center="136.00000" data-main-y="993.40000">
+      <path d="M106.500 971.000 H165.500 Q173.500 971.000 173.500 979.000 V1006.000 C173.500 1019.200 98.500 1019.200 98.500 1006.000 V979.000 Q98.500 971.000 106.500 971.000 Z" fill="url(#ivory)" stroke="#38383d" stroke-width="2.7" />
+      <g id="main-comma" data-role="main" data-label="," data-bbox="133.481,989.197,138.519,997.603" fill="#f5f4f2">
+        <text x="132.25659" y="992.66303" font-family="Gentium" font-weight="600" font-style="normal" font-size="28.5" letter-spacing="0" style="font-family:'Gentium';font-weight:600;font-style:normal;letter-spacing:0px;" xml:space="preserve">,</text>
+      </g>
+    </g>
+    <g id="key-seven" data-kind="navy" data-center="234,993" data-main-center="234.00000" data-main-y="993.40000">
+      <path d="M204.500 971.000 H263.500 Q271.500 971.000 271.500 979.000 V1006.000 C271.500 1019.200 196.500 1019.200 196.500 1006.000 V979.000 Q196.500 971.000 204.500 971.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-seven" data-role="main" data-label="7" data-bbox="225.810,982.900,242.190,1003.900" fill="#202124">
+        <text x="224.91000" y="1003.90000" font-family="Jost*" font-weight="600" font-style="normal" font-size="30" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">7</text>
+      </g>
+    </g>
+    <g id="key-eight" data-kind="navy" data-center="331.5,993" data-main-center="331.50000" data-main-y="993.40000">
+      <path d="M302.000 971.000 H361.000 Q369.000 971.000 369.000 979.000 V1006.000 C369.000 1019.200 294.000 1019.200 294.000 1006.000 V979.000 Q294.000 971.000 302.000 971.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-eight" data-role="main" data-label="8" data-bbox="324.045,982.480,338.955,1004.320" fill="#202124">
+        <text x="322.45500" y="1003.90000" font-family="Jost*" font-weight="600" font-style="normal" font-size="30" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">8</text>
+      </g>
+    </g>
+    <g id="key-nine" data-kind="navy" data-center="428.5,993" data-main-center="428.50000" data-main-y="993.40000">
+      <path d="M399.000 971.000 H458.000 Q466.000 971.000 466.000 979.000 V1006.000 C466.000 1019.200 391.000 1019.200 391.000 1006.000 V979.000 Q391.000 971.000 399.000 971.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-nine" data-role="main" data-label="9" data-bbox="420.370,982.720,436.630,1004.080" fill="#202124">
+        <text x="418.87000" y="1004.14000" font-family="Jost*" font-weight="600" font-style="normal" font-size="30" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">9</text>
+      </g>
+    </g>
+    <g id="key-times" data-kind="navy" data-center="526,993" data-main-center="526.00000" data-main-y="993.40000">
+      <path d="M496.500 971.000 H555.500 Q563.500 971.000 563.500 979.000 V1006.000 C563.500 1019.200 488.500 1019.200 488.500 1006.000 V979.000 Q488.500 971.000 496.500 971.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-times" data-role="main" data-label="×" data-bbox="518.374,985.743,533.626,1001.057" fill="#202124">
+        <text x="516.76200" y="1001.30500" font-family="Jost*" font-weight="600" font-style="normal" font-size="31" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">×</text>
+      </g>
+    </g>
+    <g id="key-alpha" data-kind="alpha" data-center="136,1067" data-main-center="136.00000" data-main-y="1067.40000">
+      <path d="M106.500 1045.000 H165.500 Q173.500 1045.000 173.500 1053.000 V1080.000 C173.500 1093.200 98.500 1093.200 98.500 1080.000 V1053.000 Q98.500 1045.000 106.500 1045.000 Z" fill="url(#black)" stroke="#214f7d" stroke-width="2.7" />
+      <g id="main-alpha" data-role="main" data-label="ALPHA" data-bbox="107.484,1060.908,164.516,1073.893" fill="#f5f4f2">
+        <text x="107.46625" y="1073.89250" font-family="Jost*" font-weight="600" font-style="normal" font-size="17.5" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ALPHA</text>
+      </g>
+    </g>
+    <g id="key-four" data-kind="navy" data-center="234,1067" data-main-center="234.00000" data-main-y="1067.40000">
+      <path d="M204.500 1045.000 H263.500 Q271.500 1045.000 271.500 1053.000 V1080.000 C271.500 1093.200 196.500 1093.200 196.500 1080.000 V1053.000 Q196.500 1045.000 204.500 1045.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-four" data-role="main" data-label="4" data-bbox="224.865,1056.900,243.135,1077.900" fill="#202124">
+        <text x="224.38500" y="1077.90000" font-family="Jost*" font-weight="600" font-style="normal" font-size="30" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">4</text>
+      </g>
+    </g>
+    <g id="key-five" data-kind="navy" data-center="331.5,1067" data-main-center="331.50000" data-main-y="1067.40000">
+      <path d="M302.000 1045.000 H361.000 Q369.000 1045.000 369.000 1053.000 V1080.000 C369.000 1093.200 294.000 1093.200 294.000 1080.000 V1053.000 Q294.000 1045.000 302.000 1045.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-five" data-role="main" data-label="5" data-bbox="323.370,1056.720,339.630,1078.080" fill="#202124">
+        <text x="322.23000" y="1077.72000" font-family="Jost*" font-weight="600" font-style="normal" font-size="30" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">5</text>
+      </g>
+    </g>
+    <g id="key-six" data-kind="navy" data-center="428.5,1067" data-main-center="428.50000" data-main-y="1067.40000">
+      <path d="M399.000 1045.000 H458.000 Q466.000 1045.000 466.000 1053.000 V1080.000 C466.000 1093.200 391.000 1093.200 391.000 1080.000 V1053.000 Q391.000 1045.000 399.000 1045.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-six" data-role="main" data-label="6" data-bbox="420.370,1056.720,436.630,1078.080" fill="#202124">
+        <text x="418.87000" y="1077.66000" font-family="Jost*" font-weight="600" font-style="normal" font-size="30" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">6</text>
+      </g>
+    </g>
+    <g id="key-minus" data-kind="navy" data-center="526,1067" data-main-center="526.00000" data-main-y="1067.40000">
+      <path d="M496.500 1045.000 H555.500 Q563.500 1045.000 563.500 1053.000 V1080.000 C563.500 1093.200 488.500 1093.200 488.500 1080.000 V1053.000 Q488.500 1045.000 496.500 1045.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-minus" data-role="main" data-label="−" data-bbox="518.496,1065.576,533.504,1069.224" fill="#202124">
+        <text x="516.51200" y="1074.98400" font-family="Jost*" font-weight="600" font-style="normal" font-size="32" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">−</text>
+      </g>
+    </g>
+    <g id="key-shift" data-kind="shift" data-center="136,1141" data-main-center="136.00000" data-main-y="1141.40000">
+      <path d="M106.500 1119.000 H165.500 Q173.500 1119.000 173.500 1127.000 V1154.000 C173.500 1167.200 98.500 1167.200 98.500 1154.000 V1127.000 Q98.500 1119.000 106.500 1119.000 Z" fill="url(#orange)" stroke="#272427" stroke-width="2.7" />
+      <g id="main-shift" data-role="main" data-label="SHIFT" data-bbox="112.725,1134.995,159.275,1147.805" fill="#f5f4f2">
+        <text x="112.13000" y="1147.49000" font-family="Jost*" font-weight="600" font-style="normal" font-size="17.5" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">SHIFT</text>
+      </g>
+    </g>
+    <g id="key-one" data-kind="navy" data-center="234,1141" data-main-center="234.00000" data-main-y="1141.40000">
+      <path d="M204.500 1119.000 H263.500 Q271.500 1119.000 271.500 1127.000 V1154.000 C271.500 1167.200 196.500 1167.200 196.500 1154.000 V1127.000 Q196.500 1119.000 204.500 1119.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-one" data-role="main" data-label="1" data-bbox="229.395,1130.720,238.605,1152.080" fill="#202124">
+        <text x="227.23500" y="1152.08000" font-family="Jost*" font-weight="600" font-style="normal" font-size="30" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">1</text>
+      </g>
+    </g>
+    <g id="key-two" data-kind="navy" data-center="331.5,1141" data-main-center="331.50000" data-main-y="1141.40000">
+      <path d="M302.000 1119.000 H361.000 Q369.000 1119.000 369.000 1127.000 V1154.000 C369.000 1167.200 294.000 1167.200 294.000 1154.000 V1127.000 Q294.000 1119.000 302.000 1119.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-two" data-role="main" data-label="2" data-bbox="323.040,1130.705,339.960,1152.095" fill="#202124">
+        <text x="322.44000" y="1152.09500" font-family="Jost*" font-weight="600" font-style="normal" font-size="30" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">2</text>
+      </g>
+    </g>
+    <g id="key-three" data-kind="navy" data-center="428.5,1141" data-main-center="428.50000" data-main-y="1141.40000">
+      <path d="M399.000 1119.000 H458.000 Q466.000 1119.000 466.000 1127.000 V1154.000 C466.000 1167.200 391.000 1167.200 391.000 1154.000 V1127.000 Q391.000 1119.000 399.000 1119.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-three" data-role="main" data-label="3" data-bbox="420.820,1130.510,436.180,1152.290" fill="#202124">
+        <text x="419.26000" y="1151.87000" font-family="Jost*" font-weight="600" font-style="normal" font-size="30" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">3</text>
+      </g>
+    </g>
+    <g id="key-plus" data-kind="navy" data-center="526,1141" data-main-center="526.00000" data-main-y="1141.40000">
+      <path d="M496.500 1119.000 H555.500 Q563.500 1119.000 563.500 1127.000 V1154.000 C563.500 1167.200 488.500 1167.200 488.500 1154.000 V1127.000 Q488.500 1119.000 496.500 1119.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-plus" data-role="main" data-label="+" data-bbox="517.568,1132.984,534.432,1149.816" fill="#202124">
+        <text x="515.48800" y="1149.88000" font-family="Jost*" font-weight="600" font-style="normal" font-size="32" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">+</text>
+      </g>
+    </g>
+    <g id="key-on" data-kind="navy" data-center="136,1216" data-main-center="136.00000" data-main-y="1216.40000">
+      <path d="M106.500 1193.000 H165.500 Q173.500 1193.000 173.500 1201.000 V1230.000 C173.500 1243.200 98.500 1243.200 98.500 1230.000 V1201.000 Q98.500 1193.000 106.500 1193.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-on" data-role="main" data-label="ON" data-bbox="121.646,1208.931,150.354,1223.869" fill="#202124">
+        <text x="120.94770" y="1223.19000" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.4" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ON</text>
+      </g>
+    </g>
+    <g id="key-zero" data-kind="navy" data-center="234,1216" data-main-center="234.00000" data-main-y="1216.40000">
+      <path d="M204.500 1193.000 H263.500 Q271.500 1193.000 271.500 1201.000 V1230.000 C271.500 1243.200 196.500 1243.200 196.500 1230.000 V1201.000 Q196.500 1193.000 204.500 1193.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-zero" data-role="main" data-label="0" data-bbox="225.540,1205.540,242.460,1227.260" fill="#202124">
+        <text x="224.34000" y="1226.90000" font-family="Jost*" font-weight="600" font-style="normal" font-size="30" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">0</text>
+      </g>
+    </g>
+    <g id="key-dot" data-kind="navy" data-center="331.5,1216">
+      <path d="M302.000 1193.000 H361.000 Q369.000 1193.000 369.000 1201.000 V1230.000 C369.000 1243.200 294.000 1243.200 294.000 1230.000 V1201.000 Q294.000 1193.000 302.000 1193.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <circle cx="331.5" cy="1216" r="3.5" fill="#202124" />
+    </g>
+    <g id="key-negative" data-kind="navy" data-center="428.5,1216" data-main-center="428.50000" data-main-y="1216.40000">
+      <path d="M399.000 1193.000 H458.000 Q466.000 1193.000 466.000 1201.000 V1230.000 C466.000 1243.200 391.000 1243.200 391.000 1230.000 V1201.000 Q391.000 1193.000 399.000 1193.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-negative" data-role="main" data-label="(-)" data-bbox="420.076,1204.934,436.924,1227.866" fill="#202124">
+        <text x="418.34400" y="1223.18600" font-family="Jost*" font-weight="600" font-style="normal" font-size="23.4" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">(-)</text>
+      </g>
+    </g>
+    <g id="key-enter" data-kind="navy" data-center="526,1216" data-main-center="526.00000" data-main-y="1216.40000">
+      <path d="M496.500 1193.000 H555.500 Q563.500 1193.000 563.500 1201.000 V1230.000 C563.500 1243.200 488.500 1243.200 488.500 1230.000 V1201.000 Q488.500 1193.000 496.500 1193.000 Z" fill="url(#navy)" stroke="#5a595b" stroke-width="2.7" />
+      <g id="main-enter" data-role="main" data-label="ENTER" data-bbox="499.741,1209.663,552.259,1223.138" fill="#202124">
+        <text x="498.41125" y="1222.52500" font-family="Jost*" font-weight="600" font-style="normal" font-size="17.5" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ENTER</text>
+      </g>
+    </g>
+  </g>
+  <g id="shift-legends">
+    <path d="M126 603 V597 H181 M237 597 H290 V603" fill="none" stroke="#29262a" stroke-width="1.25" />
+    <g id="shift-setup" data-role="shift" data-label="SETUP" data-bbox="189.518,592.500,227.482,602.500" fill="#29262a">
+      <text x="189.02460" y="602.25390" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">SETUP</text>
+    </g>
+    <g id="shift-home" data-role="shift" data-label="MODES" data-bbox="103.375,670.250,150.625,680.750" fill="#29262a">
+      <text x="102.84300" y="680.54000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">MODES</text>
+    </g>
+    <g id="shift-aplet" data-role="shift" data-label="NOTE" data-bbox="191.829,670.110,226.171,680.890" fill="#29262a">
+      <text x="190.73700" y="680.40000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">NOTE</text>
+    </g>
+    <g id="shift-views" data-role="shift" data-label="SKETCH" data-bbox="266.556,670.411,315.444,680.589" fill="#29262a">
+      <text x="266.05200" y="680.37900" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">SKETCH</text>
+    </g>
+    <g id="shift-vars" data-role="shift" data-label="CHARS" data-bbox="96.500,748.222,140.978,758.778" fill="#29262a">
+      <text x="95.96800" y="758.56800" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CHARS</text>
+    </g>
+    <g id="shift-math" data-role="shift" data-label="CMDS" data-bbox="194.500,748.250,232.342,758.750" fill="#29262a">
+      <text x="193.96800" y="758.54000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CMDS</text>
+    </g>
+    <g id="shift-deriv" data-role="shift" data-label="∫" data-bbox="292.000,746.004,302.168,760.996" fill="#29262a">
+      <text x="294.68672" y="757.28516" font-family="Gentium" font-weight="600" font-style="italic" font-size="15.2" letter-spacing="-0.14" style="font-family:'Gentium';font-weight:600;font-style:italic;letter-spacing:-0.14px;" xml:space="preserve">∫</text>
+    </g>
+    <g id="shift-xt" data-role="shift" data-label="EEX" data-bbox="389.000,748.600,412.016,758.400" fill="#29262a">
+      <text x="387.90800" y="758.40000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">EEX</text>
+    </g>
+    <g id="shift-del" data-role="shift" data-label="CLEAR" data-bbox="486.500,748.243,527.702,758.757" fill="#29262a">
+      <text x="485.96800" y="758.58900" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CLEAR</text>
+    </g>
+    <g id="shift-sin" data-role="shift" data-label="ASIN" data-bbox="96.500,816.582,127.510,827.418" fill="#29262a">
+      <text x="96.45800" y="826.92800" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ASIN</text>
+    </g>
+    <g id="shift-cos" data-role="shift" data-label="ACOS" data-bbox="194.500,816.722,231.698,827.278" fill="#29262a">
+      <text x="194.45800" y="827.06800" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ACOS</text>
+    </g>
+    <g id="shift-tan" data-role="shift" data-label="ATAN" data-bbox="292.000,816.582,325.390,827.418" fill="#29262a">
+      <text x="291.95800" y="826.92800" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ATAN</text>
+    </g>
+    <g id="shift-ln" data-role="shift" data-label="ex" data-bbox="389.000,815.706,403.273,828.294" fill="#29262a">
+      <text x="388.60664" y="827.99004" font-family="Gentium" font-weight="600" font-style="italic" font-size="15.2" letter-spacing="0" style="font-family:'Gentium';font-weight:600;font-style:italic;letter-spacing:0px;" xml:space="preserve">e</text>
+      <text x="397.80664" y="821.19004" font-family="Gentium" font-weight="600" font-style="italic" font-size="12" letter-spacing="0" style="font-family:'Gentium';font-weight:600;font-style:italic;letter-spacing:0px;" xml:space="preserve">x</text>
+    </g>
+    <g id="shift-log" data-role="shift" data-label="10x" data-bbox="486.500,815.583,506.967,828.417" fill="#29262a">
+      <text x="485.30000" y="828.26719" font-family="Jost*" font-weight="400" font-style="normal" font-size="15" letter-spacing="0" style="font-family:'Jost*';font-weight:400;font-style:normal;letter-spacing:0px;font-feature-settings:'ss01' 1;" xml:space="preserve">10</text>
+      <text x="501.50000" y="821.06719" font-family="Gentium" font-weight="600" font-style="italic" font-size="12" letter-spacing="0" style="font-family:'Gentium';font-weight:600;font-style:italic;letter-spacing:0px;" xml:space="preserve">x</text>
+    </g>
+    <g id="shift-power2" data-role="shift" data-label="√" data-bbox="96.500,883.500,113.741,894.500" fill="#29262a">
+      <path d="M2334 1422Q2328 1401 2315.0 1363.5Q2302 1326 2296 1307H1077L748 79Q736 50 698.0 26.5Q660 3 619.5 -11.5Q579 -26 562 -30L172 799H41L11 831Q16 851 30.0 885.0Q44 919 53 939L317 940L657 221L998 1452H2304Z" transform="translate(96.41836,894.27695) scale(0.007421875,-0.007421875)" data-font="GS" data-glyph="radical-vinculum-1050" />
+    </g>
+    <g id="shift-powery" data-role="shift" data-label="n√" data-bbox="194.500,883.500,219.333,894.500" fill="#29262a">
+      <path d="M365 280V0H476V292C476 403 420 470 316 470C253 470 206 443 177 389V460H69V0H177V280C177 342 219 383 280 383C338 383 365 347 365 280Z" transform="translate(193.81000,888.57695) scale(0.010000000,-0.010000000)" data-font="JM" data-glyph="n" />
+      <path d="M2334 1422Q2328 1401 2315.0 1363.5Q2302 1326 2296 1307H1077L748 79Q736 50 698.0 26.5Q660 3 619.5 -11.5Q579 -26 562 -30L172 799H41L11 831Q16 851 30.0 885.0Q44 919 53 939L317 940L657 221L998 1452H2304Z" transform="translate(202.01000,894.27695) scale(0.007421875,-0.007421875)" data-font="GS" data-glyph="radical-vinculum-1050" />
+    </g>
+    <g id="shift-openparen" data-role="shift" data-label="ABS" data-bbox="292.000,883.722,317.256,894.278" fill="#29262a">
+      <text x="291.95800" y="894.06800" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ABS</text>
+    </g>
+    <g id="shift-closeparen" data-role="shift" data-label="ARG" data-bbox="389.000,883.722,417.128,894.278" fill="#29262a">
+      <text x="388.95800" y="894.06800" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ARG</text>
+    </g>
+    <g id="shift-divide" data-role="shift" data-label="X−1" data-bbox="486.500,882.100,502.252,895.900" fill="#29262a">
+      <text x="486.35200" y="895.90000" font-family="Jost*" font-weight="400" font-style="normal" font-size="14.8" letter-spacing="0" style="font-family:'Jost*';font-weight:400;font-style:normal;letter-spacing:0px;font-feature-settings:'ss01' 1;" xml:space="preserve">X</text>
+      <text x="493.35200" y="889.20000" font-family="Jost*" font-weight="400" font-style="normal" font-size="10" letter-spacing="-0.2" style="font-family:'Jost*';font-weight:400;font-style:normal;letter-spacing:-0.2px;font-feature-settings:'ss01' 1;" xml:space="preserve">−1</text>
+    </g>
+    <g id="shift-comma" data-role="shift" data-label="MEMORY" data-bbox="96.500,952.750,154.754,963.250" fill="#29262a">
+      <text x="95.96800" y="963.04000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">MEMORY</text>
+    </g>
+    <g id="shift-seven" data-role="shift" data-label="LIST" data-bbox="194.500,952.911,218.608,963.089" fill="#29262a">
+      <text x="193.40800" y="962.87900" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">LIST</text>
+    </g>
+    <g id="shift-eight" data-role="shift" data-label="{" data-bbox="292.000,951.140,295.514,964.860" fill="#29262a">
+      <text x="291.37000" y="962.06000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">{</text>
+    </g>
+    <g id="shift-nine" data-role="shift" data-label="}" data-bbox="389.000,951.140,392.514,964.860" fill="#29262a">
+      <text x="388.20200" y="962.06000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">}</text>
+    </g>
+    <g id="shift-times" data-role="shift" data-label="!" data-bbox="486.500,952.967,488.474,963.033" fill="#29262a">
+      <text x="485.26800" y="962.76700" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">!</text>
+    </g>
+    <g id="shift-alpha" data-role="shift" data-label="alpha" data-bbox="96.500,1024.450,138.143,1041.550" fill="#29262a">
+      <text x="95.91860" y="1037.78800" font-family="Jost*" font-weight="500" font-style="normal" font-size="17.1" letter-spacing="-0.08" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.08px;font-feature-settings:'ss01' 1;" xml:space="preserve">alpha</text>
+    </g>
+    <g id="shift-four" data-role="shift" data-label="MATRIX" data-bbox="194.500,1027.827,241.344,1038.173" fill="#29262a">
+      <text x="193.96800" y="1038.17300" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">MATRIX</text>
+    </g>
+    <g id="shift-five" data-role="shift" data-label="[" data-bbox="292.000,1026.000,294.926,1040.000" fill="#29262a">
+      <text x="290.65600" y="1036.92000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">[</text>
+    </g>
+    <g id="shift-six" data-role="shift" data-label="]" data-bbox="389.000,1026.000,391.926,1040.000" fill="#29262a">
+      <text x="388.72000" y="1036.92000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">]</text>
+    </g>
+    <g id="shift-angle" fill="none" stroke="#29262a" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" transform="translate(-4 0)">
+      <path d="M494 1037 H505 M494 1037 L501 1028.2" fill="none" />
+      <path d="M500.664 1036.52 A6.8 6.8 0 0 0 498.352 1034.008" fill="none" />
+    </g>
+    <g id="shift-one" data-role="shift" data-label="PROGRAM" data-bbox="194.500,1101.722,260.510,1112.278" fill="#29262a">
+      <text x="193.40800" y="1112.06800" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">PROGRAM</text>
+    </g>
+    <g id="shift-two" data-role="shift" data-label="SYNTAX" data-bbox="292.000,1101.582,341.938,1112.418" fill="#29262a">
+      <text x="291.49600" y="1111.92800" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">SYNTAX</text>
+    </g>
+    <g id="shift-three" data-role="shift" data-label="π" data-bbox="389.000,1102.548,398.829,1111.452" fill="#29262a">
+      <text x="388.91113" y="1111.03457" font-family="Gentium" font-weight="600" font-style="italic" font-size="18.2" letter-spacing="-0.14" style="font-family:'Gentium';font-weight:600;font-style:italic;letter-spacing:-0.14px;" xml:space="preserve">π</text>
+    </g>
+    <g id="shift-plus" data-role="shift" data-label="Σ" data-bbox="486.500,1101.579,494.911,1112.421" fill="#29262a">
+      <text x="486.07520" y="1112.42051" font-family="Gentium" font-weight="600" font-style="normal" font-size="17.4" letter-spacing="-0.14" style="font-family:'Gentium';font-weight:600;font-style:normal;letter-spacing:-0.14px;" xml:space="preserve">Σ</text>
+    </g>
+    <g id="shift-on" data-role="shift" data-label="OFF" data-bbox="96.500,1175.911,120.706,1186.089" fill="#29262a">
+      <text x="95.96800" y="1185.87900" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">OFF</text>
+    </g>
+    <g id="shift-zero" data-role="shift" data-label="NOTEPAD" data-bbox="194.500,1175.582,255.428,1186.418" fill="#29262a">
+      <text x="193.40800" y="1185.92800" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">NOTEPAD</text>
+    </g>
+    <g id="shift-dot" data-role="shift" data-label="=" data-bbox="292.000,1179.117,298.958,1182.883" fill="#29262a">
+      <text x="291.14600" y="1184.53500" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">=</text>
+    </g>
+    <g id="shift-negative" data-role="shift" data-label="AND" data-bbox="389.000,1175.582,418.582,1186.418" fill="#29262a">
+      <text x="388.95800" y="1185.92800" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">AND</text>
+    </g>
+    <g id="shift-enter" data-role="shift" data-label="ANS" data-bbox="486.500,1175.582,514.304,1186.418" fill="#29262a">
+      <text x="486.45800" y="1185.92800" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ANS</text>
+    </g>
+  </g>
+  <g id="alpha-legends">
+    <g id="alpha-vars" data-role="alpha" data-label="A" data-bbox="167.789,809.829,179.211,822.171" fill="#2f72b4">
+      <text x="167.73850" y="822.17065" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">A</text>
+    </g>
+    <g id="alpha-math" data-role="alpha" data-label="B" data-bbox="267.534,810.155,275.466,821.845" fill="#2f72b4">
+      <text x="266.23115" y="821.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">B</text>
+    </g>
+    <g id="alpha-deriv" data-role="alpha" data-label="C" data-bbox="364.107,809.955,373.893,822.045" fill="#2f72b4">
+      <text x="363.47230" y="821.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">C</text>
+    </g>
+    <g id="alpha-xt" data-role="alpha" data-label="D" data-bbox="461.107,810.155,470.893,821.845" fill="#2f72b4">
+      <text x="459.80430" y="821.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">D</text>
+    </g>
+    <g id="alpha-sin" data-role="alpha" data-label="E" data-bbox="169.943,877.155,177.057,888.845" fill="#2f72b4">
+      <text x="168.64030" y="888.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">E</text>
+    </g>
+    <g id="alpha-cos" data-role="alpha" data-label="F" data-bbox="268.277,877.155,274.723,888.845" fill="#2f72b4">
+      <text x="266.97430" y="888.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">F</text>
+    </g>
+    <g id="alpha-tan" data-role="alpha" data-label="G" data-bbox="363.070,876.930,374.930,889.070" fill="#2f72b4">
+      <text x="362.43569" y="888.81995" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">G</text>
+    </g>
+    <g id="alpha-ln" data-role="alpha" data-label="H" data-bbox="461.090,877.155,470.910,888.845" fill="#2f72b4">
+      <text x="459.78760" y="888.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">H</text>
+    </g>
+    <g id="alpha-log" data-role="alpha" data-label="I" data-bbox="562.506,877.155,564.494,888.845" fill="#2f72b4">
+      <text x="561.20375" y="888.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">I</text>
+    </g>
+    <g id="alpha-power2" data-role="alpha" data-label="J" data-bbox="170.736,944.251,176.264,959.749" fill="#2f72b4">
+      <text x="172.94055" y="955.94120" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">J</text>
+    </g>
+    <g id="alpha-powery" data-role="alpha" data-label="K" data-bbox="267.008,946.155,275.992,957.845" fill="#2f72b4">
+      <text x="265.70510" y="957.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">K</text>
+    </g>
+    <g id="alpha-openparen" data-role="alpha" data-label="L" data-bbox="365.693,946.155,372.307,957.845" fill="#2f72b4">
+      <text x="364.39080" y="957.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">L</text>
+    </g>
+    <g id="alpha-closeparen" data-role="alpha" data-label="M" data-bbox="459.596,945.863,472.404,958.137" fill="#2f72b4">
+      <text x="458.96095" y="958.13725" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">M</text>
+    </g>
+    <g id="alpha-divide" data-role="alpha" data-label="N" data-bbox="558.265,945.571,568.735,958.430" fill="#2f72b4">
+      <text x="556.96195" y="957.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">N</text>
+    </g>
+    <g id="alpha-comma" data-role="alpha" data-label="O" data-bbox="167.430,1019.930,179.570,1032.070" fill="#2f72b4">
+      <text x="166.79495" y="1031.81995" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">O</text>
+    </g>
+    <g id="alpha-seven" data-role="alpha" data-label="P" data-bbox="267.642,1020.155,275.358,1031.845" fill="#2f72b4">
+      <text x="266.33970" y="1031.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">P</text>
+    </g>
+    <g id="alpha-eight" data-role="alpha" data-label="Q" data-bbox="362.462,1019.930,375.538,1032.070" fill="#2f72b4">
+      <text x="361.82735" y="1031.81995" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">Q</text>
+    </g>
+    <g id="alpha-nine" data-role="alpha" data-label="R" data-bbox="461.741,1020.155,470.258,1031.845" fill="#2f72b4">
+      <text x="460.43890" y="1031.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">R</text>
+    </g>
+    <g id="alpha-times" data-role="alpha" data-label="S" data-bbox="559.317,1019.930,567.683,1032.070" fill="#2f72b4">
+      <text x="558.71545" y="1031.81995" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">S</text>
+    </g>
+    <g id="alpha-four" data-role="alpha" data-label="T" data-bbox="267.425,1094.155,275.575,1105.845" fill="#2f72b4">
+      <text x="267.29160" y="1105.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">T</text>
+    </g>
+    <g id="alpha-five" data-role="alpha" data-label="U" data-bbox="364.742,1094.005,373.259,1105.995" fill="#2f72b4">
+      <text x="363.52240" y="1105.69470" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">U</text>
+    </g>
+    <g id="alpha-six" data-role="alpha" data-label="V" data-bbox="460.289,1093.829,471.711,1106.171" fill="#2f72b4">
+      <text x="460.23850" y="1105.51935" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">V</text>
+    </g>
+    <g id="alpha-minus" data-role="alpha" data-label="W" data-bbox="555.117,1093.554,571.883,1106.446" fill="#2f72b4">
+      <text x="554.98300" y="1105.82830" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">W</text>
+    </g>
+    <g id="alpha-one" data-role="alpha" data-label="X" data-bbox="266.557,1169.155,276.443,1180.845" fill="#2f72b4">
+      <text x="266.42320" y="1180.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">X</text>
+    </g>
+    <g id="alpha-two" data-role="alpha" data-label="Y" data-bbox="364.032,1169.155,373.968,1180.845" fill="#2f72b4">
+      <text x="363.98165" y="1180.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">Y</text>
+    </g>
+    <g id="alpha-three" data-role="alpha" data-label="Z" data-bbox="461.458,1169.155,470.542,1180.845" fill="#2f72b4">
+      <text x="461.24050" y="1180.84500" font-family="Jost*" font-weight="500" font-style="normal" font-size="16.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">Z</text>
+    </g>
+    <g id="alpha-plus" data-role="alpha" data-label="SPACE" data-bbox="542.719,1169.534,584.281,1180.466" fill="#2f72b4">
+      <text x="542.19675" y="1180.24900" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.5" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">SPACE</text>
+    </g>
+    <g id="alpha-zero" data-role="alpha" data-label="θ" data-bbox="267.577,1242.955,275.423,1255.045" fill="#2f72b4">
+      <text x="266.81220" y="1254.88900" font-family="Noto Sans" font-weight="600" font-style="italic" font-size="15.6" letter-spacing="-0.14" style="font-family:'Noto Sans';font-weight:600;font-style:italic;letter-spacing:-0.14px;" xml:space="preserve">θ</text>
+    </g>
+    <g id="alpha-dot" data-role="alpha" data-label=":" data-bbox="367.850,1245.062,370.150,1252.938" fill="#2f72b4">
+      <text x="366.83984" y="1252.62983" font-family="Gentium" font-weight="600" font-style="normal" font-size="15.8" letter-spacing="-0.14" style="font-family:'Gentium';font-weight:600;font-style:normal;letter-spacing:-0.14px;" xml:space="preserve">:</text>
+    </g>
+    <g id="alpha-negative" data-role="alpha" data-label=";" data-bbox="464.604,1243.846,467.396,1254.154" fill="#2f72b4">
+      <text x="463.92471" y="1251.41475" font-family="Gentium" font-weight="600" font-style="normal" font-size="15.8" letter-spacing="-0.14" style="font-family:'Gentium';font-weight:600;font-style:normal;letter-spacing:-0.14px;" xml:space="preserve">;</text>
+    </g>
+    <g id="cancel" data-role="alpha" data-label="CANCEL" data-bbox="111.674,1245.302,166.326,1256.698" fill="#7f2f25">
+      <text x="111.08200" y="1256.18000" font-family="Jost*" font-weight="400" font-style="normal" font-size="14.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:400;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CANCEL</text>
+    </g>
+  </g>
+</svg>
