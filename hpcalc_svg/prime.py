@@ -354,21 +354,22 @@ class PrimeRenderer(Renderer):
             # containing a dotted placeholder, and a barred placeholder.
             # A generic 2x2 matrix (as in earlier builds) is incorrect.
             icons = self.group(g, "units-symbols", fill="none",
-                               stroke="#34353a", stroke_width=1.7)
+                               stroke="#34353a", stroke_width=1.7,
+                               transform="translate(0 -3)")
             for oy in (cy-30, cy-10):
                 self.rect(icons, cx-38, oy, 12, 14, 0, fill="none",
                           stroke_width=1.5, stroke_dasharray="2.7,1.8")
             self.path(icons, f"M{cx-43} {cy-14} H{cx-24}",
                       fill="none", stroke_width=1.7)
             # A dark comma separates the miniature math fields.
-            self._label(g, "units-comma-1", ",", cx-19, cy-12,
+            self._label(g, "units-comma-1", ",", cx-19, cy-15,
                         "#34353a", 23, "GSI", role="primary")
             self.path(icons, f"M{cx-11} {cy-19} l6 9 8 -24 h16",
                       fill="none", stroke_width=2.45,
                       stroke_linejoin="round")
             self.rect(icons, cx+7, cy-24, 12, 15, 0, fill="none",
                       stroke_width=1.4, stroke_dasharray="2.4,1.6")
-            self._label(g, "units-comma-2", ",", cx+25, cy-12,
+            self._label(g, "units-comma-2", ",", cx+25, cy-15,
                         "#34353a", 23, "GSI", role="primary")
             self.path(icons, f"M{cx+32} {cy-34} V{cy-7} "
                              f"M{cx+48} {cy-34} V{cy-7}",
@@ -393,26 +394,27 @@ class PrimeRenderer(Renderer):
                       fill="none", stroke="#272731", stroke_width=4.3,
                       stroke_linejoin="round", stroke_linecap="square")
         elif kid == "parentheses":
-            # Dotted placeholder with surrounding printer-like prime marks.
-            self.rect(g, x+16, cy+19, 15, 12, 0,
-                      fill="none", stroke="#005092", stroke_width=1.35,
-                      stroke_dasharray="2.4,1.8")
-            self.path(g, f"M{x+10} {cy+13} v7 m-3 -4 v5 M{x+35} {cy+13} v7",
-                      fill="none", stroke="#005092", stroke_width=1.7)
+            # The original only has a dotted insertion placeholder.
+            self.rect(g, x+14, cy+18, 19, 13, 0,
+                      fill="none", stroke="#005092", stroke_width=1.55,
+                      stroke_dasharray="2.7,1.8")
         elif kid == "comma":
-            # Expand/contract symbol alongside the printed comma, missing
-            # from the original approximate SVG.
-            self.path(g, f"M{cx+22} {cy-30} L{cx+41} {cy-11} "
-                         f"M{cx+33} {cy-11} H{cx+41} V{cy-19} "
-                         f"M{cx+22} {cy-11} L{cx+38} {cy-27} "
-                         f"M{cx+30} {cy-27} H{cx+38} V{cy-19}",
-                      fill="none", stroke="#2b2c31", stroke_width=1.9,
+            # Distinct crossed diagonal arrows instead of overlapping Ls.
+            arrow = self.group(g, "comma-cross-arrows", data_role="primary-symbol")
+            tx, ty = cx+32, cy-22
+            self.path(arrow, f"M{tx-7} {ty-8} L{tx+7} {ty+6} "
+                             f"M{tx+1} {ty+6} H{tx+7} V{ty} "
+                             f"M{tx+7} {ty-8} L{tx-7} {ty+6} "
+                             f"M{tx-7} {ty} V{ty+6} H{tx-1}",
+                      fill="none", stroke="#2b2c31", stroke_width=1.85,
                       stroke_linecap="round", stroke_linejoin="round")
         secondary = key.get("secondary")
-        if secondary and kid not in ("ln", "log", "divide", "power", "square", "fraction"):
+        if secondary and kid not in ("ln", "log", "divide", "power", "square", "fraction", "sign"):
             font = key.get("secondary_font", "JM")
             centered = key.get("secondary_center", False) or kid == "del"
-            secondary_size = 23.0 if len(secondary) < 7 else 21.0
+            secondary_size = 32.0 if kid == "enter" else (
+                23.0 if len(secondary) < 7 else 21.0
+            )
             if not centered and key.get("alpha"):
                 # Keep shift ink out of the reserved right-hand ALPHA letter lane.
                 alpha_width = self.ink_width(self.parts(key["alpha"], "JS", 23))
@@ -422,7 +424,7 @@ class PrimeRenderer(Renderer):
                 ) > available:
                     secondary_size -= .5
             self._label(g, "secondary-" + key["id"], secondary,
-                        cx if centered else x+10, cy+26,
+                        cx if centered else x+10, cy+(23 if kid == "enter" else 26),
                         self.d["palette"]["legend_blue"], secondary_size,
                         font, "center" if centered else "left", "shift-legend")
         blue = self.d["palette"]["legend_blue"]
@@ -440,7 +442,7 @@ class PrimeRenderer(Renderer):
                       stroke_linejoin="round", stroke_linecap="round")
             if kid == "power":
                 self._label(g, "root-degree", "n", x+10, cy+13,
-                            blue, 14, "JM", "left", "shift-exponent")
+                            blue, 14, "GSI", "left", "shift-exponent")
         elif kid in ("ln", "log", "divide"):
             # Three composite superscript typesets with distinct baselines.
             # The glyphs are still emitted by the production font outliner.
