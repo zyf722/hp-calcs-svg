@@ -42,8 +42,8 @@ class PrimeRenderer(Renderer):
             "x2": "0", "y2": "1",
         })
         for offset, color in [
-            ("0", "#dedbd6"), (".22", "#f2f0ed"),
-            (".70", "#f8f7f4"), ("1", "#dedbd7"),
+            ("0", "#c8c8c5"), (".22", "#d7d6d2"),
+            (".70", "#eae8e4"), ("1", "#e8e6e3"),
         ]:
             ET.SubElement(slope, svg_tag("stop"), {
                 "offset": offset, "stop-color": color,
@@ -295,8 +295,8 @@ class PrimeRenderer(Renderer):
             icon = key["icon"]
             if icon == "mem":
                 self.rect(g, x+4, y+4, w-8, h*.52, 2.5, fill="#26272b")
-            self._icon(g, icon, cx, cy-16, "#f7f7f5",
-                       54 if icon == "mem" else 49 if icon == "del" else 43)
+            self._icon(g, icon, cx, cy-12 if icon == "mem" else cy-16,
+                       "#f7f7f5", 54 if icon == "mem" else 49 if icon == "del" else 43)
         else:
             primary_color = "#fafaf9" if cap else self.d["palette"]["primary_text"]
             label = key["label"]
@@ -344,12 +344,12 @@ class PrimeRenderer(Renderer):
                       stroke_linejoin="round")
             self.rect(icons, cx+9, cy-24, 13, 17, 0, fill="none",
                       stroke_width=1.4, stroke_dasharray="2.7,1.7")
-            self._label(g, "units-comma-2", ",", cx+27, cy-12,
+            self._label(g, "units-comma-2", ",", cx+25, cy-12,
                         "#34353a", 23, "GSI", role="primary")
-            self.path(icons, f"M{cx+35} {cy-34} V{cy-7} "
-                             f"M{cx+54} {cy-34} V{cy-7}",
+            self.path(icons, f"M{cx+32} {cy-34} V{cy-7} "
+                             f"M{cx+48} {cy-34} V{cy-7}",
                       fill="none", stroke_width=2.6)
-            self.rect(icons, cx+39, cy-26, 12, 16, 0, fill="none",
+            self.rect(icons, cx+36, cy-26, 9, 16, 0, fill="none",
                       stroke_width=1.5, stroke_dasharray="2.4,1.6")
         elif kid == "fraction":
             # Compose the numerator, slash and denominator as separate glyphs.
@@ -378,15 +378,14 @@ class PrimeRenderer(Renderer):
         elif kid == "comma":
             # Expand/contract symbol alongside the printed comma, missing
             # from the original approximate SVG.
-            tx, ty = cx+32, cy-19
-            self.path(g, f"M{tx-9} {ty+8} L{tx} {ty-1} H{tx-5} "
-                         f"M{tx} {ty-1} V{ty+4} "
-                         f"M{tx+8} {ty-7} L{tx+1} {ty} H{tx+6} "
-                         f"M{tx+1} {ty} V{ty-5}",
-                      fill="none", stroke="#2b2c31", stroke_width=1.8,
+            self.path(g, f"M{cx+22} {cy-30} L{cx+41} {cy-11} "
+                         f"M{cx+33} {cy-11} H{cx+41} V{cy-19} "
+                         f"M{cx+22} {cy-11} L{cx+38} {cy-27} "
+                         f"M{cx+30} {cy-27} H{cx+38} V{cy-19}",
+                      fill="none", stroke="#2b2c31", stroke_width=1.9,
                       stroke_linecap="round", stroke_linejoin="round")
         secondary = key.get("secondary")
-        if secondary and kid not in ("ln", "log", "divide"):
+        if secondary and kid not in ("ln", "log", "divide", "power", "square"):
             font = key.get("secondary_font", "JM")
             centered = key.get("secondary_center", False) or kid == "del"
             secondary_size = 23.0 if len(secondary) < 7 else 21.0
@@ -403,15 +402,21 @@ class PrimeRenderer(Renderer):
                         self.d["palette"]["legend_blue"], secondary_size,
                         font, "center" if centered else "left", "shift-legend")
         blue = self.d["palette"]["legend_blue"]
-        if kid == "power":
-            self._label(g, "root-degree", "n", x+11, cy+13,
-                        blue, 13, "JM", "left")
-            # Native √ in the math font is overdrawn with a connected bar.
-            self.path(g, f"M{x+27} {cy+17} H{x+49}",
-                      fill="none", stroke=blue, stroke_width=1.4)
-        elif kid == "square":
-            self.path(g, f"M{x+27} {cy+18} H{x+48}",
-                      fill="none", stroke=blue, stroke_width=1.4)
+        if kid in ("power", "square"):
+            # A single connected radicand outline, not an unconnected font √
+            # with an arbitrarily positioned horizontal bar.
+            self.bounds["secondary-" + kid] = (x+13, cy+10, x+45, cy+32)
+            root = self.group(g, "secondary-" + kid,
+                              data_bbox=f"{x+13:.3f},{cy+10:.3f},"
+                                        f"{x+45:.3f},{cy+32:.3f}",
+                              data_role="shift-legend")
+            self.path(root, f"M{x+13} {cy+23} L{x+18} {cy+30} "
+                            f"L{x+26} {cy+13} H{x+44}",
+                      fill="none", stroke=blue, stroke_width=2.2,
+                      stroke_linejoin="round", stroke_linecap="round")
+            if kid == "power":
+                self._label(g, "root-degree", "n", x+10, cy+13,
+                            blue, 14, "JM", "left", "shift-exponent")
         elif kid in ("ln", "log", "divide"):
             # Three composite superscript typesets with distinct baselines.
             # The glyphs are still emitted by the production font outliner.
