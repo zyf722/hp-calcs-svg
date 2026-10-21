@@ -1,0 +1,776 @@
+{
+  "extends": [
+    "common/base.json"
+  ],
+  "metadata": {
+    "name": "HP Prime",
+    "model_id": "hpprime",
+    "canvas": [
+      1023,
+      2048
+    ],
+    "native_lcd_pixels": [
+      320,
+      240
+    ],
+    "output_prefix": "HPPrime"
+  },
+  "palette": {
+    "primary_text": "#272731",
+    "upper_text": "#eceaf0",
+    "legend_blue": "#005092",
+    "legend_orange": "#ee4d1b"
+  },
+  "gradients": {
+    "prime-shell": [
+      "#343d48",
+      "#171d25",
+      "#29343d"
+    ],
+    "prime-upper": [
+      "#1b1b1d",
+      "#141416",
+      "#252427"
+    ],
+    "prime-metal": [
+      "#a5aaae",
+      "#d1d0cd",
+      "#b5b9bb",
+      "#dad9d6",
+      "#aab0b4"
+    ],
+    "prime-screen": [
+      "#191819",
+      "#1d1b1b",
+      "#202022"
+    ],
+    "prime-dark-key": [
+      "#343536",
+      "#222327",
+      "#292b2f"
+    ],
+    "prime-light-key": [
+      "#efeeeb",
+      "#e5e3e0",
+      "#efedea"
+    ],
+    "prime-blue": [
+      "#1170aa",
+      "#0062a4",
+      "#00588c"
+    ],
+    "prime-orange": [
+      "#f98047",
+      "#ff733f",
+      "#fa5935"
+    ]
+  },
+  "paths": [
+    {
+      "id": "outer-shell",
+      "d": "M115 54 C78 54 52 79 51 117 L51 1818 C51 1917 68 1958 135 1974 C238 1994 785 1994 889 1973 C956 1958 971 1917 971 1818 L971 117 C971 78 944 54 907 54 Z",
+      "fill": "url(#prime-shell)",
+      "stroke": "#252d34",
+      "stroke_width": 2.2
+    },
+    {
+      "id": "outer-highlight",
+      "d": "M116 56 C80 57 54 81 54 116 L54 1820 C54 1914 73 1954 142 1970",
+      "fill": "none",
+      "stroke": "#78848a",
+      "stroke_width": 1.4,
+      "opacity": 0.62
+    },
+    {
+      "id": "metal-panel",
+      "d": "M53 1076 L969 1076 L969 1817 C969 1917 954 1953 885 1972 C780 1994 244 1994 140 1973 C69 1954 53 1916 53 1817 Z",
+      "fill": "url(#prime-metal)",
+      "stroke": "#22282d",
+      "stroke_width": 1.6
+    },
+    {
+      "id": "upper-panel",
+      "d": "M114 65 Q64 66 63 113 L63 1076 L959 1076 L959 115 Q958 65 907 65 Z",
+      "fill": "url(#prime-upper)",
+      "stroke": "#090b0e",
+      "stroke_width": 3
+    },
+    {
+      "id": "upper-rim",
+      "d": "M111 72 Q71 72 71 115 V1066 H950 V116 Q950 73 909 72 Z",
+      "fill": "none",
+      "stroke": "#505158",
+      "stroke_width": 1.35,
+      "opacity": 0.75
+    },
+    {
+      "id": "display-bottom-seam",
+      "d": "M72 817 H950",
+      "fill": "none",
+      "stroke": "#08090a",
+      "stroke_width": 3,
+      "opacity": 0.78
+    },
+    {
+      "id": "display-bottom-hairline",
+      "d": "M72 818 H950",
+      "fill": "none",
+      "stroke": "#646061",
+      "stroke_width": 0.9,
+      "opacity": 0.42
+    },
+    {
+      "id": "upper-bottom-seam",
+      "d": "M52 1074 H970",
+      "fill": "none",
+      "stroke": "#0a0b0c",
+      "stroke_width": 5
+    },
+    {
+      "id": "metal-edge-highlight",
+      "d": "M57 1080 V1818 C57 1911 72 1952 141 1970 C257 1989 766 1989 884 1970 C952 1953 963 1914 963 1818 V1080",
+      "fill": "none",
+      "stroke": "#f3f0e9",
+      "stroke_width": 1.1,
+      "opacity": 0.55
+    }
+  ],
+  "display": {
+    "screen": [
+      125,
+      151,
+      773,
+      575,
+      0
+    ],
+    "screen_fill": "url(#prime-screen)",
+    "screen_stroke": "#17171a",
+    "screen_stroke_width": 1.4
+  },
+  "header": {
+    "brand_text": "HP Prime Graphing Calculator",
+    "x": 123,
+    "top_y": 97,
+    "font_size": 28.6,
+    "text_color": "#d7d0ca"
+  },
+  "logo": {
+    "circle": [
+      875,
+      110,
+      29
+    ],
+    "svg": [
+      845,
+      80,
+      60,
+      60
+    ]
+  },
+  "nav": {
+    "cx": 513,
+    "cy": 945,
+    "outer_radius": 111,
+    "inner_radius": 92
+  },
+  "keyboard": {
+    "radius": 7,
+    "rows": [
+      {
+        "id": "upper-a",
+        "center_y": 879,
+        "default_size": 29,
+        "height": 82,
+        "keys": [
+          {
+            "id": "apps",
+            "cx": 175,
+            "width": 111,
+            "kind": "dark",
+            "label": "Apps",
+            "secondary": "Info",
+            "main_size": 31
+          },
+          {
+            "id": "symb",
+            "cx": 307,
+            "width": 112,
+            "kind": "dark",
+            "label": "Symb",
+            "secondary": "Setup",
+            "icon": "symb",
+            "height": 59,
+            "center_y": 857,
+            "main_size": 24
+          },
+          {
+            "id": "help",
+            "cx": 716,
+            "width": 112,
+            "kind": "dark",
+            "label": "Help",
+            "secondary": "User",
+            "icon": "help",
+            "height": 59,
+            "center_y": 857,
+            "main_size": 25
+          },
+          {
+            "id": "esc",
+            "cx": 852,
+            "width": 109,
+            "kind": "dark",
+            "label": "Esc",
+            "secondary": "Clear",
+            "main_size": 32
+          }
+        ]
+      },
+      {
+        "id": "upper-b",
+        "center_y": 997,
+        "default_size": 29,
+        "height": 82,
+        "keys": [
+          {
+            "id": "home",
+            "cx": 175,
+            "width": 111,
+            "kind": "dark",
+            "label": "",
+            "secondary": "Settings",
+            "icon": "home",
+            "main_size": 28
+          },
+          {
+            "id": "plot",
+            "cx": 307,
+            "width": 112,
+            "kind": "dark",
+            "label": "Plot",
+            "secondary": "Setup",
+            "icon": "plot",
+            "height": 62,
+            "center_y": 938,
+            "main_size": 23
+          },
+          {
+            "id": "view",
+            "cx": 716,
+            "width": 112,
+            "kind": "dark",
+            "label": "View",
+            "secondary": "Copy",
+            "icon": "view",
+            "height": 62,
+            "center_y": 938,
+            "main_size": 24
+          },
+          {
+            "id": "cas",
+            "cx": 852,
+            "width": 109,
+            "kind": "dark",
+            "label": "CAS",
+            "secondary": "Settings",
+            "main_size": 31
+          }
+        ]
+      },
+      {
+        "id": "upper-c",
+        "center_y": 1022,
+        "default_size": 27,
+        "height": 62,
+        "keys": [
+          {
+            "id": "num",
+            "cx": 307,
+            "width": 112,
+            "kind": "dark",
+            "label": "Num",
+            "secondary": "Setup",
+            "icon": "num",
+            "main_size": 23
+          },
+          {
+            "id": "menu",
+            "cx": 716,
+            "width": 112,
+            "kind": "dark",
+            "label": "Menu",
+            "secondary": "Paste",
+            "icon": "menu",
+            "main_size": 23
+          }
+        ]
+      },
+      {
+        "id": "lower-1",
+        "center_y": 1144,
+        "default_size": 32,
+        "height": 81,
+        "keys": [
+          {
+            "id": "vars",
+            "cx": 174,
+            "width": 106,
+            "kind": "light",
+            "label": "Vars",
+            "secondary": "Chars",
+            "alpha": "A",
+            "main_size": 29,
+            "main_tracking": -0.8
+          },
+          {
+            "id": "mem",
+            "cx": 307,
+            "width": 108,
+            "kind": "light",
+            "label": "",
+            "secondary": "Mem",
+            "alpha": "B",
+            "icon": "mem"
+          },
+          {
+            "id": "units",
+            "cx": 444,
+            "width": 109,
+            "kind": "light",
+            "label": "√",
+            "secondary": "Units",
+            "alpha": "C",
+            "main_font": "GS",
+            "main_size": 22
+          },
+          {
+            "id": "define",
+            "cx": 579,
+            "width": 109,
+            "kind": "light",
+            "label": "x t θ n",
+            "secondary": "Define",
+            "alpha": "D",
+            "main_font": "GSI",
+            "main_size": 26
+          },
+          {
+            "id": "fraction",
+            "cx": 716,
+            "width": 111,
+            "kind": "light",
+            "label": "a b/c",
+            "secondary": "′ ″",
+            "alpha": "E",
+            "main_font": "GSI",
+            "main_size": 32,
+            "secondary_font": "GS"
+          },
+          {
+            "id": "del",
+            "cx": 851,
+            "width": 108,
+            "kind": "light",
+            "label": "",
+            "secondary": "Del",
+            "icon": "del"
+          }
+        ]
+      },
+      {
+        "id": "lower-2",
+        "center_y": 1254,
+        "default_size": 32,
+        "height": 81,
+        "keys": [
+          {
+            "id": "power",
+            "cx": 174,
+            "width": 106,
+            "kind": "light",
+            "label": "x",
+            "secondary": "√",
+            "alpha": "F",
+            "main_font": "GSI",
+            "main_size": 44,
+            "secondary_font": "GS"
+          },
+          {
+            "id": "sin",
+            "cx": 307,
+            "width": 108,
+            "kind": "light",
+            "label": "SIN",
+            "secondary": "ASIN",
+            "alpha": "G",
+            "main_size": 31
+          },
+          {
+            "id": "cos",
+            "cx": 444,
+            "width": 109,
+            "kind": "light",
+            "label": "COS",
+            "secondary": "ACOS",
+            "alpha": "H",
+            "main_size": 31
+          },
+          {
+            "id": "tan",
+            "cx": 579,
+            "width": 109,
+            "kind": "light",
+            "label": "TAN",
+            "secondary": "ATAN",
+            "alpha": "I",
+            "main_size": 31
+          },
+          {
+            "id": "ln",
+            "cx": 716,
+            "width": 111,
+            "kind": "light",
+            "label": "LN",
+            "secondary": "e",
+            "alpha": "J",
+            "main_size": 31,
+            "secondary_font": "GSI"
+          },
+          {
+            "id": "log",
+            "cx": 851,
+            "width": 108,
+            "kind": "light",
+            "label": "LOG",
+            "secondary": "10",
+            "alpha": "K",
+            "main_size": 31,
+            "secondary_font": "GS"
+          }
+        ]
+      },
+      {
+        "id": "lower-3",
+        "center_y": 1365,
+        "default_size": 32,
+        "height": 81,
+        "keys": [
+          {
+            "id": "square",
+            "cx": 174,
+            "width": 106,
+            "kind": "light",
+            "label": "x",
+            "secondary": "√",
+            "alpha": "L",
+            "main_font": "GSI",
+            "main_size": 49,
+            "secondary_font": "GS"
+          },
+          {
+            "id": "sign",
+            "cx": 307,
+            "width": 108,
+            "kind": "light",
+            "label": "+/−",
+            "secondary": "|x|",
+            "alpha": "M",
+            "main_font": "GS",
+            "main_size": 39,
+            "secondary_font": "GSI"
+          },
+          {
+            "id": "parentheses",
+            "cx": 444,
+            "width": 109,
+            "kind": "light",
+            "label": "( )",
+            "alpha": "N",
+            "main_font": "GS",
+            "main_size": 37,
+            "secondary_font": "GS"
+          },
+          {
+            "id": "comma",
+            "cx": 579,
+            "width": 109,
+            "kind": "light",
+            "label": ",",
+            "secondary": "Eval",
+            "alpha": "O",
+            "main_size": 49,
+            "main_font": "GSI"
+          },
+          {
+            "id": "enter",
+            "cx": 782,
+            "width": 246,
+            "kind": "light",
+            "label": "Enter",
+            "secondary": "≈",
+            "main_size": 38,
+            "secondary_font": "GS",
+            "secondary_center": true
+          }
+        ]
+      },
+      {
+        "id": "lower-4",
+        "center_y": 1476,
+        "default_size": 32,
+        "height": 83,
+        "keys": [
+          {
+            "id": "eex",
+            "cx": 174,
+            "width": 106,
+            "kind": "light",
+            "label": "EEX",
+            "secondary": "Sto",
+            "alpha": "P",
+            "main_size": 30
+          },
+          {
+            "id": "7",
+            "cx": 331,
+            "width": 150,
+            "kind": "light",
+            "label": "7",
+            "secondary": "List",
+            "alpha": "Q",
+            "main_size": 54
+          },
+          {
+            "id": "8",
+            "cx": 512,
+            "width": 151,
+            "kind": "light",
+            "label": "8",
+            "secondary": "{ }",
+            "alpha": "R",
+            "main_size": 54,
+            "secondary_font": "GS"
+          },
+          {
+            "id": "9",
+            "cx": 693,
+            "width": 150,
+            "kind": "light",
+            "label": "9",
+            "secondary": "!,∞,→",
+            "alpha": "S",
+            "main_size": 54,
+            "secondary_font": "GS"
+          },
+          {
+            "id": "divide",
+            "cx": 851,
+            "width": 108,
+            "kind": "light",
+            "label": "÷",
+            "secondary": "x",
+            "alpha": "T",
+            "main_font": "GS",
+            "main_size": 47,
+            "secondary_font": "GSI"
+          }
+        ]
+      },
+      {
+        "id": "lower-5",
+        "center_y": 1587,
+        "default_size": 32,
+        "height": 83,
+        "keys": [
+          {
+            "id": "alpha",
+            "cx": 174,
+            "width": 106,
+            "kind": "light",
+            "label": "ALPHA",
+            "secondary": "alpha",
+            "main_size": 25,
+            "cap": "orange",
+            "secondary_center": true
+          },
+          {
+            "id": "4",
+            "cx": 331,
+            "width": 150,
+            "kind": "light",
+            "label": "4",
+            "secondary": "Matrix",
+            "alpha": "U",
+            "main_size": 54
+          },
+          {
+            "id": "5",
+            "cx": 512,
+            "width": 151,
+            "kind": "light",
+            "label": "5",
+            "secondary": "[ ]",
+            "alpha": "V",
+            "main_size": 54,
+            "secondary_font": "GS"
+          },
+          {
+            "id": "6",
+            "cx": 693,
+            "width": 150,
+            "kind": "light",
+            "label": "6",
+            "secondary": "≤,≥,≠",
+            "alpha": "W",
+            "main_size": 54,
+            "secondary_font": "GS"
+          },
+          {
+            "id": "multiply",
+            "cx": 851,
+            "width": 108,
+            "kind": "light",
+            "label": "×",
+            "secondary": "∠",
+            "alpha": "X",
+            "main_font": "GS",
+            "main_size": 45,
+            "secondary_font": "GS"
+          }
+        ]
+      },
+      {
+        "id": "lower-6",
+        "center_y": 1698,
+        "default_size": 32,
+        "height": 83,
+        "keys": [
+          {
+            "id": "shift",
+            "cx": 174,
+            "width": 106,
+            "kind": "light",
+            "label": "Shift",
+            "main_size": 28,
+            "cap": "blue"
+          },
+          {
+            "id": "1",
+            "cx": 331,
+            "width": 150,
+            "kind": "light",
+            "label": "1",
+            "secondary": "Program",
+            "alpha": "Y",
+            "main_size": 54
+          },
+          {
+            "id": "2",
+            "cx": 512,
+            "width": 151,
+            "kind": "light",
+            "label": "2",
+            "secondary": "i",
+            "alpha": "Z",
+            "main_size": 54,
+            "secondary_font": "GSI"
+          },
+          {
+            "id": "3",
+            "cx": 693,
+            "width": 150,
+            "kind": "light",
+            "label": "3",
+            "secondary": "π",
+            "alpha": "#",
+            "main_size": 54,
+            "secondary_font": "GSI"
+          },
+          {
+            "id": "subtract",
+            "cx": 851,
+            "width": 108,
+            "kind": "light",
+            "label": "−",
+            "secondary": "Base",
+            "alpha": ":",
+            "main_font": "GS",
+            "main_size": 53
+          }
+        ]
+      },
+      {
+        "id": "lower-7",
+        "center_y": 1809,
+        "default_size": 32,
+        "height": 83,
+        "keys": [
+          {
+            "id": "on",
+            "cx": 174,
+            "width": 106,
+            "kind": "light",
+            "label": "On",
+            "secondary": "Off",
+            "main_size": 36,
+            "secondary_center": true
+          },
+          {
+            "id": "0",
+            "cx": 331,
+            "width": 150,
+            "kind": "light",
+            "label": "0",
+            "secondary": "Notes",
+            "alpha": "\" \"",
+            "main_size": 54
+          },
+          {
+            "id": "dot",
+            "cx": 512,
+            "width": 151,
+            "kind": "light",
+            "label": "",
+            "secondary": "=",
+            "main_font": "NM",
+            "main_size": 45,
+            "secondary_center": true,
+            "secondary_font": "GS"
+          },
+          {
+            "id": "negate",
+            "cx": 693,
+            "width": 150,
+            "kind": "light",
+            "label": "",
+            "secondary": "−",
+            "main_font": "GS",
+            "main_size": 49,
+            "secondary_font": "GS",
+            "secondary_center": true
+          },
+          {
+            "id": "add",
+            "cx": 851,
+            "width": 108,
+            "kind": "light",
+            "label": "+",
+            "secondary": "Ans",
+            "alpha": ";",
+            "main_font": "GS",
+            "main_size": 52
+          }
+        ]
+      }
+    ],
+    "light_key_profile": {
+      "geometry": "side-elevation",
+      "top_edge_highlight_opacity": 0.63,
+      "front_slope_start_ratio": 0.65,
+      "front_slope_end_ratio": 0.94,
+      "front_facade_opacity": 0.7,
+      "left_bevel_width": 2,
+      "right_bevel_width": 2
+    }
+  }
+}
