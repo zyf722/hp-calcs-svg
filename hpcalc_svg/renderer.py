@@ -615,8 +615,13 @@ def build_artifacts(design: dict[str, Any], design_path: Path, assets: Path, the
     fonts = Fonts(design, assets, theta_font, math_font, radical_font)
     out.mkdir(parents=True, exist_ok=True)
     prefix = design['metadata']['output_prefix']
+    renderer_type: type[Renderer] = Renderer
+    if design['metadata'].get('model_id') == 'hpprime':
+        from hpcalc_svg.prime import PrimeRenderer
+
+        renderer_type = PrimeRenderer
     for mode, filename in [(True, f'{prefix}_outlined.svg'), (False, f'{prefix}_editable.svg')]:
-        renderer = Renderer(design, fonts, design_path.parent.parent, mode, digest)
+        renderer = renderer_type(design, fonts, design_path.parent.parent, mode, digest)
         renderer.build()
         renderer.write(out / filename)
     # Save resolved design for future variants/migrations.
