@@ -118,6 +118,10 @@ jobs:
           poetry run ruff check hpcalc_svg
           poetry run mypy hpcalc_svg
 
+      - name: Validate calculator design descriptors
+        shell: bash
+        run: poetry run python -m unittest discover -s tests -v
+
       - name: Resolve system fonts
         shell: bash
         run: |
