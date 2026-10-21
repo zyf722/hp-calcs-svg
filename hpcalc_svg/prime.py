@@ -281,7 +281,7 @@ class PrimeRenderer(Renderer):
                         blue, 14, "JM", "left")
         elif kid in ("ln", "log", "divide"):
             x_start = x+10+(14 if kid == "ln" else 29 if kid == "log" else 12)
-            self._label(g, "raised-exponent",
+            self._label(g, "raised-exponent-" + kid,
                         "x" if kid != "divide" else "-1",
                         x_start, cy+17, blue, 15,
                         "NM" if kid == "divide" else "JM", "left")
@@ -331,4 +331,7 @@ class PrimeRenderer(Renderer):
         self._header()
         self._navigation()
         self._keys()
+        ids = [element.get("id") for element in self.root.iter() if element.get("id")]
+        if len(ids) != len(set(ids)):
+            raise ValueError("Duplicate HP Prime SVG element ids")
         return self.root
