@@ -1,0 +1,1630 @@
+{
+  "metadata": {
+    "canvas": [
+      665,
+      1340
+    ],
+    "name": "HP 50g (Blue variant)",
+    "native_lcd_pixels": [
+      131,
+      80
+    ],
+    "output_prefix": "HP50gBlue",
+    "model_id": "hp50g-blue",
+    "main_key_count": 37,
+    "artwork_viewbox": [
+      728,
+      1486
+    ]
+  },
+  "fonts": {
+    "JB": "OpenType/Jost-400-Book.otf",
+    "JS": "OpenType/Jost-600-Semi.otf",
+    "GS": "Gentium-7.000/Gentium-SemiBold.ttf",
+    "GSI": "Gentium-7.000/Gentium-SemiBoldItalic.ttf",
+    "NSI": "NotoSans-SemiBoldItalic.ttf",
+    "JM": "OpenType/Jost-500-Medium.otf"
+  },
+  "palette": {
+    "shell": "#e8ecec",
+    "bezel": "#b6d7da",
+    "darktext": "#302a2c",
+    "shift": "#dc7042",
+    "alpha": "#2a896b",
+    "glass": "#bec4bc",
+    "navy_border": "#08293e",
+    "key_ivory_text": "#302a2c",
+    "key_white_text": "#f3f4f1",
+    "cancel_text": "#30282b",
+    "legend_blue": "#b8d8e5",
+    "legend_red": "#d7d45d",
+    "legend_yellow": "#2b8c6c"
+  },
+  "gradients": {
+    "shell": [
+      "#f8f9f7",
+      "#e1e6e6",
+      "#bcc5c9"
+    ],
+    "face": [
+      "#2c76b1",
+      "#1a5e9a",
+      "#104679"
+    ],
+    "ivory": [
+      "#f7f3f1",
+      "#e1dad7",
+      "#c8c0bd"
+    ],
+    "soft": [
+      "#f8f4f2",
+      "#e2dbd8",
+      "#c7bfbc"
+    ],
+    "navy": [
+      "#f6f2f0",
+      "#ddd7d4",
+      "#c3bcba"
+    ],
+    "orange": [
+      "#f6b45a",
+      "#e29439",
+      "#c56d24"
+    ],
+    "black": [
+      "#303137",
+      "#222329",
+      "#17181d"
+    ],
+    "metal": [
+      "#f3f2f0",
+      "#d8d4d3",
+      "#aaa5a7",
+      "#e5e1e1"
+    ],
+    "badge": [
+      "#f2f1ef",
+      "#dbd9d7",
+      "#aaa9a9"
+    ],
+    "silverArrow": [
+      "#756b70",
+      "#4a4146",
+      "#887b82"
+    ],
+    "fn39-blue": [
+      "#e3f4fa",
+      "#c4e1f0",
+      "#96c4df"
+    ],
+    "teal": [
+      "#d8f0ef",
+      "#add9dc",
+      "#82bdc4"
+    ],
+    "yellow": [
+      "#416d67",
+      "#2b5955",
+      "#193e3b"
+    ],
+    "screenBezel": [
+      "#c4e0e1",
+      "#afd2d4",
+      "#94bcc1"
+    ]
+  },
+  "display": {
+    "screen": [
+      100,
+      164,
+      463,
+      262,
+      17
+    ],
+    "bezel_stroke": "#77999d",
+    "screen_stroke": "#6c7775",
+    "bezel_stroke_width": 1.2,
+    "screen_stroke_width": 1.25,
+    "screen_fill": "#c2d0ca",
+    "bezel": "M79 68 C172 60 249 58.2 332.5 58.2 C416 58.2 493 60 586 68 C591.5 69.3 595.5 72.8 597.2 79.8 C600 145 600.5 229 596 320 C595 373 590 424 582 463 C581 479 576 490 565 494 C511 501 449 505 332.5 506 C216 505 154 501 100 494 C89 490 84 479 83 463 C75 424 70 373 69 320 C64.5 229 65 145 67.8 79.8 C69.5 72.8 73.5 69.3 79 68 Z",
+    "bezel_fill": "url(#screenBezel)",
+    "bezel_transform": "scale(1.100000 1.086000)",
+    "screen_path": "M119 151 C217 147 506 147 608 151 C619 152 624 158 624 176 L624 471 Q624 491 607 492 L120 492 Q102 492 102 473 L102 177 Q103 155 119 151 Z"
+  },
+  "function_keys": {
+    "centers": [
+      127,
+      209,
+      291,
+      373,
+      455,
+      535
+    ],
+    "y": 537,
+    "width": 58,
+    "height": 31,
+    "radius": 6.5,
+    "inset": 3.5,
+    "fill": "url(#soft)",
+    "stroke": "#514548",
+    "stroke_width": 2.4,
+    "top_size": 14.7,
+    "top_offset": 19,
+    "top_color": "#b8d8e5",
+    "label_size": 19.8,
+    "label_color": "#302a2c",
+    "letter_size": 19.8,
+    "letter_color": "#2b8c6c",
+    "items": [
+      {
+        "label": "F1",
+        "letter": "A",
+        "top": "Y="
+      },
+      {
+        "label": "F2",
+        "letter": "B",
+        "top": "WIN"
+      },
+      {
+        "label": "F3",
+        "letter": "C",
+        "top": "GRAPH"
+      },
+      {
+        "label": "F4",
+        "letter": "D",
+        "top": "2D/3D"
+      },
+      {
+        "label": "F5",
+        "letter": "E",
+        "top": "TBLSET"
+      },
+      {
+        "label": "F6",
+        "letter": "F",
+        "top": "TABLE"
+      }
+    ],
+    "coordinate_space": "base",
+    "composite_center": true,
+    "composite_gap": 4.6,
+    "composite_side_margin": 4,
+    "letter_offset_y": 0,
+    "letter_offset_x": 2
+  },
+  "nav": {
+    "outer_radius": 24,
+    "face_radius": 22.45,
+    "arrow_half_width": 6.4,
+    "arrow_up": 7.3,
+    "arrow_down": 5.6,
+    "shadow_fill": "#71716d",
+    "outer_fill": "url(#metal)",
+    "outline": "#1c1d24",
+    "outline_width": 2,
+    "glyph_fill": "url(#silverArrow)",
+    "glyph_stroke": "#464d55",
+    "glyph_stroke_width": 0.45,
+    "shadow_offset": [
+      0.7,
+      1.6
+    ],
+    "shadow_radius_extra": 1.4,
+    "shadow_opacity": 0.3,
+    "recess_fill": "#15558e",
+    "recess_stroke": "#0d3d69",
+    "recess_stroke_width": 1,
+    "recess_shadow": "rgba(255,255,255,0.12)",
+    "recess_fill_opacity": 1,
+    "recess_stroke_opacity": 1,
+    "recess_rim_radius": 27.2,
+    "recess_rim_color": "#5b5c61",
+    "recess_rim_opacity": 0.16,
+    "recess_rim_width": 0.95,
+    "soft_well": {
+      "shadow_fill": "#0b365f",
+      "shadow_opacity": 0.18,
+      "shadow_blur": "blur6",
+      "shadow_offset_y": 2.2,
+      "body_fill": "#1d5e98",
+      "body_opacity": 0.33,
+      "body_blur": "blur4",
+      "highlight_color": "#79add0",
+      "highlight_opacity": 0.09,
+      "highlight_width": 4.8,
+      "highlight_blur": "blur6",
+      "highlight_dx": -0.8,
+      "highlight_dy": -1.1,
+      "depth_color": "#0b355e",
+      "depth_opacity": 0.1,
+      "depth_width": 5.4,
+      "depth_blur": "blur6",
+      "depth_dx": 0.9,
+      "depth_dy": 1.4,
+      "rim_color": "#ddf8fd",
+      "rim_opacity": 0,
+      "rim_width": 0,
+      "rim_blur": "blur6",
+      "button_shadow_blur": "blur2",
+      "button_shadow_opacity": 0.18,
+      "ambient_highlight_fill": "#75aad0",
+      "ambient_highlight_opacity": 0.05,
+      "ambient_shadow_fill": "#082f55",
+      "ambient_shadow_opacity": 0.06
+    },
+    "buttons": [
+      {
+        "id": "up",
+        "cx": 453,
+        "cy": 621,
+        "rotation": 0
+      },
+      {
+        "id": "left",
+        "cx": 392,
+        "cy": 669,
+        "rotation": 270
+      },
+      {
+        "id": "right",
+        "cx": 514,
+        "cy": 669,
+        "rotation": 90
+      },
+      {
+        "id": "down",
+        "cx": 453,
+        "cy": 714,
+        "rotation": 180
+      }
+    ],
+    "recess_path": "M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z",
+    "coordinate_space": "base"
+  },
+  "keyboard": {
+    "ink_offset_y": 1,
+    "radius": 8.5,
+    "outline_width": 2.5,
+    "kind_fill": {
+      "ivory": "url(#ivory)",
+      "navy": "url(#navy)",
+      "shift": "url(#orange)",
+      "alpha": "url(#yellow)",
+      "teal": "url(#teal)",
+      "red": "url(#orange)"
+    },
+    "kind_text": {
+      "ivory": "darktext",
+      "navy": "darktext",
+      "shift": "key_white_text",
+      "alpha": "key_white_text",
+      "teal": "darktext",
+      "red": "darktext"
+    },
+    "bottom_bulge": 1.6,
+    "dot_radius": 4,
+    "kind_stroke": {
+      "ivory": "#514548",
+      "navy": "#514548",
+      "shift": "#762a39",
+      "alpha": "#183c39",
+      "teal": "#53868c",
+      "red": "#995324"
+    },
+    "lower_lip_inset": 1,
+    "rows": [
+      {
+        "id": "app",
+        "center_y": 691,
+        "default_size": 19.2,
+        "height": 49,
+        "keys": [
+          {
+            "id": "apps",
+            "width": 68,
+            "label": "APPS",
+            "kind": "ivory",
+            "key_alpha": "G",
+            "legends": [
+              {
+                "text": "FILES",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "BEGIN",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_position": "below",
+            "main_size": 19.2,
+            "key_alpha_size": 19.2
+          },
+          {
+            "id": "mode",
+            "width": 68,
+            "label": "MODE",
+            "kind": "ivory",
+            "key_alpha": "H",
+            "legends": [
+              {
+                "text": "CUSTOM",
+                "style": "blue",
+                "align": "left",
+                "size": 12.8
+              },
+              {
+                "text": "END",
+                "style": "red",
+                "align": "right",
+                "extra_right": 3.2,
+                "size": 14
+              }
+            ],
+            "key_alpha_position": "below",
+            "main_size": 19.2,
+            "key_alpha_size": 19.2
+          },
+          {
+            "id": "tool",
+            "width": 68,
+            "label": "TOOL",
+            "kind": "ivory",
+            "key_alpha": "I",
+            "legends": [
+              {
+                "text": "i",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "|",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_position": "below",
+            "main_size": 19.2,
+            "key_alpha_size": 19.2
+          }
+        ],
+        "grid": "small-under-fn"
+      },
+      {
+        "id": "navrow",
+        "center_y": 780,
+        "default_size": 19.2,
+        "height": 49,
+        "keys": [
+          {
+            "id": "var",
+            "width": 68,
+            "label": "VAR",
+            "kind": "ivory",
+            "key_alpha": "J",
+            "legends": [
+              {
+                "text": "UPDIR",
+                "style": "blue",
+                "align": "left",
+                "size": 14
+              },
+              {
+                "text": "COPY",
+                "style": "red",
+                "align": "right",
+                "extra_right": 0.9
+              }
+            ],
+            "key_alpha_position": "below",
+            "main_size": 19.2,
+            "key_alpha_size": 19.2
+          },
+          {
+            "id": "sto",
+            "width": 68,
+            "label": "STO",
+            "kind": "ivory",
+            "key_alpha": "K",
+            "legends": [
+              {
+                "text": "RCL",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "CUT",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_position": "below",
+            "main_size": 19.2,
+            "key_alpha_size": 19.2,
+            "decorations": [
+              {
+                "path": "M246 769 L253 774 L246 779 Z",
+                "fill": "#302a2c"
+              }
+            ],
+            "main_dx": -6.34
+          },
+          {
+            "id": "nxt",
+            "width": 68,
+            "label": "NXT",
+            "kind": "ivory",
+            "key_alpha": "L",
+            "legends": [
+              {
+                "text": "PREV",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "PASTE",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_position": "below",
+            "main_size": 19.2,
+            "key_alpha_size": 19.2
+          }
+        ],
+        "grid": "small-under-fn"
+      },
+      {
+        "id": "func",
+        "center_y": 868,
+        "default_size": 22.6,
+        "height": 47,
+        "keys": [
+          {
+            "id": "hist",
+            "width": 81,
+            "label": "HIST",
+            "kind": "ivory",
+            "key_alpha": "M",
+            "legends": [
+              {
+                "text": "CMD",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "UNDO",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_size": 20.6,
+            "main_size": 20.6
+          },
+          {
+            "id": "eval",
+            "width": 81,
+            "label": "EVAL",
+            "kind": "ivory",
+            "key_alpha": "N",
+            "legends": [
+              {
+                "text": "PRG",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "CHARS",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_size": 20.6,
+            "main_size": 20.6
+          },
+          {
+            "id": "tick",
+            "width": 81,
+            "label": "'",
+            "kind": "ivory",
+            "key_alpha": "O",
+            "legends": [
+              {
+                "text": "MTRW",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "EQW",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_size": 20.6,
+            "main_parts": [
+              {
+                "text": "'",
+                "font": "NM",
+                "size": 28,
+                "dx": 0,
+                "dy": 0,
+                "tracking": 0
+              }
+            ]
+          },
+          {
+            "id": "symb",
+            "width": 81,
+            "label": "SYMB",
+            "kind": "ivory",
+            "key_alpha": "P",
+            "legends": [
+              {
+                "text": "MTH",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "CAT",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_size": 20.6,
+            "main_size": 19.2
+          },
+          {
+            "id": "del",
+            "width": 81,
+            "label": "",
+            "kind": "ivory",
+            "legends": [
+              {
+                "text": "DEL",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "CLEAR",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "glyph_paths": [
+              {
+                "d": "M556.832 868 L572.832 855 L572.832 862 L594.832 862 L594.832 874 L572.832 874 L572.832 881 Z",
+                "fill": "#302a2c"
+              }
+            ]
+          }
+        ],
+        "grid": "standard"
+      },
+      {
+        "id": "trig",
+        "center_y": 947,
+        "default_size": 23.8,
+        "height": 47,
+        "keys": [
+          {
+            "id": "ypower",
+            "width": 82,
+            "label": "Yˣ",
+            "kind": "ivory",
+            "key_alpha": "Q",
+            "legends": [
+              {
+                "text": "eˣ",
+                "style": "blue",
+                "align": "left",
+                "font": "GSI",
+                "parts": [
+                  {
+                    "text": "e",
+                    "font": "GSI",
+                    "size": 15.2,
+                    "dx": 0,
+                    "dy": 2.6,
+                    "tracking": 0
+                  },
+                  {
+                    "text": "x",
+                    "font": "GSI",
+                    "size": 12,
+                    "dx": 9.2,
+                    "dy": -4.2,
+                    "tracking": 0
+                  }
+                ]
+              },
+              {
+                "text": "LN",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "main_parts": [
+              {
+                "text": "Y",
+                "font": "JS",
+                "size": 24.2,
+                "dx": 0,
+                "dy": 2.5,
+                "tracking": 0
+              },
+              {
+                "text": "X",
+                "font": "JS",
+                "size": 15.6,
+                "dx": 15.7,
+                "dy": -6.5,
+                "tracking": 0
+              }
+            ],
+            "key_alpha_size": 20.6
+          },
+          {
+            "id": "root",
+            "width": 82,
+            "label": "√X",
+            "kind": "ivory",
+            "key_alpha": "R",
+            "legends": [
+              {
+                "text": "x²",
+                "style": "blue",
+                "align": "left",
+                "font": "GSI",
+                "parts": [
+                  {
+                    "text": "x",
+                    "font": "GSI",
+                    "size": 15.2,
+                    "dx": 0,
+                    "dy": 2.6,
+                    "tracking": 0
+                  },
+                  {
+                    "text": "2",
+                    "font": "JM",
+                    "size": 11.8,
+                    "dx": 9.2,
+                    "dy": -4.2,
+                    "tracking": 0
+                  }
+                ]
+              },
+              {
+                "text": "x√y",
+                "style": "red",
+                "align": "right",
+                "font": "GSI",
+                "parts": [
+                  {
+                    "text": "x",
+                    "font": "GSI",
+                    "size": 9.8,
+                    "dx": 0,
+                    "dy": -5,
+                    "tracking": 0
+                  },
+                  {
+                    "text": "√",
+                    "font": "GS",
+                    "size": 15.2,
+                    "dx": 7.6,
+                    "dy": 0.2,
+                    "vinculum_units": 1000,
+                    "tracking": 0
+                  },
+                  {
+                    "text": "y",
+                    "font": "GSI",
+                    "size": 10.8,
+                    "dx": 20,
+                    "dy": 0.6,
+                    "tracking": 0
+                  }
+                ]
+              }
+            ],
+            "main_parts": [
+              {
+                "text": "√",
+                "font": "GS",
+                "size": 25.2,
+                "dx": 0,
+                "dy": 0,
+                "vinculum_units": 1750,
+                "tracking": 0
+              },
+              {
+                "text": "X",
+                "font": "JS",
+                "size": 24,
+                "dx": 18.6,
+                "dy": 2.3,
+                "tracking": 0
+              }
+            ],
+            "key_alpha_size": 20.6
+          },
+          {
+            "id": "sin",
+            "width": 82,
+            "label": "SIN",
+            "kind": "ivory",
+            "key_alpha": "S",
+            "legends": [
+              {
+                "text": "ASIN",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "Σ",
+                "style": "red",
+                "align": "right",
+                "font": "GS"
+              }
+            ],
+            "key_alpha_size": 20.6,
+            "main_size": 23.2
+          },
+          {
+            "id": "cos",
+            "width": 82,
+            "label": "COS",
+            "kind": "ivory",
+            "key_alpha": "T",
+            "legends": [
+              {
+                "text": "ACOS",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "∂",
+                "style": "red",
+                "align": "right",
+                "font": "GS"
+              }
+            ],
+            "key_alpha_size": 20.6,
+            "main_size": 23.2
+          },
+          {
+            "id": "tan",
+            "width": 82,
+            "label": "TAN",
+            "kind": "ivory",
+            "key_alpha": "U",
+            "legends": [
+              {
+                "text": "ATAN",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "∫",
+                "style": "red",
+                "align": "right",
+                "font": "GSI",
+                "size": 14.6
+              }
+            ],
+            "key_alpha_size": 20.6,
+            "main_size": 23.2
+          }
+        ],
+        "grid": "standard"
+      },
+      {
+        "id": "algebra",
+        "center_y": 1028,
+        "default_size": 26.2,
+        "height": 48,
+        "keys": [
+          {
+            "id": "eex",
+            "width": 82,
+            "label": "EEX",
+            "kind": "ivory",
+            "key_alpha": "V",
+            "legends": [
+              {
+                "text": "10ˣ",
+                "style": "blue",
+                "align": "left",
+                "font": "JM",
+                "parts": [
+                  {
+                    "text": "10",
+                    "font": "JM",
+                    "size": 15.2,
+                    "dx": 0,
+                    "dy": 1,
+                    "tracking": 0
+                  },
+                  {
+                    "text": "x",
+                    "font": "JM",
+                    "size": 10.4,
+                    "dx": 17.2,
+                    "dy": -6,
+                    "tracking": 0
+                  }
+                ]
+              },
+              {
+                "text": "LOG",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_size": 20.6,
+            "main_size": 19.2
+          },
+          {
+            "id": "plusminus",
+            "width": 82,
+            "label": "+/−",
+            "kind": "ivory",
+            "key_alpha": "W",
+            "legends": [
+              {
+                "text": "≠",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "=",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_size": 20.6,
+            "main_size": 25
+          },
+          {
+            "id": "x",
+            "width": 82,
+            "label": "X",
+            "kind": "ivory",
+            "key_alpha": "X",
+            "legends": [
+              {
+                "text": "≤",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "<",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_size": 20.6
+          },
+          {
+            "id": "reciprocal",
+            "width": 82,
+            "label": "1/X",
+            "kind": "ivory",
+            "key_alpha": "Y",
+            "legends": [
+              {
+                "text": "≥",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": ">",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_size": 20.6,
+            "main_parts": [
+              {
+                "text": "1",
+                "font": "JS",
+                "size": 23.5,
+                "dx": 0,
+                "dy": 0,
+                "tracking": 0
+              },
+              {
+                "text": "/",
+                "font": "JS",
+                "size": 22,
+                "dx": 12.4,
+                "dy": 0,
+                "tracking": 0
+              },
+              {
+                "text": "X",
+                "font": "JS",
+                "size": 23.5,
+                "dx": 24.5,
+                "dy": 0,
+                "tracking": 0
+              }
+            ]
+          },
+          {
+            "id": "divide",
+            "width": 82,
+            "label": "÷",
+            "kind": "navy",
+            "key_alpha": "Z",
+            "legends": [
+              {
+                "text": "ABS",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "ARG",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "key_alpha_size": 20.6,
+            "main_size": 34
+          }
+        ],
+        "grid": "standard"
+      },
+      {
+        "id": "789",
+        "center_y": 1112,
+        "default_size": 27,
+        "height": 54,
+        "keys": [
+          {
+            "id": "alpha",
+            "width": 82,
+            "label": "ALPHA",
+            "kind": "alpha",
+            "main_size": 20.6,
+            "legends": [
+              {
+                "text": "USER",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "ENTRY",
+                "style": "red",
+                "align": "right"
+              }
+            ]
+          },
+          {
+            "id": "seven",
+            "width": 82,
+            "label": "7",
+            "kind": "navy",
+            "main_size": 31,
+            "legends": [
+              {
+                "text": "S.SLV",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "NUM.SLV",
+                "style": "red",
+                "align": "right",
+                "size": 13.1,
+                "extra_right": 5,
+                "font": "JM"
+              }
+            ]
+          },
+          {
+            "id": "eight",
+            "width": 82,
+            "label": "8",
+            "kind": "navy",
+            "main_size": 31,
+            "legends": [
+              {
+                "text": "EXP&LN",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "TRIG",
+                "style": "red",
+                "align": "right"
+              }
+            ]
+          },
+          {
+            "id": "nine",
+            "width": 82,
+            "label": "9",
+            "kind": "navy",
+            "main_size": 31,
+            "legends": [
+              {
+                "text": "FINANCE",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "TIME",
+                "style": "red",
+                "align": "right"
+              }
+            ]
+          },
+          {
+            "id": "multiply",
+            "width": 82,
+            "label": "×",
+            "kind": "navy",
+            "main_size": 29,
+            "legends": [
+              {
+                "text": "[  ]",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "\" \"",
+                "style": "red",
+                "align": "right",
+                "font": "JM"
+              }
+            ]
+          }
+        ],
+        "grid": "standard"
+      },
+      {
+        "id": "456",
+        "center_y": 1195,
+        "default_size": 27,
+        "height": 53,
+        "keys": [
+          {
+            "id": "leftblue",
+            "width": 82,
+            "label": "",
+            "kind": "teal",
+            "glyph_paths": [
+              {
+                "d": "M16 10 V-3 H0",
+                "fill": "none",
+                "stroke_width": 4.6,
+                "stroke_linecap": "square",
+                "stroke_linejoin": "miter",
+                "stroke": "#343237",
+                "transform": "translate(148.88421 1195)"
+              },
+              {
+                "d": "M1 -10 L-16 -3 L1 4 Z",
+                "fill": "#343237",
+                "transform": "translate(148.88421 1195)"
+              }
+            ]
+          },
+          {
+            "id": "four",
+            "width": 82,
+            "label": "4",
+            "kind": "navy",
+            "main_size": 31,
+            "legends": [
+              {
+                "text": "CALC",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "ALG",
+                "style": "red",
+                "align": "right"
+              }
+            ]
+          },
+          {
+            "id": "five",
+            "width": 82,
+            "label": "5",
+            "kind": "navy",
+            "main_size": 31,
+            "legends": [
+              {
+                "text": "MATRICES",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "STAT",
+                "style": "red",
+                "align": "right"
+              }
+            ]
+          },
+          {
+            "id": "six",
+            "width": 82,
+            "label": "6",
+            "kind": "navy",
+            "main_size": 31,
+            "legends": [
+              {
+                "text": "CONVERT",
+                "style": "blue",
+                "align": "left",
+                "size": 14.1
+              },
+              {
+                "text": "UNITS",
+                "style": "red",
+                "align": "right",
+                "size": 14.1,
+                "extra_right": 10
+              }
+            ]
+          },
+          {
+            "id": "minus",
+            "width": 82,
+            "label": "−",
+            "kind": "navy",
+            "main_size": 30,
+            "legends": [
+              {
+                "text": "(  )",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "−",
+                "style": "red",
+                "align": "right"
+              }
+            ]
+          }
+        ],
+        "grid": "standard"
+      },
+      {
+        "id": "123",
+        "center_y": 1281,
+        "default_size": 27,
+        "height": 54,
+        "keys": [
+          {
+            "id": "rightred",
+            "width": 82,
+            "label": "",
+            "kind": "red",
+            "glyph_paths": [
+              {
+                "d": "M16 10 V-3 H0",
+                "fill": "none",
+                "stroke_width": 4.6,
+                "stroke_linecap": "square",
+                "stroke_linejoin": "miter",
+                "stroke": "#3b2521",
+                "transform": "translate(148.88421 1281) scale(-1 1)"
+              },
+              {
+                "d": "M1 -10 L-16 -3 L1 4 Z",
+                "fill": "#3b2521",
+                "transform": "translate(148.88421 1281) scale(-1 1)"
+              }
+            ]
+          },
+          {
+            "id": "one",
+            "width": 82,
+            "label": "1",
+            "kind": "navy",
+            "main_size": 31,
+            "legends": [
+              {
+                "text": "ARITH",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "CMPLX",
+                "style": "red",
+                "align": "right"
+              }
+            ]
+          },
+          {
+            "id": "two",
+            "width": 82,
+            "label": "2",
+            "kind": "navy",
+            "main_size": 31,
+            "legends": [
+              {
+                "text": "DEF",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "LIB",
+                "style": "red",
+                "align": "right"
+              }
+            ]
+          },
+          {
+            "id": "three",
+            "width": 82,
+            "label": "3",
+            "kind": "navy",
+            "main_size": 31,
+            "legends": [
+              {
+                "text": "#",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "BASE",
+                "style": "red",
+                "align": "right"
+              }
+            ]
+          },
+          {
+            "id": "plus",
+            "width": 82,
+            "label": "+",
+            "kind": "navy",
+            "main_size": 32,
+            "legends": [
+              {
+                "text": "{ }",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "<<  >>",
+                "style": "red",
+                "align": "right",
+                "font": "JM",
+                "size": 13.4
+              }
+            ]
+          }
+        ],
+        "grid": "standard"
+      },
+      {
+        "id": "base",
+        "center_y": 1367,
+        "default_size": 24,
+        "height": 55,
+        "keys": [
+          {
+            "id": "on",
+            "width": 82,
+            "label": "ON",
+            "kind": "navy",
+            "main_size": 21,
+            "legends": [
+              {
+                "text": "CONT",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "OFF",
+                "style": "red",
+                "align": "right"
+              }
+            ],
+            "below_label": "CANCEL",
+            "below_label_size": 17,
+            "below_color": "#30282b"
+          },
+          {
+            "id": "zero",
+            "width": 82,
+            "label": "0",
+            "kind": "navy",
+            "main_size": 31,
+            "legends": [
+              {
+                "text": "∞",
+                "style": "blue",
+                "align": "left",
+                "font": "GS",
+                "size": 26
+              },
+              {
+                "text": "→",
+                "style": "red",
+                "align": "right",
+                "path": "M278 1328.4 H294 V1325.2 L302.5 1329 L294 1332.8 V1329.6 H278 Z",
+                "path_fill": true
+              }
+            ]
+          },
+          {
+            "id": "dot",
+            "width": 82,
+            "label": "·",
+            "kind": "navy",
+            "main_size": 29,
+            "legends": [
+              {
+                "text": "double-colon",
+                "style": "blue",
+                "align": "left",
+                "path": "M315.9 1323.4 H318.0 V1325.5 H315.9 Z M321.0 1323.4 H323.1 V1325.5 H321.0 Z M315.9 1329.8 H318.0 V1331.9 H315.9 Z M321.0 1329.8 H323.1 V1331.9 H321.0 Z",
+                "path_fill": true
+              },
+              {
+                "text": "return-arrow",
+                "style": "red",
+                "align": "right",
+                "path": "M379 1329 L388.5 1325.2 V1328.4 H403.2 V1321 H404.4 V1329.6 H388.5 V1332.8 Z",
+                "path_fill": true
+              }
+            ]
+          },
+          {
+            "id": "spc",
+            "width": 82,
+            "label": "SPC",
+            "kind": "navy",
+            "main_size": 21,
+            "legends": [
+              {
+                "text": "π",
+                "style": "blue",
+                "align": "left",
+                "font": "RM",
+                "size": 20
+              },
+              {
+                "text": ",",
+                "style": "red",
+                "align": "right",
+                "font": "GS",
+                "size": 18
+              }
+            ]
+          },
+          {
+            "id": "enter",
+            "width": 82,
+            "label": "ENTER",
+            "kind": "navy",
+            "main_size": 19,
+            "legends": [
+              {
+                "text": "ANS",
+                "style": "blue",
+                "align": "left"
+              },
+              {
+                "text": "→NUM",
+                "style": "red",
+                "align": "right",
+                "font": "JM",
+                "size": 14.8,
+                "parts": [
+                  {
+                    "text": "NUM",
+                    "font": "JM",
+                    "size": 14.8,
+                    "dx": 0,
+                    "dy": 0,
+                    "tracking": -0.14
+                  }
+                ],
+                "vector_prefix": {
+                  "d": "M566 1328.4 H576 V1325.8 L583 1329 L576 1332.2 V1329.6 H566 Z"
+                }
+              }
+            ]
+          }
+        ],
+        "grid": "standard"
+      }
+    ],
+    "lip_profile": "side_to_side_cubic",
+    "legend_mode": "per_key",
+    "legend_colors": {
+      "blue": "legend_blue",
+      "red": "legend_red",
+      "yellow": "legend_yellow"
+    },
+    "legend_defaults": {
+      "short_size": 14.6,
+      "long_size": 13.1,
+      "length_threshold": 6,
+      "blue_max_width": 64,
+      "red_max_width": 56,
+      "min_size": 11.4,
+      "left_inset": -5,
+      "right_inset": -3,
+      "vertical_offset": 11.8,
+      "wide_label_threshold": 7,
+      "wide_label_left_shift": 10
+    },
+    "grids": {
+      "small-under-fn": [
+        139.03158,
+        228.8,
+        318.56842
+      ],
+      "standard": [
+        148.88421,
+        256.16842,
+        362.90526,
+        469.09474,
+        575.83158
+      ]
+    },
+    "inline_alpha": true,
+    "inline_alpha_gap": 4,
+    "inline_alpha_side_margin": 2.5,
+    "inline_alpha_layout": "fixed_right",
+    "inline_alpha_fixed_dx": 29.5,
+    "inline_alpha_min_gap": 4,
+    "inline_alpha_edge_margin": 1,
+    "inline_alpha_uniform_size": 20.6,
+    "inline_primary_rows": [
+      "func",
+      "trig",
+      "algebra"
+    ],
+    "inline_primary_center_dx": -10.4,
+    "inline_primary_center_dy": 0,
+    "inline_primary_full_center_ids": [
+      "divide"
+    ]
+  },
+  "modifiers": {
+    "shift_band": {
+      "123": 1107,
+      "456": 1033,
+      "789": 958,
+      "fnB": 675.5,
+      "func": 753.5,
+      "trig": 822,
+      "math": 889,
+      "base": 1181
+    },
+    "alpha_band": {
+      "123": 1175,
+      "456": 1100,
+      "789": 1026,
+      "func": 816,
+      "trig": 883,
+      "math": 952,
+      "base": 1249
+    },
+    "shift_font": "JM",
+    "shift_size": 14,
+    "alpha_font": "JM",
+    "alpha_size": 15.2,
+    "space_size": 13.9,
+    "setup": {
+      "target": [
+        208.5,
+        597.5
+      ],
+      "size": 13.7,
+      "bracket": "M126 603 V597 H181 M237 597 H290 V603"
+    },
+    "angle": {
+      "vertex": [
+        494,
+        1037
+      ],
+      "arm_h": 11,
+      "arm_y": -8.8,
+      "sector_radius": 6.8,
+      "color_key": "shift"
+    },
+    "cancel": {
+      "target": [
+        139,
+        1251
+      ],
+      "size": 14.8
+    },
+    "normal_shift_dx": -4
+  },
+  "logo": {
+    "asset": "third_party/wikimedia/HP_logo_2008.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:HP_logo_2008.svg",
+    "rect": [
+      532,
+      77,
+      94,
+      57,
+      7
+    ],
+    "svg": [
+      550,
+      78,
+      57,
+      55
+    ],
+    "badge_fill": "url(#badge)",
+    "badge_stroke": "#999a9b",
+    "badge_stroke_width": 1.1,
+    "fill": "#2d292b"
+  },
+  "paths": [
+    {
+      "id": "outer-shell",
+      "d": "M93 33 C171 27 250 27 332.5 28 C415 27 494 27 572 33 C611 34 630 48 633 79 C636 105 635 122 635 136 C635 254 636 483 636 645 C636 853 629 1059 610 1205 C608 1227 605 1240 599 1254 C588 1278 571 1294 535 1299 C449 1310 336 1315 332.5 1315 C329 1315 216 1310 130 1299 C94 1294 77 1278 66 1254 C60 1240 57 1227 55 1205 C36 1059 29 853 29 645 C29 483 30 254 30 136 C30 122 29 105 32 79 C35 48 54 34 93 33 Z",
+      "fill": "url(#shell)",
+      "stroke": "#aebcc3",
+      "stroke_width": 1.7,
+      "coordinate_space": "base"
+    },
+    {
+      "id": "irda-recess",
+      "d": "M155 34.4 C239 31.0 290 30.2 332.5 30.2 C375 30.2 426 31.0 510 34.4 L508.2 37.7 C420.5 35.6 375 35.0 332.5 35.0 C290 35.0 244.5 35.6 156.8 37.7 Z",
+      "fill": "#151619",
+      "stroke": "#0c0d10",
+      "stroke_width": 0.8,
+      "coordinate_space": "base"
+    },
+    {
+      "id": "irda-lower-rim",
+      "d": "M156.5 37.8 C243 35.9 289 35.4 332.5 35.4 C376 35.4 422 35.9 508.5 37.8",
+      "fill": "none",
+      "stroke": "#45464b",
+      "stroke_width": 0.45,
+      "opacity": 0.35,
+      "coordinate_space": "base"
+    },
+    {
+      "id": "front-panel",
+      "d": "M76 53 C167 44 254 43 332.5 44 C411 43 498 44 589 53 C603 54 610 59 611 76 C615 119 612 248 607 357 C603 439 595 486 590 532 C587 583 587 633 591 686 C598 780 601 870 601 971 C601 1098 600 1195 587 1235 C579 1260 564 1278 534 1286 C490 1297 410 1300 332.5 1300 C255 1300 175 1297 131 1286 C101 1278 86 1260 78 1235 C65 1195 64 1098 64 971 C64 870 67 780 74 686 C78 633 78 583 75 532 C70 486 62 439 58 357 C53 248 50 119 54 76 C55 59 62 54 76 53 Z",
+      "fill": "url(#face)",
+      "stroke": "#0d416f",
+      "stroke_width": 1.1,
+      "transform": "translate(-15.050 0) scale(1.140000 1.109000)"
+    }
+  ],
+  "header": {
+    "x": 105,
+    "top_y": 86,
+    "second_y": 116,
+    "font_size": 27,
+    "triangle_y": [
+      68,
+      77
+    ],
+    "triangle_half_width": 6,
+    "brand_text": "HP",
+    "model_text": "50g",
+    "subtitle": "Graphing Calculator",
+    "text_color": "#302a2c",
+    "triangle_color": "#302a2c",
+    "triangle_x_offset": 0,
+    "model_tracking": -0.18,
+    "subtitle_tracking": -0.18,
+    "model_x": 145.86,
+    "triangle_char_index": 6,
+    "triangle_ink_anchor": true,
+    "brand_font": "JB",
+    "brand_model_gap": 9.5,
+    "triangle_after_last_char_positions": 1
+  }
+}

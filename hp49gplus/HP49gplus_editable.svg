@@ -1,0 +1,764 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 665 1340" width="665" height="1340" role="img" aria-label="HP 49g+ faithful flat front view" data-source-sha256="b4701a395459cc799a0418ad3701a6d66fe0e217ecdcc8c831f1338735aa2b5a">
+  <title>HP 49g+ front-view vector redraw</title>
+  <desc>Generated only from JSON design layers. Blank LCD. Jost*, Gentium, Noto Sans and Asana Math glyph sources.</desc>
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#474548" />
+      <stop offset="0.5" stop-color="#222225" />
+      <stop offset="1.0" stop-color="#101114" />
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#eeeae4" />
+      <stop offset="0.5" stop-color="#d6d0c6" />
+      <stop offset="1.0" stop-color="#c5c3ba" />
+    </linearGradient>
+    <linearGradient id="ivory" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#66636a" />
+      <stop offset="0.5" stop-color="#55545d" />
+      <stop offset="1.0" stop-color="#484951" />
+    </linearGradient>
+    <linearGradient id="soft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#918e96" />
+      <stop offset="0.5" stop-color="#787680" />
+      <stop offset="1.0" stop-color="#61616a" />
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#36363c" />
+      <stop offset="0.5" stop-color="#292a31" />
+      <stop offset="1.0" stop-color="#202127" />
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#ed4459" />
+      <stop offset="0.5" stop-color="#bc172e" />
+      <stop offset="1.0" stop-color="#9c1629" />
+    </linearGradient>
+    <linearGradient id="black" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#303036" />
+      <stop offset="0.5" stop-color="#1b1b20" />
+      <stop offset="1.0" stop-color="#101216" />
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#f3f3f5" />
+      <stop offset="0.3333333333333333" stop-color="#d9dee7" />
+      <stop offset="0.6666666666666666" stop-color="#a6b0bf" />
+      <stop offset="1.0" stop-color="#e6e9f0" />
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#fff" />
+      <stop offset="0.5" stop-color="#f5f8f8" />
+      <stop offset="1.0" stop-color="#cbd6d9" />
+    </linearGradient>
+    <linearGradient id="silverArrow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#707880" />
+      <stop offset="0.5" stop-color="#42464f" />
+      <stop offset="1.0" stop-color="#8a929a" />
+    </linearGradient>
+    <linearGradient id="fn39-blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#e3f4fa" />
+      <stop offset="0.5" stop-color="#c4e1f0" />
+      <stop offset="1.0" stop-color="#96c4df" />
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#08bbd2" />
+      <stop offset="0.5" stop-color="#008fa8" />
+      <stop offset="1.0" stop-color="#077d93" />
+    </linearGradient>
+    <linearGradient id="yellow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.0" stop-color="#fff044" />
+      <stop offset="0.5" stop-color="#eecb00" />
+      <stop offset="1.0" stop-color="#dba900" />
+    </linearGradient>
+    <filter id="blur2" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="2" />
+    </filter>
+    <filter id="blur4" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+    <filter id="blur6" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+  </defs>
+  <g id="artwork" transform="scale(0.913461538 0.901749664)">
+    <g id="housing">
+      <path d="M93 33 C171 27 250 27 332.5 28 C415 27 494 27 572 33 C611 34 630 48 633 79 C636 105 635 122 635 136 C635 254 636 483 636 645 C636 853 629 1059 610 1205 C608 1227 605 1240 599 1254 C588 1278 571 1294 535 1299 C449 1310 336 1315 332.5 1315 C329 1315 216 1310 130 1299 C94 1294 77 1278 66 1254 C60 1240 57 1227 55 1205 C36 1059 29 853 29 645 C29 483 30 254 30 136 C30 122 29 105 32 79 C35 48 54 34 93 33 Z" id="outer-shell" fill="url(#shell)" stroke="#15161a" stroke-width="2.1" transform="scale(1.094736842105 1.108955223881)" />
+      <path d="M155 34.4 C239 31.0 290 30.2 332.5 30.2 C375 30.2 426 31.0 510 34.4 L508.2 37.7 C420.5 35.6 375 35.0 332.5 35.0 C290 35.0 244.5 35.6 156.8 37.7 Z" id="irda-recess" fill="#151619" stroke="#0c0d10" stroke-width="0.8" transform="scale(1.094736842105 1.108955223881)" />
+      <path d="M156.5 37.8 C243 35.9 289 35.4 332.5 35.4 C376 35.4 422 35.9 508.5 37.8" id="irda-lower-rim" fill="none" stroke="#45464b" stroke-width="0.45" opacity="0.35" transform="scale(1.094736842105 1.108955223881)" />
+      <path d="M76 53 C167 44 254 43 332.5 44 C411 43 498 44 589 53 C603 54 610 59 611 76 C615 119 612 248 607 357 C603 439 595 486 590 532 C587 583 587 633 591 686 C598 780 601 870 601 971 C601 1098 600 1195 587 1235 C579 1260 564 1278 534 1286 C490 1297 410 1300 332.5 1300 C255 1300 175 1297 131 1286 C101 1278 86 1260 78 1235 C65 1195 64 1098 64 971 C64 870 67 780 74 686 C78 633 78 583 75 532 C70 486 62 439 58 357 C53 248 50 119 54 76 C55 59 62 54 76 53 Z" id="front-panel" fill="url(#face)" stroke="#b9b6b0" stroke-width="1.3" transform="translate(-15.050 0) scale(1.140000 1.109000)" />
+    </g>
+    <g id="display">
+      <path d="M79 68 C172 60 249 58.2 332.5 58.2 C416 58.2 493 60 586 68 C591.5 69.3 595.5 72.8 597.2 79.8 C600 145 600.5 229 596 320 C595 373 590 424 582 463 C581 479 576 490 565 494 C511 501 449 505 332.5 506 C216 505 154 501 100 494 C89 490 84 479 83 463 C75 424 70 373 69 320 C64.5 229 65 145 67.8 79.8 C69.5 72.8 73.5 69.3 79 68 Z" fill="#d5d0c8" stroke="#85817c" stroke-width="1.2" transform="scale(1.100000 1.086000)" />
+      <path d="M119 151 C217 147 506 147 608 151 C619 152 624 158 624 176 L624 471 Q624 491 607 492 L120 492 Q102 492 102 473 L102 177 Q103 155 119 151 Z" fill="#c2d0ca" stroke="#727873" stroke-width="1.25" />
+    </g>
+    <g id="hp-logo" data-source="https://commons.wikimedia.org/wiki/File:HP_logo_2008.svg">
+      <rect x="532" y="77" width="94" height="57" rx="7" fill="url(#badge)" stroke="#787986" stroke-width="1.1" />
+      <svg x="550" y="78" width="57" height="55" viewBox="0 0 1000 999.98" overflow="visible" preserveAspectRatio="xMidYMid meet">
+        <g transform="translate(-203.54 -212.7)">
+          <path d="m704.93 212.7-107.58 301.62 73.131 0.0229c52.68 0.0153 75.098 41.551 58.509 88.066l-106.97 299.91h-107.64l117.69-330h-55.422l-117.68 330h-108.57l241.48-677.11c-222.38 50.731-388.34 249.71-388.34 487.46 0 234.05 160.82 430.51 377.98 484.98l243.97-685.01h176.69c36.545 0 82.508 24.641 62.646 80.724l-99.203 280.11c-12.672 35.78-42.793 43.031-66.789 43.031h-108.62l-105.35 295.79c6.2031 0.2273 12.418 0.3834 18.672 0.3834 276.14 0 500-223.85 500-500-7e-4 -275.68-223.11-499.23-498.62-499.98zm208.15 358.81-102.47 287.64h54.567l102.49-287.64z" fill="#015294" />
+        </g>
+      </svg>
+    </g>
+    <g id="header-print">
+      <g id="hp" data-role="header" data-label="hp" data-bbox="105.000,86.000,133.507,113.000" fill="#14171c">
+        <text x="103.27200" y="107.06000" font-family="Jost*" font-weight="600" font-style="normal" font-size="27" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">hp</text>
+      </g>
+      <g id="model" data-role="header" data-label="49g+" data-bbox="145.860,86.000,205.503,111.380" fill="#14171c">
+        <text x="145.32000" y="105.17000" font-family="Jost*" font-weight="400" font-style="normal" font-size="27" letter-spacing="-0.18" style="font-family:'Jost*';font-weight:400;font-style:normal;letter-spacing:-0.18px;font-feature-settings:'ss01' 1;" xml:space="preserve">49g+</text>
+      </g>
+      <g id="description" data-role="header" data-label="graphing calculator" data-bbox="105.000,116.000,328.236,143.270" fill="#14171c">
+        <text x="104.05500" y="137.06000" font-family="Jost*" font-weight="400" font-style="normal" font-size="27" letter-spacing="-0.18" style="font-family:'Jost*';font-weight:400;font-style:normal;letter-spacing:-0.18px;font-feature-settings:'ss01' 1;" xml:space="preserve">graphing calculator</text>
+      </g>
+      <path d="M290.261 68.000 L284.261 77.000 H296.261 Z" fill="#171719" data-anchor="calculator-second-l" />
+    </g>
+    <g id="six-function-keys" transform="scale(1.094736842105 1.108955223881)">
+      <g id="F1">
+        <rect x="98.0" y="537" width="58" height="31" rx="6.5" fill="url(#soft)" stroke="#18181d" stroke-width="2.4" />
+        <g id="fn1-top" data-role="fn-top" data-label="Y=" data-bbox="118.581,512.855,135.419,523.145" fill="#2a5267">
+          <text x="118.53665" y="523.14500" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">Y=</text>
+        </g>
+        <g id="fn1-label" data-role="fn" data-label="F1" data-bbox="109.415,545.451,125.907,559.549" fill="#17181b">
+          <text x="107.91030" y="559.54880" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">F1</text>
+        </g>
+        <g id="fn1-letter" data-role="fn-alpha" data-label="A" data-bbox="132.507,545.154,146.585,559.846" fill="#dbbb53">
+          <text x="132.48730" y="559.84580" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">A</text>
+        </g>
+      </g>
+      <g id="F2">
+        <rect x="180.0" y="537" width="58" height="31" rx="6.5" fill="url(#soft)" stroke="#18181d" stroke-width="2.4" />
+        <g id="fn2-top" data-role="fn-top" data-label="WIN" data-bbox="194.499,512.326,223.501,523.674" fill="#2a5267">
+          <text x="194.38120" y="523.13030" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">WIN</text>
+        </g>
+        <g id="fn2-label" data-role="fn" data-label="F2" data-bbox="191.375,545.441,211.927,559.559" fill="#17181b">
+          <text x="189.87070" y="559.55870" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">F2</text>
+        </g>
+        <g id="fn2-letter" data-role="fn-alpha" data-label="B" data-bbox="218.526,545.570,228.625,559.430" fill="#dbbb53">
+          <text x="217.02170" y="559.43000" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">B</text>
+        </g>
+      </g>
+      <g id="F3">
+        <rect x="262.0" y="537" width="58" height="31" rx="6.5" fill="url(#soft)" stroke="#18181d" stroke-width="2.4" />
+        <g id="fn3-top" data-role="fn-top" data-label="GRAPH" data-bbox="267.172,512.458,314.828,523.542" fill="#2a5267">
+          <text x="266.61340" y="523.32140" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">GRAPH</text>
+        </g>
+        <g id="fn3-label" data-role="fn" data-label="F3" data-bbox="272.742,545.313,292.897,559.687" fill="#17181b">
+          <text x="271.23710" y="559.41020" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">F3</text>
+        </g>
+        <g id="fn3-letter" data-role="fn-alpha" data-label="C" data-bbox="299.497,545.293,311.258,559.707" fill="#dbbb53">
+          <text x="298.78410" y="559.43000" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">C</text>
+        </g>
+      </g>
+      <g id="F4">
+        <rect x="344.0" y="537" width="58" height="31" rx="6.5" fill="url(#soft)" stroke="#18181d" stroke-width="2.4" />
+        <g id="fn4-top" data-role="fn-top" data-label="2D/3D" data-bbox="350.892,511.664,395.108,524.336" fill="#2a5267">
+          <text x="350.59790" y="522.13070" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">2D/3D</text>
+        </g>
+        <g id="fn4-label" data-role="fn" data-label="F4" data-bbox="354.019,545.570,375.382,559.430" fill="#17181b">
+          <text x="352.51440" y="559.43000" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">F4</text>
+        </g>
+        <g id="fn4-letter" data-role="fn-alpha" data-label="D" data-bbox="381.982,545.570,393.981,559.430" fill="#dbbb53">
+          <text x="380.47720" y="559.43000" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">D</text>
+        </g>
+      </g>
+      <g id="F5">
+        <rect x="426.0" y="537" width="58" height="31" rx="6.5" fill="url(#soft)" stroke="#18181d" stroke-width="2.4" />
+        <g id="fn5-top" data-role="fn-top" data-label="TBLSET" data-bbox="431.676,512.657,478.324,523.343" fill="#2a5267">
+          <text x="431.55805" y="523.12295" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">TBLSET</text>
+        </g>
+        <g id="fn5-label" data-role="fn" data-label="F5" data-bbox="438.049,545.451,458.521,559.549" fill="#17181b">
+          <text x="436.54390" y="559.31120" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">F5</text>
+        </g>
+        <g id="fn5-letter" data-role="fn-alpha" data-label="E" data-bbox="465.120,545.570,473.951,559.430" fill="#dbbb53">
+          <text x="463.61570" y="559.43000" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">E</text>
+        </g>
+      </g>
+      <g id="F6">
+        <rect x="506.0" y="537" width="58" height="31" rx="6.5" fill="url(#soft)" stroke="#18181d" stroke-width="2.4" />
+        <g id="fn6-top" data-role="fn-top" data-label="TABLE" data-bbox="515.656,512.568,554.345,523.432" fill="#2a5267">
+          <text x="515.53790" y="523.43165" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.7" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">TABLE</text>
+        </g>
+        <g id="fn6-label" data-role="fn" data-label="F6" data-bbox="518.326,545.431,539.035,559.569" fill="#17181b">
+          <text x="516.82110" y="559.29140" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">F6</text>
+        </g>
+        <g id="fn6-letter" data-role="fn-alpha" data-label="F" data-bbox="545.635,545.570,553.674,559.430" fill="#dbbb53">
+          <text x="544.13050" y="559.43000" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">F</text>
+        </g>
+      </g>
+    </g>
+    <g id="navigation" transform="scale(1.094736842105 1.108955223881)">
+      <g id="recess">
+        <path d="M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z" fill="#777674" opacity="0.18" filter="url(#blur6)" transform="translate(0 2.2)" />
+        <path d="M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z" fill="#05384d" opacity="0.06" filter="url(#blur6)" transform="translate(0.8 1.2)" />
+        <path d="M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z" fill="#bcb7ad" opacity="0.33" filter="url(#blur4)" />
+        <path d="M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z" fill="#ffffff" opacity="0.05" filter="url(#blur6)" transform="translate(-0.9 -1.1)" />
+        <path d="M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z" fill="none" stroke="#fcfaf6" stroke-width="4.8" opacity="0.09" filter="url(#blur6)" transform="translate(-0.8 -1.1)" />
+        <path d="M453 592 C469 592 481 605 481 621 C481 627 479 633 476 639 Q484 641 492 644 C498 640 506 639 514 639 C532 639 543 653 543 669 C543 685 530 699 514 699 C504 699 496 695 491 692 Q484 696 477 698 C480 703 481 709 481 714 C481 730 468 742 453 742 C437 742 425 730 425 714 C425 708 426 702 429 698 Q422 696 414 692 C408 696 400 699 392 699 C376 699 363 685 363 669 C363 653 376 639 392 639 C400 639 409 640 414 644 Q422 641 430 639 C426 633 425 627 425 621 C425 605 437 592 453 592 Z" fill="none" stroke="#686761" stroke-width="5.4" opacity="0.1" filter="url(#blur6)" transform="translate(0.9 1.4)" />
+      </g>
+      <g id="up">
+        <circle cx="453.7" cy="622.6" r="25.4" fill="#71716d" opacity="0.18" filter="url(#blur2)" />
+        <circle cx="453" cy="621" r="24" fill="url(#metal)" stroke="#1c1d24" stroke-width="2" />
+        <path d="M453 613.7 L446.6 626.6 L459.4 626.6 Z" fill="url(#silverArrow)" stroke="#464d55" stroke-width="0.45" transform="rotate(0 453 621)" />
+      </g>
+      <g id="left">
+        <circle cx="392.7" cy="670.6" r="25.4" fill="#71716d" opacity="0.18" filter="url(#blur2)" />
+        <circle cx="392" cy="669" r="24" fill="url(#metal)" stroke="#1c1d24" stroke-width="2" />
+        <path d="M392 661.7 L385.6 674.6 L398.4 674.6 Z" fill="url(#silverArrow)" stroke="#464d55" stroke-width="0.45" transform="rotate(270 392 669)" />
+      </g>
+      <g id="right">
+        <circle cx="514.7" cy="670.6" r="25.4" fill="#71716d" opacity="0.18" filter="url(#blur2)" />
+        <circle cx="514" cy="669" r="24" fill="url(#metal)" stroke="#1c1d24" stroke-width="2" />
+        <path d="M514 661.7 L507.6 674.6 L520.4 674.6 Z" fill="url(#silverArrow)" stroke="#464d55" stroke-width="0.45" transform="rotate(90 514 669)" />
+      </g>
+      <g id="down">
+        <circle cx="453.7" cy="715.6" r="25.4" fill="#71716d" opacity="0.18" filter="url(#blur2)" />
+        <circle cx="453" cy="714" r="24" fill="url(#metal)" stroke="#1c1d24" stroke-width="2" />
+        <path d="M453 706.7 L446.6 719.6 L459.4 719.6 Z" fill="url(#silverArrow)" stroke="#464d55" stroke-width="0.45" transform="rotate(180 453 714)" />
+      </g>
+    </g>
+    <g id="keyboard">
+      <g id="key-apps" data-kind="ivory" data-center="139.03158,691" data-main-center="139.03158" data-main-y="686.00000">
+        <path d="M113.532 666.500 H164.532 Q173.032 666.500 173.032 675.000 V706.000 C173.032 719.467 105.032 719.467 105.032 706.000 V675.000 Q105.032 666.500 113.532 666.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-apps" data-role="main" data-label="APPS" data-bbox="115.501,678.704,162.562,693.296" fill="#f6f6f8">
+          <text x="115.48158" y="692.95040" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">APPS</text>
+        </g>
+        <g id="key-alpha-apps" data-role="key-alpha" data-label="G" data-bbox="132.214,698.021,145.849,711.979" fill="#efce6d">
+          <text x="131.48459" y="711.69120" font-family="Jost*" font-weight="500" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">G</text>
+        </g>
+      </g>
+      <g id="legend-apps-0" data-role="blue" data-label="FILES" data-bbox="100.032,649.393,133.154,660.007" fill="#2f596a">
+        <text x="98.89278" y="659.78810" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">FILES</text>
+      </g>
+      <g id="legend-apps-1" data-role="red" data-label="BEGIN" data-bbox="134.792,649.079,176.032,660.321" fill="#aa5656">
+        <text x="133.65298" y="659.81000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">BEGIN</text>
+      </g>
+      <g id="key-mode" data-kind="ivory" data-center="228.8,691" data-main-center="228.80000" data-main-y="686.00000">
+        <path d="M203.300 666.500 H254.300 Q262.800 666.500 262.800 675.000 V706.000 C262.800 719.467 194.800 719.467 194.800 706.000 V675.000 Q194.800 666.500 203.300 666.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-mode" data-role="main" data-label="MODE" data-bbox="201.362,678.771,256.238,693.229" fill="#f6f6f8">
+          <text x="200.67080" y="692.88320" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">MODE</text>
+        </g>
+        <g id="key-alpha-mode" data-role="key-alpha" data-label="H" data-bbox="223.155,698.280,234.445,711.720" fill="#efce6d">
+          <text x="221.65760" y="711.72000" font-family="Jost*" font-weight="500" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">H</text>
+        </g>
+      </g>
+      <g id="legend-mode-0" data-role="blue" data-label="CUSTOM" data-bbox="189.800,649.881,239.622,659.519" fill="#2f596a">
+        <text x="189.31360" y="659.28880" font-family="Jost*" font-weight="500" font-style="normal" font-size="12.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CUSTOM</text>
+      </g>
+      <g id="legend-mode-1" data-role="red" data-label="END" data-bbox="244.461,649.772,269.000,659.628" fill="#aa5656">
+        <text x="243.46240" y="659.18000" font-family="Jost*" font-weight="500" font-style="normal" font-size="12.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">END</text>
+      </g>
+      <g id="key-tool" data-kind="ivory" data-center="318.56842,691" data-main-center="318.56842" data-main-y="686.00000">
+        <path d="M293.068 666.500 H344.068 Q352.568 666.500 352.568 675.000 V706.000 C352.568 719.467 284.568 719.467 284.568 706.000 V675.000 Q284.568 666.500 293.068 666.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-tool" data-role="main" data-label="TOOL" data-bbox="293.847,678.973,343.290,693.027" fill="#f6f6f8">
+          <text x="293.73202" y="692.68160" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">TOOL</text>
+        </g>
+        <g id="key-alpha-tool" data-role="key-alpha" data-label="I" data-bbox="317.426,698.280,319.711,711.720" fill="#efce6d">
+          <text x="315.92842" y="711.72000" font-family="Jost*" font-weight="500" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">I</text>
+        </g>
+      </g>
+      <g id="legend-tool-0" data-role="blue" data-label="i" data-bbox="279.568,649.524,281.554,659.876" fill="#2f596a">
+        <text x="278.61942" y="659.87570" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">i</text>
+      </g>
+      <g id="legend-tool-1" data-role="red" data-label="|" data-bbox="354.021,647.400,355.568,662.000" fill="#aa5656">
+        <text x="352.56082" y="658.86100" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">|</text>
+      </g>
+      <g id="key-var" data-kind="ivory" data-center="139.03158,780" data-main-center="139.03158" data-main-y="775.00000">
+        <path d="M113.532 755.500 H164.532 Q173.032 755.500 173.032 764.000 V795.000 C173.032 808.467 105.032 808.467 105.032 795.000 V764.000 Q105.032 755.500 113.532 755.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-var" data-role="main" data-label="VAR" data-bbox="120.845,767.474,157.218,782.526" fill="#f6f6f8">
+          <text x="120.82598" y="781.72000" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">VAR</text>
+        </g>
+        <g id="key-alpha-var" data-role="key-alpha" data-label="J" data-bbox="135.854,785.091,142.209,802.909" fill="#efce6d">
+          <text x="138.38838" y="798.53120" font-family="Jost*" font-weight="500" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">J</text>
+        </g>
+      </g>
+      <g id="legend-var-0" data-role="blue" data-label="UPDIR" data-bbox="100.032,738.674,137.622,748.726" fill="#2f596a">
+        <text x="99.00958" y="748.47400" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">UPDIR</text>
+      </g>
+      <g id="legend-var-1" data-role="red" data-label="COPY" data-bbox="140.518,738.611,176.932,748.789" fill="#aa5656">
+        <text x="139.98558" y="748.57900" font-family="Jost*" font-weight="500" font-style="normal" font-size="14" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">COPY</text>
+      </g>
+      <g id="key-sto" data-kind="ivory" data-center="228.8,780" data-main-center="222.46000" data-main-y="775.00000">
+        <path d="M203.300 755.500 H254.300 Q262.800 755.500 262.800 764.000 V795.000 C262.800 808.467 194.800 808.467 194.800 795.000 V764.000 Q194.800 755.500 203.300 755.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-sto" data-role="main" data-label="STO" data-bbox="204.600,767.973,240.320,782.027" fill="#f6f6f8">
+          <text x="203.94720" y="781.68160" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">STO</text>
+        </g>
+        <path d="M246 769 L253 774 L246 779 Z" fill="#f8f8f9" data-role="key-decoration" />
+        <g id="key-alpha-sto" data-role="key-alpha" data-label="K" data-bbox="223.635,787.280,233.965,800.720" fill="#efce6d">
+          <text x="222.13760" y="800.72000" font-family="Jost*" font-weight="500" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">K</text>
+        </g>
+      </g>
+      <g id="legend-sto-0" data-role="blue" data-label="RCL" data-bbox="189.800,738.415,214.063,748.985" fill="#2f596a">
+        <text x="188.66120" y="748.81000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">RCL</text>
+      </g>
+      <g id="legend-sto-1" data-role="red" data-label="CUT" data-bbox="239.727,738.371,265.800,749.029" fill="#aa5656">
+        <text x="239.17220" y="748.76620" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CUT</text>
+      </g>
+      <g id="key-nxt" data-kind="ivory" data-center="318.56842,780" data-main-center="318.56842" data-main-y="775.00000">
+        <path d="M293.068 755.500 H344.068 Q352.568 755.500 352.568 764.000 V795.000 C352.568 808.467 284.568 808.467 284.568 795.000 V764.000 Q284.568 755.500 293.068 755.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-nxt" data-role="main" data-label="NXT" data-bbox="300.622,767.608,336.515,782.392" fill="#f6f6f8">
+          <text x="299.16282" y="781.72000" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">NXT</text>
+        </g>
+        <g id="key-alpha-nxt" data-role="key-alpha" data-label="L" data-bbox="314.767,787.280,322.370,800.720" fill="#efce6d">
+          <text x="313.26922" y="800.72000" font-family="Jost*" font-weight="500" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">L</text>
+        </g>
+      </g>
+      <g id="legend-nxt-0" data-role="blue" data-label="PREV" data-bbox="279.568,738.305,313.488,749.095" fill="#2f596a">
+        <text x="278.42962" y="748.52530" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">PREV</text>
+      </g>
+      <g id="legend-nxt-1" data-role="red" data-label="PASTE" data-bbox="316.635,738.196,355.568,749.204" fill="#aa5656">
+        <text x="315.49662" y="748.98520" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">PASTE</text>
+      </g>
+      <g id="key-hist" data-kind="ivory" data-center="148.88421,868" data-alpha-center="178.38421" data-main-center="138.48421" data-main-y="868.00000">
+        <path d="M116.884 844.500 H180.884 Q189.384 844.500 189.384 853.000 V882.000 C189.384 895.467 108.384 895.467 108.384 882.000 V853.000 Q108.384 844.500 116.884 844.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-hist" data-role="main" data-label="HIST" data-bbox="116.930,860.460,160.038,875.540" fill="#f6f6f8">
+          <text x="115.36471" y="875.16880" font-family="Jost*" font-weight="600" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">HIST</text>
+        </g>
+        <g id="key-alpha-hist" data-role="key-alpha" data-label="M" data-bbox="170.484,860.430,186.284,875.571" fill="#efce6d">
+          <text x="169.70131" y="875.57050" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">M</text>
+        </g>
+      </g>
+      <g id="legend-hist-0" data-role="blue" data-label="CMD" data-bbox="103.384,827.247,134.626,838.153" fill="#2f596a">
+        <text x="102.82941" y="837.97790" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CMD</text>
+      </g>
+      <g id="legend-hist-1" data-role="red" data-label="UNDO" data-bbox="151.472,827.079,192.384,838.321" fill="#aa5656">
+        <text x="150.40581" y="837.81000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">UNDO</text>
+      </g>
+      <g id="key-eval" data-kind="ivory" data-center="256.16842,868" data-alpha-center="285.66842" data-main-center="245.76842" data-main-y="868.00000">
+        <path d="M224.168 844.500 H288.168 Q296.668 844.500 296.668 853.000 V882.000 C296.668 895.467 215.668 895.467 215.668 882.000 V853.000 Q215.668 844.500 224.168 844.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-eval" data-role="main" data-label="EVAL" data-bbox="222.247,859.925,269.290,876.075" fill="#f6f6f8">
+          <text x="220.68162" y="875.21000" font-family="Jost*" font-weight="600" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">EVAL</text>
+        </g>
+        <g id="key-alpha-eval" data-role="key-alpha" data-label="N" data-bbox="279.210,860.069,292.127,875.931" fill="#efce6d">
+          <text x="277.60352" y="875.21000" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">N</text>
+        </g>
+      </g>
+      <g id="legend-eval-0" data-role="blue" data-label="PRG" data-bbox="210.668,827.393,237.284,838.007" fill="#2f596a">
+        <text x="209.52962" y="837.78810" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">PRG</text>
+      </g>
+      <g id="legend-eval-1" data-role="red" data-label="CHARS" data-bbox="253.260,827.196,299.668,838.204" fill="#aa5656">
+        <text x="252.70542" y="837.98520" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CHARS</text>
+      </g>
+      <g id="key-tick" data-kind="ivory" data-center="362.90526,868" data-alpha-center="392.40526" data-main-center="352.50526" data-main-y="868.00000">
+        <path d="M330.905 844.500 H394.905 Q403.405 844.500 403.405 853.000 V882.000 C403.405 895.467 322.405 895.467 322.405 882.000 V853.000 Q322.405 844.500 330.905 844.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-tick" data-role="main" data-label="'" data-bbox="351.175,864.388,353.835,871.612" fill="#f6f6f8">
+          <text x="349.35526" y="884.38000" font-family="Noto Sans Math" font-weight="400" font-style="normal" font-size="28" letter-spacing="0" style="font-family:'Noto Sans Math';font-weight:400;font-style:normal;letter-spacing:0px;" xml:space="preserve">'</text>
+        </g>
+        <g id="key-alpha-tick" data-role="key-alpha" data-label="O" data-bbox="384.917,860.512,399.893,875.488" fill="#efce6d">
+          <text x="384.13436" y="875.17910" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">O</text>
+        </g>
+      </g>
+      <g id="legend-tick-0" data-role="blue" data-label="MTRW" data-bbox="317.405,827.064,359.515,838.336" fill="#2f596a">
+        <text x="316.85046" y="837.79540" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">MTRW</text>
+      </g>
+      <g id="legend-tick-1" data-role="red" data-label="EQW" data-bbox="372.755,827.064,406.405,838.336" fill="#aa5656">
+        <text x="371.61606" y="837.79540" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">EQW</text>
+      </g>
+      <g id="key-symb" data-kind="ivory" data-center="469.09474,868" data-alpha-center="498.59474" data-main-center="458.69474" data-main-y="868.00000">
+        <path d="M437.095 844.500 H501.095 Q509.595 844.500 509.595 853.000 V882.000 C509.595 895.467 428.595 895.467 428.595 882.000 V853.000 Q428.595 844.500 437.095 844.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-symb" data-role="main" data-label="SYMB" data-bbox="433.474,860.771,483.915,875.229" fill="#f6f6f8">
+          <text x="432.82154" y="874.88320" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">SYMB</text>
+        </g>
+        <g id="key-alpha-symb" data-role="key-alpha" data-label="P" data-bbox="493.836,860.790,503.353,875.210" fill="#efce6d">
+          <text x="492.22934" y="875.21000" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">P</text>
+        </g>
+      </g>
+      <g id="legend-symb-0" data-role="blue" data-label="MTH" data-bbox="423.595,827.335,452.121,838.066" fill="#2f596a">
+        <text x="423.03994" y="838.06550" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">MTH</text>
+      </g>
+      <g id="legend-symb-1" data-role="red" data-label="CAT" data-bbox="486.244,827.218,512.595,838.182" fill="#aa5656">
+        <text x="485.68954" y="838.00710" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CAT</text>
+      </g>
+      <g id="key-del" data-kind="ivory" data-center="575.83158,868">
+        <path d="M543.832 844.500 H607.832 Q616.332 844.500 616.332 853.000 V882.000 C616.332 895.467 535.332 895.467 535.332 882.000 V853.000 Q535.332 844.500 543.832 844.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <path d="M556.832 868 L572.832 855 L572.832 862 L594.832 862 L594.832 874 L572.832 874 L572.832 881 Z" fill="#f7f7f8" data-role="main-symbol" />
+      </g>
+      <g id="legend-del-0" data-role="blue" data-label="DEL" data-bbox="530.332,827.590,554.404,837.810" fill="#2f596a">
+        <text x="529.19278" y="837.81000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">DEL</text>
+      </g>
+      <g id="legend-del-1" data-role="red" data-label="CLEAR" data-bbox="576.340,827.218,619.332,838.182" fill="#aa5656">
+        <text x="575.78498" y="838.00710" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CLEAR</text>
+      </g>
+      <g id="key-ypower" data-kind="ivory" data-center="148.88421,947" data-alpha-center="178.38421" data-main-center="138.48421" data-main-y="947.00000">
+        <path d="M116.384 923.500 H181.384 Q189.884 923.500 189.884 932.000 V961.000 C189.884 974.467 107.884 974.467 107.884 961.000 V932.000 Q107.884 923.500 116.384 923.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-ypower" data-role="main" data-label="YX" data-bbox="125.647,937.040,151.322,956.960" fill="#f6f6f8">
+          <text x="125.62231" y="956.96000" font-family="Jost*" font-weight="600" font-style="normal" font-size="24.2" letter-spacing="0" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:0px;font-feature-settings:'ss01' 1;" xml:space="preserve">Y</text>
+          <text x="141.32231" y="947.96000" font-family="Jost*" font-weight="600" font-style="normal" font-size="15.6" letter-spacing="0" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:0px;font-feature-settings:'ss01' 1;" xml:space="preserve">X</text>
+        </g>
+        <g id="key-alpha-ypower" data-role="key-alpha" data-label="Q" data-bbox="170.319,939.512,186.449,954.488" fill="#efce6d">
+          <text x="169.53651" y="954.17910" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">Q</text>
+        </g>
+      </g>
+      <g id="legend-ypower-0" data-role="blue" data-label="ex" data-bbox="102.884,905.406,117.158,917.994" fill="#2f596a">
+        <text x="102.49085" y="917.69004" font-family="Gentium" font-weight="600" font-style="italic" font-size="15.2" letter-spacing="0" style="font-family:'Gentium';font-weight:600;font-style:italic;letter-spacing:0px;" xml:space="preserve">e</text>
+        <text x="111.69085" y="910.89004" font-family="Gentium" font-weight="600" font-style="italic" font-size="12" letter-spacing="0" style="font-family:'Gentium';font-weight:600;font-style:italic;letter-spacing:0px;" xml:space="preserve">x</text>
+      </g>
+      <g id="legend-ypower-1" data-role="red" data-label="LN" data-bbox="176.847,906.079,192.884,917.321" fill="#aa5656">
+        <text x="175.70861" y="916.81000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">LN</text>
+      </g>
+      <g id="key-root" data-kind="ivory" data-center="256.16842,947" data-alpha-center="285.66842" data-main-center="245.76842" data-main-y="947.00000">
+        <path d="M223.668 923.500 H288.668 Q297.168 923.500 297.168 932.000 V961.000 C297.168 974.467 215.168 974.467 215.168 961.000 V932.000 Q215.168 923.500 223.668 923.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-root" data-role="main" data-label="√X" data-bbox="227.170,936.917,264.367,957.083" fill="#f6f6f8">
+          <path d="M3034 1422Q3028 1401 3015.0 1363.5Q3002 1326 2996 1307H1077L748 79Q736 50 698.0 26.5Q660 3 619.5 -11.5Q579 -26 562 -30L172 799H41L11 831Q16 851 30.0 885.0Q44 919 53 939L317 940L657 221L998 1452H3004Z" transform="translate(227.03453,954.78320) scale(0.012304687,-0.012304687)" data-font="GS" data-glyph="radical-vinculum-1750" />
+          <path d="M450 700 327 480 207 700H31L242 362L6 0H182L326 250L464 0H641L410 362L626 700Z" transform="translate(245.63453,957.08320) scale(0.024000000,-0.024000000)" data-font="JS" data-glyph="X" />
+        </g>
+        <g id="key-alpha-root" data-role="key-alpha" data-label="R" data-bbox="280.415,939.790,290.921,954.210" fill="#efce6d">
+          <text x="278.80862" y="954.21000" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">R</text>
+        </g>
+      </g>
+      <g id="legend-root-0" data-role="blue" data-label="x2" data-bbox="210.168,903.947,226.195,919.453" fill="#2f596a">
+        <text x="210.45787" y="919.14865" font-family="Gentium" font-weight="600" font-style="italic" font-size="15.2" letter-spacing="0" style="font-family:'Gentium';font-weight:600;font-style:italic;letter-spacing:0px;" xml:space="preserve">x</text>
+        <text x="219.65787" y="912.34865" font-family="Jost*" font-weight="500" font-style="normal" font-size="11.8" letter-spacing="0" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:0px;font-feature-settings:'ss01' 1;" xml:space="preserve">2</text>
+      </g>
+      <g id="legend-root-1" data-role="red" data-label="x√y" data-bbox="275.035,904.793,300.168,918.607" fill="#aa5656">
+        <path d="M933 883Q933 844 831.0 729.5Q729 615 533 410L470 496Q530 565 582.0 634.0Q634 703 666.0 753.0Q698 803 698 813Q698 830 685.5 839.0Q673 848 637 848Q618 848 591 845L587 906Q653 920 724.5 928.0Q796 936 832 936Q887 936 910.0 920.0Q933 904 933 883ZM912 92Q826 32 759.0 -4.5Q692 -41 646 -41Q602 -41 558.5 19.0Q515 79 473.5 173.0Q432 267 391.5 373.0Q351 479 312.5 573.0Q274 667 238.0 727.0Q202 787 169 787Q153 787 111.0 778.0Q69 769 41 761L22 820Q68 843 126.0 870.0Q184 897 233.0 916.5Q282 936 301 936Q338 936 377.5 877.0Q417 818 458.0 724.5Q499 631 539.5 526.0Q580 421 619.0 327.5Q658 234 695.0 175.0Q732 116 764 116Q787 116 820.0 123.0Q853 130 890 149ZM473 369Q432 309 361.0 214.5Q290 120 210 0Q186 -3 143.0 -10.0Q100 -17 57.0 -25.5Q14 -34 -11 -41L-39 -1Q27 57 109.0 136.5Q191 216 271.5 301.0Q352 386 411 459Z" transform="translate(275.22194,910.36992) scale(0.004785156,-0.004785156)" data-font="GSI" data-glyph="x" />
+        <path d="M2284 1422Q2278 1401 2265.0 1363.5Q2252 1326 2246 1307H1077L748 79Q736 50 698.0 26.5Q660 3 619.5 -11.5Q579 -26 562 -30L172 799H41L11 831Q16 851 30.0 885.0Q44 919 53 939L317 940L657 221L998 1452H2254Z" transform="translate(282.82194,915.56992) scale(0.007421875,-0.007421875)" data-font="GS" data-glyph="radical-vinculum-1000" />
+        <path d="M552 52 410 -121 377 -92Q362 -5 336.0 111.0Q310 227 280.0 345.5Q250 464 220.5 560.5Q191 657 169 705Q145 756 129.5 771.5Q114 787 97 787Q83 787 53.0 779.0Q23 771 -1 763L-18 820Q37 848 95.5 874.5Q154 901 201.0 918.5Q248 936 269 936Q296 936 316.0 907.0Q336 878 360 809Q389 725 425.0 598.5Q461 472 495.0 329.0Q529 186 552 52ZM938 860Q938 793 845.5 599.0Q753 405 583 82Q492 -91 402.0 -222.0Q312 -353 214.0 -426.5Q116 -500 -1 -500Q-48 -500 -92.0 -486.5Q-136 -473 -163.5 -455.0Q-191 -437 -191 -424Q-191 -406 -167.5 -367.0Q-144 -328 -114.5 -291.5Q-85 -255 -67 -246Q-19 -286 22.5 -302.5Q64 -319 101 -319Q183 -319 268.5 -215.5Q354 -112 452 74Q504 172 556.0 278.0Q608 384 651.0 480.5Q694 577 720.0 649.0Q746 721 746 751Q746 804 693 804Q659 804 607 781L584 838Q656 879 731.0 907.5Q806 936 851 936Q885 936 911.5 923.0Q938 910 938 860Z" transform="translate(295.22194,915.96992) scale(0.005273438,-0.005273438)" data-font="GSI" data-glyph="y" />
+      </g>
+      <g id="key-sin" data-kind="ivory" data-center="362.90526,947" data-alpha-center="392.40526" data-main-center="352.50526" data-main-y="947.00000">
+        <path d="M330.405 923.500 H395.405 Q403.905 923.500 403.905 932.000 V961.000 C403.905 974.467 321.905 974.467 321.905 961.000 V932.000 Q321.905 923.500 330.405 923.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-sin" data-role="main" data-label="SIN" data-bbox="334.364,938.068,370.647,955.932" fill="#f6f6f8">
+          <text x="333.57486" y="955.12000" font-family="Jost*" font-weight="600" font-style="normal" font-size="23.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">SIN</text>
+        </g>
+        <g id="key-alpha-sin" data-role="key-alpha" data-label="S" data-bbox="387.245,939.512,397.566,954.488" fill="#efce6d">
+          <text x="386.50336" y="954.17910" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">S</text>
+        </g>
+      </g>
+      <g id="legend-sin-0" data-role="blue" data-label="ASIN" data-bbox="316.905,906.050,349.262,917.350" fill="#2f596a">
+        <text x="316.86146" y="916.83920" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ASIN</text>
+      </g>
+      <g id="legend-sin-1" data-role="red" data-label="Σ" data-bbox="399.848,907.152,406.905,916.248" fill="#aa5656">
+        <text x="399.49120" y="916.24824" font-family="Gentium" font-weight="600" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Gentium';font-weight:600;font-style:normal;letter-spacing:-0.14px;" xml:space="preserve">Σ</text>
+      </g>
+      <g id="key-cos" data-kind="ivory" data-center="469.09474,947" data-alpha-center="498.59474" data-main-center="458.69474" data-main-y="947.00000">
+        <path d="M436.595 923.500 H501.595 Q510.095 923.500 510.095 932.000 V961.000 C510.095 974.467 428.095 974.467 428.095 961.000 V932.000 Q428.095 923.500 436.595 923.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-cos" data-role="main" data-label="COS" data-bbox="435.264,938.509,482.126,955.491" fill="#f6f6f8">
+          <text x="434.42834" y="955.07360" font-family="Jost*" font-weight="600" font-style="normal" font-size="23.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">COS</text>
+        </g>
+        <g id="key-alpha-cos" data-role="key-alpha" data-label="T" data-bbox="493.568,939.790,503.621,954.210" fill="#efce6d">
+          <text x="493.40354" y="954.21000" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">T</text>
+        </g>
+      </g>
+      <g id="legend-cos-0" data-role="blue" data-label="ACOS" data-bbox="423.095,906.196,461.905,917.204" fill="#2f596a">
+        <text x="423.05094" y="916.98520" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ACOS</text>
+      </g>
+      <g id="legend-cos-1" data-role="red" data-label="∂" data-bbox="506.650,906.435,513.095,916.965" fill="#aa5656">
+        <text x="506.15119" y="916.75083" font-family="Gentium" font-weight="600" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Gentium';font-weight:600;font-style:normal;letter-spacing:-0.14px;" xml:space="preserve">∂</text>
+      </g>
+      <g id="key-tan" data-kind="ivory" data-center="575.83158,947" data-alpha-center="605.33158" data-main-center="565.43158" data-main-y="947.00000">
+        <path d="M543.332 923.500 H608.332 Q616.832 923.500 616.832 932.000 V961.000 C616.832 974.467 534.832 974.467 534.832 961.000 V932.000 Q534.832 923.500 543.332 923.500 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-tan" data-role="main" data-label="TAN" data-bbox="544.112,937.987,586.752,956.013" fill="#f6f6f8">
+          <text x="543.97238" y="955.20120" font-family="Jost*" font-weight="600" font-style="normal" font-size="23.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">TAN</text>
+        </g>
+        <g id="key-alpha-tan" data-role="key-alpha" data-label="U" data-bbox="600.079,939.605,610.585,954.395" fill="#efce6d">
+          <text x="598.57478" y="954.02460" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">U</text>
+        </g>
+      </g>
+      <g id="legend-tan-0" data-role="blue" data-label="ATAN" data-bbox="529.832,906.050,564.671,917.350" fill="#2f596a">
+        <text x="529.78778" y="916.83920" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ATAN</text>
+      </g>
+      <g id="legend-tan-1" data-role="red" data-label="∫" data-bbox="610.065,904.500,619.832,918.900" fill="#aa5656">
+        <text x="612.64564" y="915.33574" font-family="Gentium" font-weight="600" font-style="italic" font-size="14.6" letter-spacing="-0.14" style="font-family:'Gentium';font-weight:600;font-style:italic;letter-spacing:-0.14px;" xml:space="preserve">∫</text>
+      </g>
+      <g id="key-eex" data-kind="ivory" data-center="148.88421,1028" data-alpha-center="178.38421" data-main-center="138.48421" data-main-y="1028.00000">
+        <path d="M116.384 1004.000 H181.384 Q189.884 1004.000 189.884 1012.500 V1042.500 C189.884 1055.967 107.884 1055.967 107.884 1042.500 V1012.500 Q107.884 1004.000 116.384 1004.000 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-eex" data-role="main" data-label="EEX" data-bbox="121.930,1021.280,155.039,1034.720" fill="#f6f6f8">
+          <text x="120.47061" y="1034.72000" font-family="Jost*" font-weight="600" font-style="normal" font-size="19.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">EEX</text>
+        </g>
+        <g id="key-alpha-eex" data-role="key-alpha" data-label="V" data-bbox="171.339,1020.388,185.429,1035.612" fill="#efce6d">
+          <text x="171.27721" y="1034.80830" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">V</text>
+        </g>
+      </g>
+      <g id="legend-eex-0" data-role="blue" data-label="10x" data-bbox="102.884,986.224,123.780,998.176" fill="#2f596a">
+        <text x="101.74421" y="998.00840" font-family="Jost*" font-weight="500" font-style="normal" font-size="15.2" letter-spacing="0" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:0px;font-feature-settings:'ss01' 1;" xml:space="preserve">10</text>
+        <text x="118.94421" y="991.00840" font-family="Jost*" font-weight="500" font-style="normal" font-size="10.4" letter-spacing="0" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:0px;font-feature-settings:'ss01' 1;" xml:space="preserve">x</text>
+      </g>
+      <g id="legend-eex-1" data-role="red" data-label="LOG" data-bbox="165.086,986.893,192.884,997.507" fill="#aa5656">
+        <text x="163.94750" y="997.28810" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">LOG</text>
+      </g>
+      <g id="key-plusminus" data-kind="ivory" data-center="256.16842,1028" data-alpha-center="285.66842" data-main-center="245.76842" data-main-y="1028.00000">
+        <path d="M223.668 1004.000 H288.668 Q297.168 1004.000 297.168 1012.500 V1042.500 C297.168 1055.967 215.168 1055.967 215.168 1042.500 V1012.500 Q215.168 1004.000 223.668 1004.000 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-plusminus" data-role="main" data-label="+/−" data-bbox="224.633,1017.375,266.903,1038.625" fill="#f6f6f8">
+          <text x="223.00842" y="1034.87500" font-family="Jost*" font-weight="600" font-style="normal" font-size="25" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">+/−</text>
+        </g>
+        <g id="key-alpha-plusminus" data-role="key-alpha" data-label="W" data-bbox="275.327,1020.048,296.010,1035.952" fill="#efce6d">
+          <text x="275.16242" y="1035.18940" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">W</text>
+        </g>
+      </g>
+      <g id="legend-plusminus-0" data-role="blue" data-label="≠" data-bbox="210.168,988.587,217.425,995.814" fill="#2f596a">
+        <text x="209.27782" y="996.09090" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">≠</text>
+      </g>
+      <g id="legend-plusminus-1" data-role="red" data-label="=" data-bbox="292.912,990.236,300.168,994.164" fill="#aa5656">
+        <text x="292.02162" y="995.88650" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">=</text>
+      </g>
+      <g id="key-x" data-kind="ivory" data-center="362.90526,1028" data-alpha-center="392.40526" data-main-center="352.50526" data-main-y="1028.00000">
+        <path d="M330.405 1004.000 H395.405 Q403.905 1004.000 403.905 1012.500 V1042.500 C403.905 1055.967 321.905 1055.967 321.905 1042.500 V1012.500 Q321.905 1004.000 330.405 1004.000 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-x" data-role="main" data-label="X" data-bbox="344.187,1018.830,360.824,1037.170" fill="#f6f6f8">
+          <text x="344.02956" y="1037.17000" font-family="Jost*" font-weight="600" font-style="normal" font-size="26.2" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">X</text>
+        </g>
+        <g id="key-alpha-x" data-role="key-alpha" data-label="X" data-bbox="386.308,1020.790,398.503,1035.210" fill="#efce6d">
+          <text x="386.14286" y="1035.21000" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">X</text>
+        </g>
+      </g>
+      <g id="legend-x-0" data-role="blue" data-label="≤" data-bbox="316.905,987.572,324.380,996.828" fill="#2f596a">
+        <text x="316.23366" y="996.85740" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">≤</text>
+      </g>
+      <g id="legend-x-1" data-role="red" data-label="&lt;" data-bbox="399.459,988.535,406.905,995.865" fill="#aa5656">
+        <text x="398.51026" y="995.99600" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">&lt;</text>
+      </g>
+      <g id="key-reciprocal" data-kind="ivory" data-center="469.09474,1028" data-alpha-center="498.59474" data-main-center="458.69474" data-main-y="1028.00000">
+        <path d="M436.595 1004.000 H501.595 Q510.095 1004.000 510.095 1012.500 V1042.500 C510.095 1055.967 428.095 1055.967 428.095 1042.500 V1012.500 Q428.095 1004.000 436.595 1004.000 Z" fill="url(#ivory)" stroke="#25242a" stroke-width="2.5" />
+        <g id="main-reciprocal" data-role="main" data-label="1/X" data-bbox="439.759,1017.984,477.630,1038.016" fill="#f6f6f8">
+          <text x="438.06699" y="1034.71600" font-family="Jost*" font-weight="600" font-style="normal" font-size="23.5" letter-spacing="0" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:0px;font-feature-settings:'ss01' 1;" xml:space="preserve">1</text>
+          <text x="450.46699" y="1034.71600" font-family="Jost*" font-weight="600" font-style="normal" font-size="22" letter-spacing="0" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:0px;font-feature-settings:'ss01' 1;" xml:space="preserve">/</text>
+          <text x="462.56699" y="1034.71600" font-family="Jost*" font-weight="600" font-style="normal" font-size="23.5" letter-spacing="0" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:0px;font-feature-settings:'ss01' 1;" xml:space="preserve">X</text>
+        </g>
+        <g id="key-alpha-reciprocal" data-role="key-alpha" data-label="Y" data-bbox="492.466,1020.790,504.723,1035.210" fill="#efce6d">
+          <text x="492.40444" y="1035.21000" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">Y</text>
+        </g>
+      </g>
+      <g id="legend-reciprocal-0" data-role="blue" data-label="≥" data-bbox="423.095,987.572,430.555,996.828" fill="#2f596a">
+        <text x="422.14574" y="996.85740" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">≥</text>
+      </g>
+      <g id="legend-reciprocal-1" data-role="red" data-label="&gt;" data-bbox="505.649,988.535,513.095,995.865" fill="#aa5656">
+        <text x="504.69974" y="995.99600" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">&gt;</text>
+      </g>
+      <g id="key-divide" data-kind="navy" data-center="575.83158,1028" data-alpha-center="605.33158" data-main-center="575.83158" data-main-y="1028.00000">
+        <path d="M543.332 1004.000 H608.332 Q616.832 1004.000 616.832 1012.500 V1042.500 C616.832 1055.967 534.832 1055.967 534.832 1042.500 V1012.500 Q534.832 1004.000 543.332 1004.000 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-divide" data-role="main" data-label="÷" data-bbox="566.295,1017.868,585.369,1038.132" fill="#f6f6f8">
+          <text x="565.07058" y="1038.40400" font-family="Jost*" font-weight="600" font-style="normal" font-size="34" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">÷</text>
+        </g>
+        <g id="key-alpha-divide" data-role="key-alpha" data-label="Z" data-bbox="599.728,1020.790,610.935,1035.210" fill="#efce6d">
+          <text x="599.46058" y="1035.21000" font-family="Jost*" font-weight="500" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">Z</text>
+        </g>
+      </g>
+      <g id="legend-divide-0" data-role="blue" data-label="ABS" data-bbox="529.832,986.696,556.182,997.704" fill="#2f596a">
+        <text x="529.78778" y="997.48520" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ABS</text>
+      </g>
+      <g id="legend-divide-1" data-role="red" data-label="ARG" data-bbox="590.486,986.696,619.832,997.704" fill="#aa5656">
+        <text x="590.44227" y="997.48520" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ARG</text>
+      </g>
+      <g id="key-alpha" data-kind="alpha" data-center="148.88421,1112" data-main-center="148.88421" data-main-y="1113.00000">
+        <path d="M116.384 1085.000 H181.384 Q189.884 1085.000 189.884 1093.500 V1129.500 C189.884 1142.967 107.884 1142.967 107.884 1129.500 V1093.500 Q107.884 1085.000 116.384 1085.000 Z" fill="url(#yellow)" stroke="#9f8100" stroke-width="2.5" />
+        <g id="main-alpha" data-role="main" data-label="ALPHA" data-bbox="115.267,1105.357,182.502,1120.643" fill="#27282b">
+          <text x="115.24631" y="1120.64260" font-family="Jost*" font-weight="600" font-style="normal" font-size="20.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ALPHA</text>
+        </g>
+      </g>
+      <g id="legend-alpha-0" data-role="blue" data-label="USER" data-bbox="102.884,1067.871,136.336,1078.529" fill="#2f596a">
+        <text x="101.81841" y="1078.26620" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">USER</text>
+      </g>
+      <g id="legend-alpha-1" data-role="red" data-label="ENTRY" data-bbox="150.082,1067.579,192.884,1078.821" fill="#aa5656">
+        <text x="148.94341" y="1078.31000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ENTRY</text>
+      </g>
+      <g id="key-seven" data-kind="navy" data-center="256.16842,1112" data-main-center="256.16842" data-main-y="1113.00000">
+        <path d="M223.668 1085.000 H288.668 Q297.168 1085.000 297.168 1093.500 V1129.500 C297.168 1142.967 215.168 1142.967 215.168 1129.500 V1093.500 Q215.168 1085.000 223.668 1085.000 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-seven" data-role="main" data-label="7" data-bbox="247.705,1102.150,264.631,1123.850" fill="#f6f6f8">
+          <text x="246.77542" y="1123.85000" font-family="Jost*" font-weight="600" font-style="normal" font-size="31" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">7</text>
+        </g>
+      </g>
+      <g id="legend-seven-0" data-role="blue" data-label="S.SLV" data-bbox="210.168,1068.281,243.616,1078.119" fill="#2f596a">
+        <text x="209.69682" y="1077.60815" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.1" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">S.SLV</text>
+      </g>
+      <g id="legend-seven-1" data-role="red" data-label="NUM.SLV" data-bbox="250.255,1068.130,305.168,1078.270" fill="#aa5656">
+        <text x="249.23302" y="1077.75880" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.1" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">NUM.SLV</text>
+      </g>
+      <g id="key-eight" data-kind="navy" data-center="362.90526,1112" data-main-center="362.90526" data-main-y="1113.00000">
+        <path d="M330.405 1085.000 H395.405 Q403.905 1085.000 403.905 1093.500 V1129.500 C403.905 1142.967 321.905 1142.967 321.905 1129.500 V1093.500 Q321.905 1085.000 330.405 1085.000 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-eight" data-role="main" data-label="8" data-bbox="355.202,1101.716,370.609,1124.284" fill="#f6f6f8">
+          <text x="353.55876" y="1123.85000" font-family="Jost*" font-weight="600" font-style="normal" font-size="31" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">8</text>
+        </g>
+      </g>
+      <g id="legend-eight-0" data-role="blue" data-label="EXP&amp;LN" data-bbox="316.905,1068.157,362.959,1078.244" fill="#2f596a">
+        <text x="315.88346" y="1077.78500" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.1" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">EXP&amp;LN</text>
+      </g>
+      <g id="legend-eight-1" data-role="red" data-label="TRIG" data-bbox="379.656,1068.438,406.905,1077.962" fill="#aa5656">
+        <text x="379.55137" y="1077.76535" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.1" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">TRIG</text>
+      </g>
+      <g id="key-nine" data-kind="navy" data-center="469.09474,1112" data-main-center="469.09474" data-main-y="1113.00000">
+        <path d="M436.595 1085.000 H501.595 Q510.095 1085.000 510.095 1093.500 V1129.500 C510.095 1142.967 428.095 1142.967 428.095 1129.500 V1093.500 Q428.095 1085.000 436.595 1085.000 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-nine" data-role="main" data-label="9" data-bbox="460.694,1101.964,477.496,1124.036" fill="#f6f6f8">
+          <text x="459.14374" y="1124.09800" font-family="Jost*" font-weight="600" font-style="normal" font-size="31" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">9</text>
+        </g>
+      </g>
+      <g id="legend-nine-0" data-role="blue" data-label="FINANCE" data-bbox="413.095,1068.130,466.842,1078.270" fill="#2f596a">
+        <text x="412.07294" y="1077.81120" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.1" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">FINANCE</text>
+      </g>
+      <g id="legend-nine-1" data-role="red" data-label="TIME" data-bbox="485.795,1068.386,513.095,1078.014" fill="#aa5656">
+        <text x="485.69034" y="1078.01425" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.1" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">TIME</text>
+      </g>
+      <g id="key-multiply" data-kind="navy" data-center="575.83158,1112" data-main-center="575.83158" data-main-y="1113.00000">
+        <path d="M543.332 1085.000 H608.332 Q616.832 1085.000 616.832 1093.500 V1129.500 C616.832 1142.967 534.832 1142.967 534.832 1129.500 V1093.500 Q534.832 1085.000 543.332 1085.000 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-multiply" data-role="main" data-label="×" data-bbox="568.698,1105.837,582.966,1120.163" fill="#f6f6f8">
+          <text x="567.18958" y="1120.39500" font-family="Jost*" font-weight="600" font-style="normal" font-size="29" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">×</text>
+        </g>
+      </g>
+      <g id="legend-multiply-0" data-role="blue" data-label="[  ]" data-bbox="529.832,1065.900,544.844,1080.500" fill="#2f596a">
+        <text x="528.42998" y="1077.28800" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">[  ]</text>
+      </g>
+      <g id="legend-multiply-1" data-role="red" data-label="&quot; &quot;" data-bbox="603.351,1070.952,619.832,1075.448" fill="#aa5656">
+        <text x="602.29958" y="1081.17160" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">" "</text>
+      </g>
+      <g id="key-leftblue" data-kind="teal" data-center="148.88421,1195">
+        <path d="M116.384 1168.500 H181.384 Q189.884 1168.500 189.884 1177.000 V1212.000 C189.884 1225.467 107.884 1225.467 107.884 1212.000 V1177.000 Q107.884 1168.500 116.384 1168.500 Z" fill="url(#teal)" stroke="#0a5966" stroke-width="2.5" />
+        <path d="M16 10 V-3 H0" fill="none" stroke-width="4.6" stroke-linecap="square" stroke-linejoin="miter" stroke="#f2fbff" transform="translate(148.88421 1195)" data-role="main-symbol" />
+        <path d="M1 -10 L-16 -3 L1 4 Z" fill="#f2fbff" transform="translate(148.88421 1195)" data-role="main-symbol" />
+      </g>
+      <g id="key-four" data-kind="navy" data-center="256.16842,1195" data-main-center="256.16842" data-main-y="1196.00000">
+        <path d="M223.668 1168.500 H288.668 Q297.168 1168.500 297.168 1177.000 V1212.000 C297.168 1225.467 215.168 1225.467 215.168 1212.000 V1177.000 Q215.168 1168.500 223.668 1168.500 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-four" data-role="main" data-label="4" data-bbox="246.729,1185.150,265.608,1206.850" fill="#f6f6f8">
+          <text x="246.23292" y="1206.85000" font-family="Jost*" font-weight="600" font-style="normal" font-size="31" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">4</text>
+        </g>
+      </g>
+      <g id="legend-four-0" data-role="blue" data-label="CALC" data-bbox="210.168,1151.218,245.270,1162.182" fill="#2f596a">
+        <text x="209.61362" y="1162.00710" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CALC</text>
+      </g>
+      <g id="legend-four-1" data-role="red" data-label="ALG" data-bbox="272.473,1151.196,300.168,1162.204" fill="#aa5656">
+        <text x="272.42891" y="1161.98520" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ALG</text>
+      </g>
+      <g id="key-five" data-kind="navy" data-center="362.90526,1195" data-main-center="362.90526" data-main-y="1196.00000">
+        <path d="M330.405 1168.500 H395.405 Q403.905 1168.500 403.905 1177.000 V1212.000 C403.905 1225.467 321.905 1225.467 321.905 1212.000 V1177.000 Q321.905 1168.500 330.405 1168.500 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-five" data-role="main" data-label="5" data-bbox="354.504,1184.964,371.306,1207.036" fill="#f6f6f8">
+          <text x="353.32626" y="1206.66400" font-family="Jost*" font-weight="600" font-style="normal" font-size="31" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">5</text>
+        </g>
+      </g>
+      <g id="legend-five-0" data-role="blue" data-label="MATRICES" data-bbox="306.905,1151.761,366.120,1161.639" fill="#2f596a">
+        <text x="306.40746" y="1161.44220" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.1" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">MATRICES</text>
+      </g>
+      <g id="legend-five-1" data-role="red" data-label="STAT" data-bbox="379.409,1151.761,406.905,1161.639" fill="#aa5656">
+        <text x="378.93756" y="1161.44220" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.1" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">STAT</text>
+      </g>
+      <g id="key-six" data-kind="navy" data-center="469.09474,1195" data-main-center="469.09474" data-main-y="1196.00000">
+        <path d="M436.595 1168.500 H501.595 Q510.095 1168.500 510.095 1177.000 V1212.000 C510.095 1225.467 428.095 1225.467 428.095 1212.000 V1177.000 Q428.095 1168.500 436.595 1168.500 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-six" data-role="main" data-label="6" data-bbox="460.694,1184.964,477.496,1207.036" fill="#f6f6f8">
+          <text x="459.14374" y="1206.60200" font-family="Jost*" font-weight="600" font-style="normal" font-size="31" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">6</text>
+        </g>
+      </g>
+      <g id="legend-six-0" data-role="blue" data-label="CONVERT" data-bbox="413.095,1151.354,475.633,1162.046" fill="#2f596a">
+        <text x="412.56981" y="1161.50725" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.813943449169004" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CONVERT</text>
+      </g>
+      <g id="legend-six-1" data-role="red" data-label="UNITS" data-bbox="486.633,1151.382,523.095,1162.018" fill="#aa5656">
+        <text x="485.62495" y="1161.53488" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.813943449169004" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">UNITS</text>
+      </g>
+      <g id="key-minus" data-kind="navy" data-center="575.83158,1195" data-main-center="575.83158" data-main-y="1196.00000">
+        <path d="M543.332 1168.500 H608.332 Q616.832 1168.500 616.832 1177.000 V1212.000 C616.832 1225.467 534.832 1225.467 534.832 1212.000 V1177.000 Q534.832 1168.500 543.332 1168.500 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-minus" data-role="main" data-label="−" data-bbox="568.797,1194.290,582.867,1197.710" fill="#f6f6f8">
+          <text x="566.93658" y="1203.11000" font-family="Jost*" font-weight="600" font-style="normal" font-size="30" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">−</text>
+        </g>
+      </g>
+      <g id="legend-minus-0" data-role="blue" data-label="(  )" data-bbox="529.832,1149.546,545.209,1163.854" fill="#2f596a">
+        <text x="528.64898" y="1160.93400" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">(  )</text>
+      </g>
+      <g id="legend-minus-1" data-role="red" data-label="−" data-bbox="613.101,1155.992,619.832,1157.408" fill="#aa5656">
+        <text x="612.15198" y="1160.16750" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">−</text>
+      </g>
+      <g id="key-rightred" data-kind="red" data-center="148.88421,1281">
+        <path d="M116.384 1254.000 H181.384 Q189.884 1254.000 189.884 1262.500 V1298.500 C189.884 1311.967 107.884 1311.967 107.884 1298.500 V1262.500 Q107.884 1254.000 116.384 1254.000 Z" fill="url(#orange)" stroke="#852535" stroke-width="2.5" />
+        <path d="M16 10 V-3 H0" fill="none" stroke-width="4.6" stroke-linecap="square" stroke-linejoin="miter" stroke="#fff9fb" transform="translate(148.88421 1281) scale(-1 1)" data-role="main-symbol" />
+        <path d="M1 -10 L-16 -3 L1 4 Z" fill="#fff9fb" transform="translate(148.88421 1281) scale(-1 1)" data-role="main-symbol" />
+      </g>
+      <g id="key-one" data-kind="navy" data-center="256.16842,1281" data-main-center="256.16842" data-main-y="1282.00000">
+        <path d="M223.668 1254.000 H288.668 Q297.168 1254.000 297.168 1262.500 V1298.500 C297.168 1311.967 215.168 1311.967 215.168 1298.500 V1262.500 Q215.168 1254.000 223.668 1254.000 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-one" data-role="main" data-label="1" data-bbox="251.410,1270.964,260.927,1293.036" fill="#f6f6f8">
+          <text x="249.17792" y="1293.03600" font-family="Jost*" font-weight="600" font-style="normal" font-size="31" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">1</text>
+        </g>
+      </g>
+      <g id="legend-one-0" data-role="blue" data-label="ARITH" data-bbox="210.168,1236.805,249.393,1247.595" fill="#2f596a">
+        <text x="210.12462" y="1247.59470" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ARITH</text>
+      </g>
+      <g id="legend-one-1" data-role="red" data-label="CMPLX" data-bbox="254.680,1236.747,300.168,1247.653" fill="#aa5656">
+        <text x="254.12522" y="1247.47790" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CMPLX</text>
+      </g>
+      <g id="key-two" data-kind="navy" data-center="362.90526,1281" data-main-center="362.90526" data-main-y="1282.00000">
+        <path d="M330.405 1254.000 H395.405 Q403.905 1254.000 403.905 1262.500 V1298.500 C403.905 1311.967 321.905 1311.967 321.905 1298.500 V1262.500 Q321.905 1254.000 330.405 1254.000 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-two" data-role="main" data-label="2" data-bbox="354.163,1270.948,371.647,1293.052" fill="#f6f6f8">
+          <text x="353.54326" y="1293.05150" font-family="Jost*" font-weight="600" font-style="normal" font-size="31" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">2</text>
+        </g>
+      </g>
+      <g id="legend-two-0" data-role="blue" data-label="DEF" data-bbox="316.905,1237.090,340.832,1247.310" fill="#2f596a">
+        <text x="315.76646" y="1247.31000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">DEF</text>
+      </g>
+      <g id="legend-two-1" data-role="red" data-label="LIB" data-bbox="389.213,1237.090,406.905,1247.310" fill="#aa5656">
+        <text x="388.07386" y="1247.31000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">LIB</text>
+      </g>
+      <g id="key-three" data-kind="navy" data-center="469.09474,1281" data-main-center="469.09474" data-main-y="1282.00000">
+        <path d="M436.595 1254.000 H501.595 Q510.095 1254.000 510.095 1262.500 V1298.500 C510.095 1311.967 428.095 1311.967 428.095 1298.500 V1262.500 Q428.095 1254.000 436.595 1254.000 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-three" data-role="main" data-label="3" data-bbox="461.159,1270.747,477.031,1293.253" fill="#f6f6f8">
+          <text x="459.54674" y="1292.81900" font-family="Jost*" font-weight="600" font-style="normal" font-size="31" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">3</text>
+        </g>
+      </g>
+      <g id="legend-three-0" data-role="blue" data-label="#" data-bbox="423.095,1237.090,431.271,1247.310" fill="#2f596a">
+        <text x="422.58374" y="1247.31000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">#</text>
+      </g>
+      <g id="legend-three-1" data-role="red" data-label="BASE" data-bbox="480.241,1236.696,513.095,1247.704" fill="#aa5656">
+        <text x="479.10254" y="1247.48520" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">BASE</text>
+      </g>
+      <g id="key-plus" data-kind="navy" data-center="575.83158,1281" data-main-center="575.83158" data-main-y="1282.00000">
+        <path d="M543.332 1254.000 H608.332 Q616.832 1254.000 616.832 1262.500 V1298.500 C616.832 1311.967 534.832 1311.967 534.832 1298.500 V1262.500 Q534.832 1254.000 543.332 1254.000 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-plus" data-role="main" data-label="+" data-bbox="567.400,1273.584,584.264,1290.416" fill="#f6f6f8">
+          <text x="565.31958" y="1290.48000" font-family="Jost*" font-weight="600" font-style="normal" font-size="32" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">+</text>
+        </g>
+      </g>
+      <g id="legend-plus-0" data-role="blue" data-label="{ }" data-bbox="529.832,1235.634,541.719,1248.766" fill="#2f596a">
+        <text x="529.22858" y="1246.08600" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.4" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">{ }</text>
+      </g>
+      <g id="legend-plus-1" data-role="red" data-label="&lt;&lt;  &gt;&gt;" data-bbox="579.930,1238.837,619.832,1245.563" fill="#aa5656">
+        <text x="579.05858" y="1245.68400" font-family="Jost*" font-weight="500" font-style="normal" font-size="13.4" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">&lt;&lt;  &gt;&gt;</text>
+      </g>
+      <g id="key-on" data-kind="navy" data-center="148.88421,1367" data-main-center="148.88421" data-main-y="1368.00000">
+        <path d="M116.384 1339.500 H181.384 Q189.884 1339.500 189.884 1348.000 V1385.000 C189.884 1398.467 107.884 1398.467 107.884 1385.000 V1348.000 Q107.884 1339.500 116.384 1339.500 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-on" data-role="main" data-label="ON" data-bbox="133.341,1359.915,164.428,1376.085" fill="#f6f6f8">
+          <text x="132.58471" y="1375.35000" font-family="Jost*" font-weight="600" font-style="normal" font-size="21" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ON</text>
+        </g>
+      </g>
+      <g id="legend-on-0" data-role="blue" data-label="CONT" data-bbox="102.884,1322.079,142.366,1333.321" fill="#2f596a">
+        <text x="102.32941" y="1332.81000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CONT</text>
+      </g>
+      <g id="legend-on-1" data-role="red" data-label="OFF" data-bbox="167.629,1322.393,192.884,1333.007" fill="#aa5656">
+        <text x="167.07401" y="1332.78810" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">OFF</text>
+      </g>
+      <g id="below-on" data-role="below-label" data-label="CANCEL" data-bbox="117.444,1399.955,180.324,1413.045" fill="#141519">
+        <text x="116.76421" y="1412.45000" font-family="Jost*" font-weight="400" font-style="normal" font-size="17" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:400;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">CANCEL</text>
+      </g>
+      <g id="key-zero" data-kind="navy" data-center="256.16842,1367" data-main-center="256.16842" data-main-y="1368.00000">
+        <path d="M223.668 1339.500 H288.668 Q297.168 1339.500 297.168 1348.000 V1385.000 C297.168 1398.467 215.168 1398.467 215.168 1385.000 V1348.000 Q215.168 1339.500 223.668 1339.500 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-zero" data-role="main" data-label="0" data-bbox="247.426,1356.778,264.910,1379.222" fill="#f6f6f8">
+          <text x="246.18642" y="1378.85000" font-family="Jost*" font-weight="600" font-style="normal" font-size="31" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">0</text>
+        </g>
+      </g>
+      <g id="legend-zero-0" data-role="blue" data-label="∞" data-bbox="210.168,1324.050,225.847,1331.350" fill="#2f596a">
+        <text x="209.27975" y="1335.03154" font-family="Gentium" font-weight="600" font-style="normal" font-size="26" letter-spacing="-0.14" style="font-family:'Gentium';font-weight:600;font-style:normal;letter-spacing:-0.14px;" xml:space="preserve">∞</text>
+      </g>
+      <path d="M278 1328.4 H294 V1325.2 L302.5 1329 L294 1332.8 V1329.6 H278 Z" fill="#aa5656" stroke="none" data-role="red" />
+      <g id="key-dot" data-kind="navy" data-center="362.90526,1367">
+        <path d="M330.405 1339.500 H395.405 Q403.905 1339.500 403.905 1348.000 V1385.000 C403.905 1398.467 321.905 1398.467 321.905 1385.000 V1348.000 Q321.905 1339.500 330.405 1339.500 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <circle cx="362.90526" cy="1367" r="4" fill="#f6f6f8" />
+      </g>
+      <path d="M315.9 1323.4 H318.0 V1325.5 H315.9 Z M321.0 1323.4 H323.1 V1325.5 H321.0 Z M315.9 1329.8 H318.0 V1331.9 H315.9 Z M321.0 1329.8 H323.1 V1331.9 H321.0 Z" fill="#2f596a" stroke="none" data-role="blue" />
+      <path d="M379 1329 L388.5 1325.2 V1328.4 H403.2 V1321 H404.4 V1329.6 H388.5 V1332.8 Z" fill="#aa5656" stroke="none" data-role="red" />
+      <g id="key-spc" data-kind="navy" data-center="469.09474,1367" data-main-center="469.09474" data-main-y="1368.00000">
+        <path d="M436.595 1339.500 H501.595 Q510.095 1339.500 510.095 1348.000 V1385.000 C510.095 1398.467 428.095 1398.467 428.095 1385.000 V1348.000 Q428.095 1339.500 436.595 1339.500 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-spc" data-role="main" data-label="SPC" data-bbox="450.366,1360.314,487.823,1375.686" fill="#f6f6f8">
+          <text x="449.65224" y="1375.30800" font-family="Jost*" font-weight="600" font-style="normal" font-size="21" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">SPC</text>
+        </g>
+      </g>
+      <g id="legend-spc-0" data-role="blue" data-label="π" data-bbox="423.095,1322.880,435.115,1332.520" fill="#2f596a">
+        <text x="422.55474" y="1332.22000" font-family="Asana Math" font-weight="400" font-style="normal" font-size="20" letter-spacing="-0.14" style="font-family:'Asana Math';font-weight:400;font-style:normal;letter-spacing:-0.14px;" xml:space="preserve">π</text>
+      </g>
+      <g id="legend-spc-1" data-role="red" data-label="," data-bbox="509.913,1325.045,513.095,1330.355" fill="#aa5656">
+        <text x="509.13966" y="1327.23455" font-family="Gentium" font-weight="600" font-style="normal" font-size="18" letter-spacing="-0.14" style="font-family:'Gentium';font-weight:600;font-style:normal;letter-spacing:-0.14px;" xml:space="preserve">,</text>
+      </g>
+      <g id="key-enter" data-kind="navy" data-center="575.83158,1367" data-main-center="575.83158" data-main-y="1368.00000">
+        <path d="M543.332 1339.500 H608.332 Q616.832 1339.500 616.832 1348.000 V1385.000 C616.832 1398.467 534.832 1398.467 534.832 1385.000 V1348.000 Q534.832 1339.500 543.332 1339.500 Z" fill="url(#navy)" stroke="#16171c" stroke-width="2.5" />
+        <g id="main-enter" data-role="main" data-label="ENTER" data-bbox="547.298,1360.685,604.365,1375.315" fill="#f6f6f8">
+          <text x="545.85408" y="1374.65000" font-family="Jost*" font-weight="600" font-style="normal" font-size="19" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:600;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ENTER</text>
+        </g>
+      </g>
+      <g id="legend-enter-0" data-role="blue" data-label="ANS" data-bbox="529.832,1322.050,558.839,1333.350" fill="#2f596a">
+        <text x="529.78778" y="1332.83920" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.6" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">ANS</text>
+      </g>
+      <g id="legend-enter-1-vector" data-role="red">
+        <path d="M566 1328.4 H576 V1325.8 L583 1329 L576 1332.2 V1329.6 H566 Z" fill="#aa5656" data-role="red" />
+      </g>
+      <g id="legend-enter-1" data-role="red" data-label="NUM" data-bbox="588.070,1322.002,619.832,1333.398" fill="#aa5656">
+        <text x="586.91518" y="1332.88000" font-family="Jost*" font-weight="500" font-style="normal" font-size="14.8" letter-spacing="-0.14" style="font-family:'Jost*';font-weight:500;font-style:normal;letter-spacing:-0.14px;font-feature-settings:'ss01' 1;" xml:space="preserve">NUM</text>
+      </g>
+    </g>
+  </g>
+</svg>
