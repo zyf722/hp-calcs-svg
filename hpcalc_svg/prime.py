@@ -444,39 +444,58 @@ class PrimeRenderer(Renderer):
                 self._label(g, "root-degree", "n", x+10, cy+13,
                             blue, 14, "GSI", "left", "shift-exponent")
         elif kid in ("ln", "log", "divide"):
-            # Three composite superscript typesets with distinct baselines.
-            # The glyphs are still emitted by the production font outliner.
+            # Fit complete mathematical exponents inside the sloped front band.
             if kid == "ln":
                 base, exp, font = "e", "x", "GSI"
-                offset, size = 20, 15
+                offset, size = 20, 13.5
             elif kid == "log":
-                base, exp, font = "10", "x", "JM"
-                offset, size = 36, 15
+                base, exp, font = "10", "x", "GS"
+                offset, size = 36, 13.5
             else:
                 base, exp, font = "x", "−1", "GSI"
-                offset, size = 22, 14
+                offset, size = 22, 12.5
             self._label(g, "secondary-" + kid, base,
                         x+10, cy+26, blue, 23, font, "left", "shift-legend")
             self._label(g, "raised-exponent-" + kid, exp,
-                        x+offset, cy+14, blue, size,
-                        "NM" if kid == "divide" else "GSI",
+                        x+offset, cy+19.5, blue, size,
+                        "GS" if kid == "divide" else "GSI",
                         "left", "shift-exponent")
         elif kid == "eex":
-            self.path(g, f"M{x+57} {cy+20} l10 6 -10 6 Z", fill=blue)
+            # Attach dark STO arrow to actual rendered terminal glyph ink.
+            text_right = self.bounds["secondary-eex"][2]
+            self.path(g, f"M{text_right+.35:.3f} {cy+20} l8 6 -8 6 Z",
+                      fill="#25262b", data_part="sto-triangle")
+        elif kid == "sign":
+            # Gentium italic x and two explicit vertical modulus delimiters.
+            self.bounds["secondary-sign"] = (x+11, cy+16, x+53, cy+34)
+            absolute = self.group(g, "secondary-sign",
+                                  data_bbox=f"{x+11:.3f},{cy+16:.3f},"
+                                            f"{x+53:.3f},{cy+34:.3f}",
+                                  data_role="shift-legend")
+            self.path(absolute, f"M{x+13} {cy+17} V{cy+33} "
+                                f"M{x+47} {cy+17} V{cy+33}",
+                      fill="none", stroke=blue, stroke_width=2.1)
+            self._label(absolute, "abs-math-x", "x", x+30, cy+25,
+                        blue, 23, "GSI", role="shift-legend")
         elif kid == "fraction":
-            # Three separately spaced marks: degree, prime and double-prime.
-            # The old string "′ ″" overlapped the circle to read as "9".
+            # Minute/second slashes are distinct oblique strokes, not Noto
+            # glyphs that look like upright apostrophes.
             self.bounds["secondary-fraction"] = (x+7, cy+16, x+53, cy+33)
-            degree = self.group(g, "secondary-fraction",
-                                data_bbox=f"{x+7:.3f},{cy+16:.3f},"
-                                          f"{x+53:.3f},{cy+33:.3f}",
-                                data_role="shift-legend")
-            self.circle(degree, x+11, cy+24, 3.1, fill="none",
+            marks = self.group(g, "secondary-fraction",
+                               data_bbox=f"{x+7:.3f},{cy+16:.3f},"
+                                         f"{x+53:.3f},{cy+33:.3f}",
+                               data_role="shift-legend")
+            self.circle(marks, x+11, cy+24, 3.1, fill="none",
                         stroke=blue, stroke_width=1.55)
-            self._label(degree, "fraction-prime", "′", x+24, cy+26,
-                        blue, 19, "NM", "left", "shift-legend")
-            self._label(degree, "fraction-double-prime", "″", x+39, cy+26,
-                        blue, 19, "NM", "left", "shift-legend")
+            minute = self.group(marks, "fraction-prime", data_role="shift-legend")
+            self.path(minute, f"M{x+25} {cy+19} l-3.1 8.4",
+                      fill="none", stroke=blue, stroke_width=2.35,
+                      stroke_linecap="round")
+            second = self.group(marks, "fraction-double-prime", data_role="shift-legend")
+            self.path(second, f"M{x+39} {cy+19} l-3.1 8.4 "
+                              f"M{x+45} {cy+19} l-3.1 8.4",
+                      fill="none", stroke=blue, stroke_width=2.35,
+                      stroke_linecap="round")
         if key.get("alpha"):
             self._label(g, "alpha-" + key["id"], key["alpha"], x+w-10, cy+26,
                         self.d["palette"]["legend_orange"], 23,
