@@ -456,7 +456,7 @@ class PrimeRenderer(Renderer):
                 offset, size = 20, 13.5
             elif kid == "log":
                 base, exp, font = "10", "x", "GS"
-                offset, size = 36, 13.5
+                offset, size = 34.5, 13.5
             else:
                 base, exp, font = "x", "−1", "GSI"
                 offset, size = 22, 12.5
