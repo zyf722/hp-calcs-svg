@@ -319,7 +319,8 @@
             "label": "Vars",
             "secondary": "Chars",
             "alpha": "A",
-            "main_size": 29
+            "main_size": 29,
+            "main_tracking": -0.8
           },
           {
             "id": "mem",
@@ -339,7 +340,7 @@
             "label": "√",
             "secondary": "Units",
             "alpha": "C",
-            "main_font": "NM",
+            "main_font": "GS",
             "main_size": 22
           },
           {
@@ -363,7 +364,7 @@
             "alpha": "E",
             "main_font": "GSI",
             "main_size": 32,
-            "secondary_font": "NM"
+            "secondary_font": "GS"
           },
           {
             "id": "del",
@@ -392,7 +393,7 @@
             "alpha": "F",
             "main_font": "GSI",
             "main_size": 44,
-            "secondary_font": "NM"
+            "secondary_font": "GS"
           },
           {
             "id": "sin",
@@ -433,7 +434,7 @@
             "secondary": "e",
             "alpha": "J",
             "main_size": 31,
-            "secondary_font": "NM"
+            "secondary_font": "GSI"
           },
           {
             "id": "log",
@@ -444,7 +445,7 @@
             "secondary": "10",
             "alpha": "K",
             "main_size": 31,
-            "secondary_font": "NM"
+            "secondary_font": "GS"
           }
         ]
       },
@@ -464,7 +465,7 @@
             "alpha": "L",
             "main_font": "GSI",
             "main_size": 49,
-            "secondary_font": "NM"
+            "secondary_font": "GS"
           },
           {
             "id": "sign",
@@ -474,9 +475,9 @@
             "label": "+/−",
             "secondary": "|x|",
             "alpha": "M",
-            "main_font": "NM",
+            "main_font": "GS",
             "main_size": 39,
-            "secondary_font": "NM"
+            "secondary_font": "GSI"
           },
           {
             "id": "parentheses",
@@ -485,9 +486,9 @@
             "kind": "light",
             "label": "( )",
             "alpha": "N",
-            "main_font": "NM",
+            "main_font": "GS",
             "main_size": 37,
-            "secondary_font": "NM"
+            "secondary_font": "GS"
           },
           {
             "id": "comma",
@@ -497,7 +498,8 @@
             "label": ",",
             "secondary": "Eval",
             "alpha": "O",
-            "main_size": 46
+            "main_size": 49,
+            "main_font": "GSI"
           },
           {
             "id": "enter",
@@ -507,7 +509,7 @@
             "label": "Enter",
             "secondary": "≈",
             "main_size": 38,
-            "secondary_font": "NM",
+            "secondary_font": "GS",
             "secondary_center": true
           }
         ]
@@ -547,7 +549,7 @@
             "secondary": "{ }",
             "alpha": "R",
             "main_size": 54,
-            "secondary_font": "NM"
+            "secondary_font": "GS"
           },
           {
             "id": "9",
@@ -558,7 +560,7 @@
             "secondary": "!,∞,→",
             "alpha": "S",
             "main_size": 54,
-            "secondary_font": "NM"
+            "secondary_font": "GS"
           },
           {
             "id": "divide",
@@ -568,9 +570,9 @@
             "label": "÷",
             "secondary": "x",
             "alpha": "T",
-            "main_font": "NM",
+            "main_font": "GS",
             "main_size": 47,
-            "secondary_font": "NM"
+            "secondary_font": "GSI"
           }
         ]
       },
@@ -610,7 +612,7 @@
             "secondary": "[ ]",
             "alpha": "V",
             "main_size": 54,
-            "secondary_font": "NM"
+            "secondary_font": "GS"
           },
           {
             "id": "6",
@@ -621,7 +623,7 @@
             "secondary": "≤,≥,≠",
             "alpha": "W",
             "main_size": 54,
-            "secondary_font": "NM"
+            "secondary_font": "GS"
           },
           {
             "id": "multiply",
@@ -631,9 +633,9 @@
             "label": "×",
             "secondary": "∠",
             "alpha": "X",
-            "main_font": "NM",
+            "main_font": "GS",
             "main_size": 45,
-            "secondary_font": "NM"
+            "secondary_font": "GS"
           }
         ]
       },
@@ -671,7 +673,7 @@
             "secondary": "i",
             "alpha": "Z",
             "main_size": 54,
-            "secondary_font": "NM"
+            "secondary_font": "GSI"
           },
           {
             "id": "3",
@@ -682,7 +684,7 @@
             "secondary": "π",
             "alpha": "#",
             "main_size": 54,
-            "secondary_font": "NM"
+            "secondary_font": "GSI"
           },
           {
             "id": "subtract",
@@ -692,7 +694,7 @@
             "label": "−",
             "secondary": "Base",
             "alpha": ":",
-            "main_font": "NM",
+            "main_font": "GS",
             "main_size": 53
           }
         ]
@@ -732,7 +734,8 @@
             "secondary": "=",
             "main_font": "NM",
             "main_size": 45,
-            "secondary_center": true
+            "secondary_center": true,
+            "secondary_font": "GS"
           },
           {
             "id": "negate",
@@ -741,9 +744,9 @@
             "kind": "light",
             "label": "",
             "secondary": "−",
-            "main_font": "NM",
+            "main_font": "GS",
             "main_size": 49,
-            "secondary_font": "NM",
+            "secondary_font": "GS",
             "secondary_center": true
           },
           {
@@ -754,7 +757,7 @@
             "label": "+",
             "secondary": "Ans",
             "alpha": ";",
-            "main_font": "NM",
+            "main_font": "GS",
             "main_size": 52
           }
         ]
