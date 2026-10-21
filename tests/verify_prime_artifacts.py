@@ -106,6 +106,77 @@ def check(path: Path, outlined: bool) -> None:
     assert abs((left + right) / 2 - 851) <= 1.5, "DEL blue legend is not centered"
     assert 1155 <= top < bottom <= 1182, "DEL legend left its sloping front"
 
+    # Production-font visual regression: check the actually rendered glyph
+    # bounds, not merely JSON strings or placeholder font metrics.
+    for identifier in ("main-vars", "secondary-enter", "main-comma",
+                       "abs-math-x", "comma-cross-arrows",
+                       "fraction-prime", "fraction-double-prime"):
+        assert identifier in nodes, f"Missing Prime engraving: {identifier}"
+
+    for identifier in ("ln", "log", "divide"):
+        x, y, width, height = (
+            float(value) for value in nodes["key-" + identifier]
+            .get("data-hitbox", "").split(",")
+        )
+        top = y + height * 0.65
+        bottom = y + height * 0.94
+        for glyph in ("secondary-" + identifier,
+                      "raised-exponent-" + identifier):
+            bx0, by0, bx1, by1 = bounds(nodes[glyph])
+            assert by0 >= top - 2.0, (
+                f"{glyph} starts above the grey modifier facet: {by0}/{top}"
+            )
+            assert by1 <= bottom + 2.0, (
+                f"{glyph} extends below the grey modifier facet: {by1}/{bottom}"
+            )
+            assert x + 7 <= bx0 and bx1 <= x + width - 7, (
+                f"{glyph} leaves the modifier's horizontal bounds"
+            )
+
+    # Font-specific checks prevent regressions to Jost or regular Noto Math
+    # for Latin mathematical variables, mathematical commas, i and pi.
+    if outlined:
+        for identifier, expected in (
+            ("main-comma", "GSI"),
+            ("abs-math-x", "GSI"),
+            ("secondary-2", "GSI"),
+            ("secondary-3", "GSI"),
+            ("root-degree", "GSI"),
+            ("square-exponent", "GS"),
+        ):
+            fonts = {
+                path.get("data-font")
+                for path in nodes[identifier].iter(tag("path"))
+                if path.get("data-font")
+            }
+            assert expected in fonts, f"{identifier} uses {fonts}, not {expected}"
+    else:
+        vars_text = list(nodes["main-vars"].iter(tag("text")))
+        assert len(vars_text) == 1
+        assert abs(float(vars_text[0].get("letter-spacing", "0")) + .8) <= .01
+        for identifier in ("secondary-symb", "secondary-help", "secondary-menu"):
+            text_nodes = list(nodes[identifier].iter(tag("text")))
+            assert len(text_nodes) == 1
+            assert float(text_nodes[0].get("font-size", "0")) >= 20, identifier
+        enter_text = list(nodes["secondary-enter"].iter(tag("text")))
+        assert len(enter_text) == 1
+        assert float(enter_text[0].get("font-size", "0")) >= 31
+
+    # Ensure the toolbox handle remains within the top black inlay.
+    mem = nodes["icon-mem"]
+    assert "scale(1.1250)" in mem.get("transform", "")
+
+    # The blue STO inscription and dark triangle must be contiguous.
+    import re
+    triangles = [
+        element for element in nodes["key-eex"].iter(tag("path"))
+        if element.get("data-part") == "sto-triangle"
+    ]
+    assert len(triangles) == 1
+    first_x = re.search(r"^M(-?[0-9.]+)", triangles[0].get("d", ""))
+    assert first_x is not None
+    assert abs(float(first_x.group(1)) - bounds(nodes["secondary-eex"])[2]) <= 1.0
+
     for node in root.iter():
         if node.get("data-bbox") is not None:
             bounds(node)
