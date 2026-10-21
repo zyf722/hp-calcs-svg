@@ -269,7 +269,8 @@ class PrimeRenderer(Renderer):
         # No polygon is added across the principal top face.
         self.rect(g, x+3.7, front_y, w-7.4, front_h, 1.0,
                   fill="url(#prime-key-front-slope)",
-                  opacity=profile["front_facade_opacity"])
+                  opacity=profile["front_facade_opacity"],
+                  data_part="modifier-front-slope")
         # Thin lateral chamfers, not a second trapezoid on the key face.
         self.path(g, f"M{x+3.2} {y+5} V{y+h-7}", fill="none",
                   stroke="#ffffff", stroke_width=profile["left_bevel_width"],
@@ -313,7 +314,7 @@ class PrimeRenderer(Renderer):
             self._label(g, "square-exponent", "2", cx+17, cy-27,
                         "#272731", 22, "JM", role="primary")
         elif kid == "power":
-            self._label(g, "power-exponent", "y", cx+19, cy-27,
+            self._label(g, "power-exponent", "y", cx+12, cy-27,
                         "#272731", 20, "GSI", role="primary")
         elif kid == "define":
             # Separate optically spaced italic variables, including theta.
@@ -422,13 +423,13 @@ class PrimeRenderer(Renderer):
             # The glyphs are still emitted by the production font outliner.
             if kid == "ln":
                 base, exp, font = "e", "x", "GSI"
-                offset, size = 30, 15
+                offset, size = 20, 15
             elif kid == "log":
                 base, exp, font = "10", "x", "JM"
                 offset, size = 36, 15
             else:
                 base, exp, font = "x", "−1", "GSI"
-                offset, size = 30, 14
+                offset, size = 22, 14
             self._label(g, "secondary-" + kid, base,
                         x+10, cy+26, blue, 23, font, "left", "shift-legend")
             self._label(g, "raised-exponent-" + kid, exp,
