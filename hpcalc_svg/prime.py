@@ -411,6 +411,12 @@ class PrimeRenderer(Renderer):
         secondary = key.get("secondary")
         if secondary and kid not in ("ln", "log", "divide", "power", "square", "fraction", "sign"):
             font = key.get("secondary_font", "JM")
+            # Ink measurement must use the same fallback as _label; Gentium
+            # legitimately omits some symbols (e.g. angle U+2220).
+            if font in ("GS", "GSI") and any(
+                ord(ch) not in self.f[font].cmap for ch in secondary
+            ):
+                font = "NM"
             centered = key.get("secondary_center", False) or kid == "del"
             secondary_size = 32.0 if kid == "enter" else (
                 23.0 if len(secondary) < 7 else 21.0
