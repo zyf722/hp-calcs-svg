@@ -326,24 +326,31 @@ class PrimeRenderer(Renderer):
                 self._label(g, "define-" + name, char, cx+dx, cy-16,
                             "#272731", size, font, role="primary")
         elif kid == "units":
-            # Compound matrix / radical / determinant legends in vector geometry.
+            # The reference is a fraction of dotted placeholders, a radical
+            # containing a dotted placeholder, and a barred placeholder.
+            # A generic 2x2 matrix (as in earlier builds) is incorrect.
             icons = self.group(g, "units-symbols", fill="none",
-                               stroke="#34353a", stroke_width=1.75)
-            for ox in (cx-39, cx-31):
-                for oy in (cy-29, cy-17):
-                    self.rect(icons, ox, oy, 6.7, 7.5, 0,
-                              fill="none", stroke_dasharray="2.3,1.4")
-            self.path(icons, f"M{cx-20} {cy-11} h-3 V{cy-34} h3", fill="none")
-            self.path(icons, f"M{cx-7} {cy-11} h3 V{cy-34} h-3", fill="none")
-            self.path(icons, f"M{cx-1} {cy-21} l5 8 6 -19 h12",
-                      fill="none", stroke_width=2.8)
-            self.path(icons, f"M{cx+9} {cy-31} h15", fill="none")
-            self.path(icons, f"M{cx+29} {cy-34} h-4 v23 h4", fill="none")
-            self.path(icons, f"M{cx+46} {cy-34} h4 v23 h-4", fill="none")
-            for ox in (cx+32, cx+39):
-                for oy in (cy-28, cy-20):
-                    self.rect(icons, ox, oy, 5, 5, 0,
-                              fill="none", stroke_dasharray="1.4,1.2")
+                               stroke="#34353a", stroke_width=1.7)
+            for oy in (cy-34, cy-11):
+                self.rect(icons, cx-41, oy, 15, 17, 0, fill="none",
+                          stroke_width=1.55, stroke_dasharray="3.2,2.1")
+            self.path(icons, f"M{cx-43} {cy-14} H{cx-24}",
+                      fill="none", stroke_width=1.7)
+            # A dark comma separates the miniature math fields.
+            self._label(g, "units-comma-1", ",", cx-19, cy-12,
+                        "#34353a", 23, "GSI", role="primary")
+            self.path(icons, f"M{cx-11} {cy-19} l6 9 8 -24 h21",
+                      fill="none", stroke_width=2.5,
+                      stroke_linejoin="round")
+            self.rect(icons, cx+9, cy-24, 13, 17, 0, fill="none",
+                      stroke_width=1.4, stroke_dasharray="2.7,1.7")
+            self._label(g, "units-comma-2", ",", cx+27, cy-12,
+                        "#34353a", 23, "GSI", role="primary")
+            self.path(icons, f"M{cx+35} {cy-34} V{cy-7} "
+                             f"M{cx+54} {cy-34} V{cy-7}",
+                      fill="none", stroke_width=2.6)
+            self.rect(icons, cx+39, cy-26, 12, 16, 0, fill="none",
+                      stroke_width=1.5, stroke_dasharray="2.4,1.6")
         elif kid == "fraction":
             # Compose the numerator, slash and denominator as separate glyphs.
             ink = self.d["palette"]["primary_text"]
