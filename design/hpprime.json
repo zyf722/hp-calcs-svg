@@ -350,7 +350,7 @@
             "label": "x t θ n",
             "secondary": "Define",
             "alpha": "D",
-            "main_font": "NM",
+            "main_font": "GSI",
             "main_size": 26
           },
           {
@@ -390,7 +390,7 @@
             "label": "x",
             "secondary": "√",
             "alpha": "F",
-            "main_font": "NM",
+            "main_font": "GSI",
             "main_size": 44,
             "secondary_font": "NM"
           },
@@ -462,7 +462,7 @@
             "label": "x",
             "secondary": "√",
             "alpha": "L",
-            "main_font": "NM",
+            "main_font": "GSI",
             "main_size": 49,
             "secondary_font": "NM"
           },
