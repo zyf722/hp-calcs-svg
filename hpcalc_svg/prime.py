@@ -329,7 +329,7 @@ class PrimeRenderer(Renderer):
                             cy-16, primary_color,
                             key.get("main_size", row["default_size"]),
                             key.get("main_font", "JS"), role="primary",
-                            tracking=-.8 if key["id"] == "vars" else None)
+                            tracking=key.get("main_tracking"))
         kid = key["id"]
         if kid == "square":
             # Font-derived superscript; position relative to the x's actual
