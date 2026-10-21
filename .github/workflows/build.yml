@@ -157,6 +157,10 @@ jobs:
           hpprime:outputprime
           EOF
 
+      - name: Verify generated HP Prime SVG geometry and labels
+        shell: bash
+        run: poetry run python tests/verify_prime_artifacts.py outputprime
+
       - name: Publish artifact branch
         if: github.event_name != 'pull_request'
         shell: bash
