@@ -21,9 +21,27 @@ class PrimeRenderer(Renderer):
         self, parent: ET.Element, name: str, label: str, x: float, y: float,
         color: str, size: float, font: str = "JM",
         align: str = "center", role: str = "legend",
+        tracking: float | None = None,
     ) -> None:
-        if label:
-            self.text(parent, name, self.parts(label, font, size), color, align, x, y, role)
+        if not label:
+            return
+        # Prefer true Gentium Semibold math; embolden only the Noto Math
+        # Regular fallback, including characters Gentium cannot represent.
+        if font in ("GS", "GSI") and any(
+            ord(ch) not in self.f[font].cmap for ch in label
+        ):
+            font = "NM"
+        components = (
+            self.parts([{"text": label, "tracking": tracking}], font, size)
+            if tracking is not None else self.parts(label, font, size)
+        )
+        self.text(parent, name, components, color, align, x, y, role)
+        if font == "NM":
+            label_group = parent[-1]
+            label_group.set("stroke", color)
+            label_group.set("stroke-width", ".68")
+            label_group.set("stroke-linejoin", "round")
+            label_group.set("paint-order", "stroke fill")
 
     def _extra_defs(self) -> None:
         metal = next(item for item in self.defs if item.get("id") == "prime-metal")
@@ -240,14 +258,16 @@ class PrimeRenderer(Renderer):
                 self._icon(g, icon, cx+dx, cy-12, "#d7e0e5", 24)
         secondary = key.get("secondary", "")
         if secondary == "Setup":
-            self.path(g, f"M{cx-33} {cy+22} v-7 m0 7 h12 l-4 -4 m4 4 l-4 4",
-                      fill="none", stroke="#70b7d4", stroke_width=1.9,
+            self.path(g, f"M{cx-33} {cy+21} v-7 m0 7 h12 l-4 -4 m4 4 l-4 4",
+                      fill="none", stroke="#70b7d4", stroke_width=2,
                       stroke_linecap="round", stroke_linejoin="round")
             self._label(g, "secondary-" + key["id"], "Setup",
-                        cx+13, cy+21, "#70b7d4", 17.5)
+                        cx+13, cy+19.5, "#70b7d4", 20.5)
         elif secondary:
+            short = h < 70
             self._label(g, "secondary-" + key["id"], secondary,
-                        cx, cy+23, "#72bad6", 20)
+                        cx, cy+(19.5 if short else 23), "#72bad6",
+                        21.0 if short else 22.5)
 
     def _light_key(
         self, parent: ET.Element, key: dict[str, Any], row: dict[str, Any],
@@ -298,22 +318,24 @@ class PrimeRenderer(Renderer):
             if icon == "mem":
                 self.rect(g, x+4, y+4, w-8, h*.60, 2.5, fill="#26272b")
             self._icon(g, icon, cx, cy-12 if icon == "mem" else cy-16,
-                       "#f7f7f5", 54 if icon == "mem" else 49 if icon == "del" else 43)
+                       "#f7f7f5", 45 if icon == "mem" else 49 if icon == "del" else 43)
         else:
             primary_color = "#fafaf9" if cap else self.d["palette"]["primary_text"]
             label = key["label"]
             if label and key["id"] not in ("units", "fraction", "define"):
                 self._label(g, "main-" + key["id"], label,
+                            cx-6 if key["id"] == "comma" else
                             cx-5 if key["id"] == "power" else cx,
                             cy-16, primary_color,
                             key.get("main_size", row["default_size"]),
-                            key.get("main_font", "JS"), role="primary")
+                            key.get("main_font", "JS"), role="primary",
+                            tracking=-.8 if key["id"] == "vars" else None)
         kid = key["id"]
         if kid == "square":
             # Font-derived superscript; position relative to the x's actual
             # ink center rather than treating "x²" as one unshaped text string.
             self._label(g, "square-exponent", "2", cx+17, cy-27,
-                        "#272731", 22, "JM", role="primary")
+                        "#272731", 22, "GS", role="primary")
         elif kid == "power":
             self._label(g, "power-exponent", "y", cx+12, cy-27,
                         "#272731", 20, "GSI", role="primary")
