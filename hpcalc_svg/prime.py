@@ -357,7 +357,7 @@ class PrimeRenderer(Renderer):
             ink = self.d["palette"]["primary_text"]
             self._label(g, "fraction-whole", "a", cx-31, cy-16, ink, 34,
                         "GSI", role="primary")
-            self._label(g, "fraction-num", "b", cx+2, cy-29, ink, 26,
+            self._label(g, "fraction-num", "b", cx+2, cy-24, ink, 26,
                         "GSI", role="primary")
             self._label(g, "fraction-den", "c", cx+25, cy-7, ink, 25,
                         "GSI", role="primary")
