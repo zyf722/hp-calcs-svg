@@ -42,8 +42,8 @@ class PrimeRenderer(Renderer):
             "x2": "0", "y2": "1",
         })
         for offset, color in [
-            ("0", "#c8c8c5"), (".22", "#d7d6d2"),
-            (".70", "#eae8e4"), ("1", "#e8e6e3"),
+            ("0", "#dfddd9"), (".22", "#dad8d4"),
+            (".70", "#dedcd8"), ("1", "#e3e1dd"),
         ]:
             ET.SubElement(slope, svg_tag("stop"), {
                 "offset": offset, "stop-color": color,
@@ -178,7 +178,7 @@ class PrimeRenderer(Renderer):
             path("M-2 -2 H2 V6 H-2 Z", fill="#f2f2f1")
         elif icon == "del":
             # Solid left-pointing backspace arrow with white cut-out X.
-            path("M-25 0 L-11 -14 H21 Q23 -14 23 -11 V11 Q23 14 21 14 H-11 Z",
+            path("M-25 0 L-11 -14 H18 Q24 -14 24 -8 V8 Q24 14 18 14 H-11 Z",
                  fill="#2b2d30")
             path("M-4 -8 L9 8 M9 -8 L-4 8", fill="none",
                  stroke="#f7f7f5", stroke_width=4.0, stroke_linecap="round")
@@ -280,7 +280,8 @@ class PrimeRenderer(Renderer):
                   opacity=".10")
         self.path(g, f"M{x+5} {y+3} H{x+w-5}", fill="none",
                   stroke="#ffffff", stroke_width=1.15,
-                  opacity=profile["top_edge_highlight_opacity"])
+                  opacity=(.12 if key["id"] == "mem" else
+                           profile["top_edge_highlight_opacity"]))
         self.path(g, f"M{x+5} {front_y+.7} H{x+w-5}", fill="none",
                   stroke="#a9a8a4", stroke_width=.75, opacity=".15")
         self.path(g, f"M{x+5} {y+h-5} H{x+w-5}", fill="none",
@@ -332,19 +333,19 @@ class PrimeRenderer(Renderer):
             # A generic 2x2 matrix (as in earlier builds) is incorrect.
             icons = self.group(g, "units-symbols", fill="none",
                                stroke="#34353a", stroke_width=1.7)
-            for oy in (cy-34, cy-11):
-                self.rect(icons, cx-41, oy, 15, 17, 0, fill="none",
-                          stroke_width=1.55, stroke_dasharray="3.2,2.1")
+            for oy in (cy-30, cy-10):
+                self.rect(icons, cx-38, oy, 12, 14, 0, fill="none",
+                          stroke_width=1.5, stroke_dasharray="2.7,1.8")
             self.path(icons, f"M{cx-43} {cy-14} H{cx-24}",
                       fill="none", stroke_width=1.7)
             # A dark comma separates the miniature math fields.
             self._label(g, "units-comma-1", ",", cx-19, cy-12,
                         "#34353a", 23, "GSI", role="primary")
-            self.path(icons, f"M{cx-11} {cy-19} l6 9 8 -24 h21",
-                      fill="none", stroke_width=2.5,
+            self.path(icons, f"M{cx-11} {cy-19} l6 9 8 -24 h16",
+                      fill="none", stroke_width=2.45,
                       stroke_linejoin="round")
-            self.rect(icons, cx+9, cy-24, 13, 17, 0, fill="none",
-                      stroke_width=1.4, stroke_dasharray="2.7,1.7")
+            self.rect(icons, cx+7, cy-24, 12, 15, 0, fill="none",
+                      stroke_width=1.4, stroke_dasharray="2.4,1.6")
             self._label(g, "units-comma-2", ",", cx+25, cy-12,
                         "#34353a", 23, "GSI", role="primary")
             self.path(icons, f"M{cx+32} {cy-34} V{cy-7} "
