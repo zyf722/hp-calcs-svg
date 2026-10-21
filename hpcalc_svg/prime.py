@@ -34,6 +34,20 @@ class PrimeRenderer(Renderer):
         })
         for offset, color in [("0", "#3b3d42"), (".65", "#24262a"), ("1", "#101217")]:
             ET.SubElement(radial, svg_tag("stop"), {"offset": offset, "stop-color": color})
+        # The modifier markings belong to the shallow *front sloping side* of
+        # each keycap. This is a lighting gradient, not an inset trapezoid
+        # printed onto the top face.
+        slope = ET.SubElement(self.defs, svg_tag("linearGradient"), {
+            "id": "prime-key-front-slope", "x1": "0", "y1": "0",
+            "x2": "0", "y2": "1",
+        })
+        for offset, color in [
+            ("0", "#dedbd6"), (".22", "#f2f0ed"),
+            (".70", "#f8f7f4"), ("1", "#dedbd7"),
+        ]:
+            ET.SubElement(slope, svg_tag("stop"), {
+                "offset": offset, "stop-color": color,
+            })
         brush = ET.SubElement(self.defs, svg_tag("pattern"), {
             "id": "prime-brush", "width": "13", "height": "9",
             "patternUnits": "userSpaceOnUse",
@@ -233,8 +247,27 @@ class PrimeRenderer(Renderer):
                   fill="#090a0c", stroke="#171819", stroke_width=1.5)
         self.rect(g, x+1.6, y+1.2, w-3.2, h-3.1, 4.8,
                   fill="url(#prime-light-key)", stroke="#aaa9a9", stroke_width=1.15)
+        profile = self.d["keyboard"]["light_key_profile"]
+        front_y = y + h * profile["front_slope_start_ratio"]
+        front_h = h * (profile["front_slope_end_ratio"] - profile["front_slope_start_ratio"])
+        # A front-elevation view of a side-profile trapezoidal key: only the
+        # lower modifier-bearing side gets a shallow planar change of lighting.
+        # No polygon is added across the principal top face.
+        self.rect(g, x+3.7, front_y, w-7.4, front_h, 1.0,
+                  fill="url(#prime-key-front-slope)",
+                  opacity=profile["front_facade_opacity"])
+        # Thin lateral chamfers, not a second trapezoid on the key face.
+        self.path(g, f"M{x+3.2} {y+5} V{y+h-7}", fill="none",
+                  stroke="#ffffff", stroke_width=profile["left_bevel_width"],
+                  opacity=".27")
+        self.path(g, f"M{x+w-3.2} {y+5} V{y+h-7}", fill="none",
+                  stroke="#373737", stroke_width=profile["right_bevel_width"],
+                  opacity=".10")
         self.path(g, f"M{x+5} {y+3} H{x+w-5}", fill="none",
-                  stroke="#ffffff", stroke_width=1.15, opacity=".9")
+                  stroke="#ffffff", stroke_width=1.15,
+                  opacity=profile["top_edge_highlight_opacity"])
+        self.path(g, f"M{x+5} {front_y+.7} H{x+w-5}", fill="none",
+                  stroke="#a9a8a4", stroke_width=.75, opacity=".15")
         self.path(g, f"M{x+5} {y+h-5} H{x+w-5}", fill="none",
                   stroke="#777b80", stroke_width=1.5, opacity=".28")
         for fraction in (.16, .84):
@@ -309,7 +342,7 @@ class PrimeRenderer(Renderer):
         secondary = key.get("secondary")
         if secondary:
             font = key.get("secondary_font", "JM")
-            centered = key.get("secondary_center", False)
+            centered = key.get("secondary_center", False) or kid == "del"
             secondary_size = 23.0 if len(secondary) < 7 else 21.0
             if not centered and key.get("alpha"):
                 # Keep shift ink out of the reserved right-hand ALPHA letter lane.
