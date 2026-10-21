@@ -58,6 +58,54 @@ def check(path: Path, outlined: bool) -> None:
                 f"Colliding shift and alpha legends on {name}: "
                 f"{shift_ink} / {alpha_ink}"
             )
+    # Physical columns, not just the strings printed on individual keys:
+    # the older drawing put 20 SVG units too much gap between 8 and 9.
+    def key_gap(a: str, b: str) -> float:
+        a_x, _, a_w, _ = (float(v) for v in nodes["key-" + a].attrib["data-hitbox"].split(","))
+        b_x, _, _, _ = (float(v) for v in nodes["key-" + b].attrib["data-hitbox"].split(","))
+        return b_x - (a_x + a_w)
+
+    for sequence in (("7", "8", "9", "divide"), ("4", "5", "6", "multiply"),
+                     ("1", "2", "3", "subtract"), ("0", "dot", "negate", "add")):
+        gaps = [key_gap(left, right) for left, right in zip(sequence, sequence[1:])]
+        assert max(gaps) - min(gaps) <= 2.0, f"Uneven Prime numeric key pitch: {sequence}, {gaps}"
+
+    # Each key has a thin modifier-bearing front-side material treatment.
+    # The principal key face must not have the failed oversized trapezoid.
+    slopes = [
+        node for node in root.iter(tag("rect"))
+        if node.get("data-part") == "modifier-front-slope"
+    ]
+    assert len(slopes) == 37, f"Expected 37 shallow front facets, found {len(slopes)}"
+    for facet in slopes:
+        assert float(facet.attrib["height"]) <= 0.34 * 83, "Modifier facet covers the principal key face"
+
+    for expected in ("symb-italic-x", "icon-mem", "icon-plot", "icon-num",
+                     "icon-view", "icon-menu", "icon-del",
+                     "units-comma-1", "units-comma-2", "root-degree"):
+        assert expected in nodes, f"Missing source-photo-matched SVG detail: {expected}"
+
+    # Verify real font-derived ink positioning on the generated deliverables:
+    # x^y, x², e^x, 10^x and x^-1 are not one unshaped Unicode string.
+    for base, raised in (
+        ("main-power", "power-exponent"),
+        ("main-square", "square-exponent"),
+        ("secondary-ln", "raised-exponent-ln"),
+        ("secondary-log", "raised-exponent-log"),
+        ("secondary-divide", "raised-exponent-divide"),
+    ):
+        body, exponent = bounds(nodes[base]), bounds(nodes[raised])
+        horizontal_gap = exponent[0] - body[2]
+        assert -4.5 <= horizontal_gap <= 5.0, (
+            f"Detached/overlapping superscript {base}: gap={horizontal_gap:.2f}"
+        )
+        assert exponent[1] < body[1], f"{raised} is not raised above {base}"
+    # The fraction numerator must not sit on the top border of the key.
+    assert bounds(nodes["fraction-num"])[1] >= 1108.0
+    left, top, right, bottom = bounds(nodes["secondary-del"])
+    assert abs((left + right) / 2 - 851) <= 1.5, "DEL blue legend is not centered"
+    assert 1155 <= top < bottom <= 1182, "DEL legend left its sloping front"
+
     for node in root.iter():
         if node.get("data-bbox") is not None:
             bounds(node)
