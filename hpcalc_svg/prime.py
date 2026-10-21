@@ -296,7 +296,7 @@ class PrimeRenderer(Renderer):
         if key.get("icon"):
             icon = key["icon"]
             if icon == "mem":
-                self.rect(g, x+4, y+4, w-8, h*.52, 2.5, fill="#26272b")
+                self.rect(g, x+4, y+4, w-8, h*.60, 2.5, fill="#26272b")
             self._icon(g, icon, cx, cy-12 if icon == "mem" else cy-16,
                        "#f7f7f5", 54 if icon == "mem" else 49 if icon == "del" else 43)
         else:
@@ -387,7 +387,7 @@ class PrimeRenderer(Renderer):
                       fill="none", stroke="#2b2c31", stroke_width=1.9,
                       stroke_linecap="round", stroke_linejoin="round")
         secondary = key.get("secondary")
-        if secondary and kid not in ("ln", "log", "divide", "power", "square"):
+        if secondary and kid not in ("ln", "log", "divide", "power", "square", "fraction"):
             font = key.get("secondary_font", "JM")
             centered = key.get("secondary_center", False) or kid == "del"
             secondary_size = 23.0 if len(secondary) < 7 else 21.0
@@ -440,8 +440,19 @@ class PrimeRenderer(Renderer):
         elif kid == "eex":
             self.path(g, f"M{x+57} {cy+20} l10 6 -10 6 Z", fill=blue)
         elif kid == "fraction":
-            self.circle(g, x+11, cy+21, 3.2, fill="none",
-                        stroke=blue, stroke_width=1.4)
+            # Three separately spaced marks: degree, prime and double-prime.
+            # The old string "′ ″" overlapped the circle to read as "9".
+            self.bounds["secondary-fraction"] = (x+7, cy+16, x+53, cy+33)
+            degree = self.group(g, "secondary-fraction",
+                                data_bbox=f"{x+7:.3f},{cy+16:.3f},"
+                                          f"{x+53:.3f},{cy+33:.3f}",
+                                data_role="shift-legend")
+            self.circle(degree, x+11, cy+24, 3.1, fill="none",
+                        stroke=blue, stroke_width=1.55)
+            self._label(degree, "fraction-prime", "′", x+24, cy+26,
+                        blue, 19, "NM", "left", "shift-legend")
+            self._label(degree, "fraction-double-prime", "″", x+39, cy+26,
+                        blue, 19, "NM", "left", "shift-legend")
         if key.get("alpha"):
             self._label(g, "alpha-" + key["id"], key["alpha"], x+w-10, cy+26,
                         self.d["palette"]["legend_orange"], 23,
