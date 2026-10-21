@@ -229,6 +229,8 @@ class PrimeRenderer(Renderer):
             self.rect(g, x+4, y+4, w-8, h*.53, 3.5, fill=cap_color)
         if key.get("icon"):
             icon = key["icon"]
+            if icon == "mem":
+                self.rect(g, x+4, y+4, w-8, h*.52, 2.5, fill="#26272b")
             self._icon(g, icon, cx, cy-16, "#f7f7f5",
                        53 if icon == "mem" else 43)
         else:
