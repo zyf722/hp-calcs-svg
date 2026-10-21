@@ -168,36 +168,50 @@ class PrimeRenderer(Renderer):
         if icon == "home":
             path("M-20 -1 L0 -21 L20 -1 H13 V18 H3 V5 H-5 V18 H-14 V-1 Z", **line)
         elif icon == "mem":
-            # Distinct briefcase handle, body and metal clasp.
-            path("M-23 -8 H23 V16 H-23 Z", fill=color)
-            path("M-10 -8 V-15 Q-10 -18 -7 -18 H7 Q10 -18 10 -15 V-8", **line)
-            path("M-22 -1 H-5 M5 -1 H22", fill="none",
-                 stroke="#26282b", stroke_width=2.7)
-            path("M-4 -6 H4 V5 H-4 Z", fill="#333438",
-                 stroke=color, stroke_width=1.4)
-            path("M-21 12 H-7 M7 12 H21", fill="none",
-                 stroke="#25272a", stroke_width=1.4)
+            # White briefcase with shoulder, handle and negative-space clasp.
+            # Built from editable silhouette geometry, not a generic suitcase.
+            path("M-23 -6 L-17 -13 H17 L23 -6 V17 H-23 Z", fill=color)
+            path("M-9 -13 V-19 H9 V-13", **line)
+            path("M-22 1 H-4 M4 1 H22", fill="none",
+                 stroke="#25272a", stroke_width=2.3)
+            path("M-4 -4 H4 V8 H-4 Z", fill="#292a2d")
+            path("M-2 -2 H2 V6 H-2 Z", fill="#f2f2f1")
         elif icon == "del":
-            path("M-24 0 L-8 -15 H20 V15 H-8 Z", fill="#292c31")
-            path("M-6 -8 L9 8 M9 -8 L-6 8", **line)
+            # Solid left-pointing backspace arrow with white cut-out X.
+            path("M-25 0 L-11 -14 H21 Q23 -14 23 -11 V11 Q23 14 21 14 H-11 Z",
+                 fill="#2b2d30")
+            path("M-4 -8 L9 8 M9 -8 L-4 8", fill="none",
+                 stroke="#f7f7f5", stroke_width=4.0, stroke_linecap="round")
         elif icon == "symb":
-            path("M-13 -12 H13 V12 H-13 Z M-7 -6 L7 6 M7 -6 L-7 6", **line)
+            # Real key shows a small pale rounded square with an italic 'x',
+            # not the crossed-box/delete icon used in the first draft.
+            self.rect(k, -15, -15, 30, 30, 5, fill="#e3e4e7")
+            self._label(k, "symb-italic-x", "x", 0, -1,
+                        "#282a2e", 25, "GSI", role="key-icon")
         elif icon == "plot":
-            path("M-17 13 V-14 M-17 13 H17 M-11 3 L-2 -2 L7 5 L15 -10", **line)
+            # Coordinate axes with arrowheads and a smooth graph trace.
+            path("M-18 12 V-18 M-21 -13 L-18 -18 L-15 -13 "
+                 "M-18 12 H19 M14 9 L19 12 L14 15", **line)
+            path("M-12 6 C-7 5 -5 -2 0 -7 S8 -6 12 -10 L16 -14",
+                 fill="none", stroke=color, stroke_width=3.1,
+                 stroke_linecap="round")
         elif icon == "num":
-            path("M-17 -15 H17 V15 H-17 Z M-17 -5 H17 M-17 5 H17 "
-                 "M-5 -15 V15 M6 -15 V15", **line)
+            # Two-column table with ruled horizontal entries.
+            path("M-18 -17 H18 V17 H-18 Z M-18 -6 H18 M-18 6 H18 "
+                 "M1 -17 V17", **line)
+            path("M-15 -11 H-2 M5 -11 H15 M-15 0 H-2 M5 0 H15 "
+                 "M-15 12 H-2 M5 12 H15", fill="none",
+                 stroke=color, stroke_width=1.6)
         elif icon == "help":
             path("M-17 -14 H17 V14 H-17 Z", fill="#d6d9de")
             self._label(k, "question", "?", 0, 0, "#272a2e", 27, "JS")
         elif icon == "view":
-            path("M-18 -13 H9 V7 H-18 Z M-8 -5 H18 V15 H-8 Z", **line)
+            path("M-19 -14 H9 V7 H-19 Z M-9 -5 H19 V16 H-9 Z", **line)
+            path("M-5 -1 H15 V12 H-5 Z", fill="#e5e7e9")
         elif icon == "menu":
-            for y in (-11, 0, 11):
-                path(f"M-16 {y} H-10", fill="none", stroke=color,
-                     stroke_width=4, stroke_linecap="round")
-                path(f"M-4 {y} H18", fill="none", stroke=color,
-                     stroke_width=3, stroke_linecap="round")
+            for y in (-12, 0, 12):
+                self.rect(k, -18, y-3, 7, 7, 1.3, fill=color)
+                self.rect(k, -6, y-2.5, 25, 5, 1.3, fill=color)
 
     def _dark_key(
         self, parent: ET.Element, key: dict[str, Any], row: dict[str, Any],
@@ -282,7 +296,7 @@ class PrimeRenderer(Renderer):
             if icon == "mem":
                 self.rect(g, x+4, y+4, w-8, h*.52, 2.5, fill="#26272b")
             self._icon(g, icon, cx, cy-16, "#f7f7f5",
-                       53 if icon == "mem" else 43)
+                       54 if icon == "mem" else 49 if icon == "del" else 43)
         else:
             primary_color = "#fafaf9" if cap else self.d["palette"]["primary_text"]
             label = key["label"]
