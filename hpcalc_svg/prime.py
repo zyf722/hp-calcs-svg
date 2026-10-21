@@ -35,23 +35,23 @@ class PrimeRenderer(Renderer):
         for offset, color in [("0", "#3b3d42"), (".65", "#24262a"), ("1", "#101217")]:
             ET.SubElement(radial, svg_tag("stop"), {"offset": offset, "stop-color": color})
         brush = ET.SubElement(self.defs, svg_tag("pattern"), {
-            "id": "prime-brush", "width": "9", "height": "7",
+            "id": "prime-brush", "width": "13", "height": "9",
             "patternUnits": "userSpaceOnUse",
         })
         for x, color, opacity in [
-            (1, "#ffffff", ".22"), (2.5, "#121920", ".12"),
-            (5.1, "#ffffff", ".16"), (8.1, "#111923", ".15"),
+            (1.1, "#ffffff", ".17"), (3.4, "#121920", ".09"),
+            (7.6, "#ffffff", ".13"), (11.2, "#111923", ".1"),
         ]:
             ET.SubElement(brush, svg_tag("path"), {
-                "d": f"M{x} 0 V7", "stroke": color,
-                "stroke-width": ".5", "opacity": opacity,
+                "d": f"M{x} 0 V9", "stroke": color,
+                "stroke-width": ".35", "opacity": opacity,
             })
 
     def _shell(self) -> None:
         self.shell()
         panel = next(path for path in self.d["paths"] if path["id"] == "metal-panel")
         metal = self.group(self.scene, "brushed-aluminium")
-        self.path(metal, panel["d"], fill="url(#prime-brush)", opacity=".58")
+        self.path(metal, panel["d"], fill="url(#prime-brush)", opacity=".48")
         self.path(metal, "M56 1080 H967", fill="none", stroke="#f0edeb",
                   stroke_width=1.1, opacity=".67")
 
@@ -104,6 +104,20 @@ class PrimeRenderer(Renderer):
                     stroke="#16181b", stroke_width=5)
         self.circle(g, cx, cy, n["inner_radius"], fill="url(#prime-nav-face)",
                     stroke="#424348", stroke_width=1.1)
+        # Four low-contrast machining sectors evoke the physical brushed dial.
+        for start_deg, end_deg, tone, alpha in [
+            (-135, -45, "#aaaaaf", .085),
+            (-45, 45, "#050507", .115),
+            (45, 135, "#a0a1a7", .065),
+            (135, 225, "#07090b", .085),
+        ]:
+            radius = n["inner_radius"] - 3
+            a0, a1 = math.radians(start_deg), math.radians(end_deg)
+            x0, y0 = cx+radius*math.cos(a0), cy+radius*math.sin(a0)
+            x1, y1 = cx+radius*math.cos(a1), cy+radius*math.sin(a1)
+            self.path(g, f"M{cx} {cy} L{x0:.3f} {y0:.3f} "
+                         f"A{radius} {radius} 0 0 1 {x1:.3f} {y1:.3f} Z",
+                      fill=tone, opacity=alpha)
         # Radial engraving is made of editable paths, not a raster texture.
         for deg in range(0, 360, 6):
             angle = math.radians(deg)
@@ -140,12 +154,15 @@ class PrimeRenderer(Renderer):
         if icon == "home":
             path("M-20 -1 L0 -21 L20 -1 H13 V18 H3 V5 H-5 V18 H-14 V-1 Z", **line)
         elif icon == "mem":
-            path("M-20 -9 H20 V17 H-20 Z", fill=color)
-            path("M-9 -9 V-15 H9 V-9", **line)
-            path("M-20 3 H-3 M3 3 H20", fill="none",
-                 stroke="#25272a", stroke_width=3)
-            path("M-3 -2 H3 V9 H-3 Z", fill="none",
-                 stroke="#242529", stroke_width=2.1)
+            # Distinct briefcase handle, body and metal clasp.
+            path("M-23 -8 H23 V16 H-23 Z", fill=color)
+            path("M-10 -8 V-15 Q-10 -18 -7 -18 H7 Q10 -18 10 -15 V-8", **line)
+            path("M-22 -1 H-5 M5 -1 H22", fill="none",
+                 stroke="#26282b", stroke_width=2.7)
+            path("M-4 -6 H4 V5 H-4 Z", fill="#333438",
+                 stroke=color, stroke_width=1.4)
+            path("M-21 12 H-7 M7 12 H21", fill="none",
+                 stroke="#25272a", stroke_width=1.4)
         elif icon == "del":
             path("M-24 0 L-8 -15 H20 V15 H-8 Z", fill="#292c31")
             path("M-6 -8 L9 8 M9 -8 L-6 8", **line)
@@ -236,7 +253,7 @@ class PrimeRenderer(Renderer):
         else:
             primary_color = "#fafaf9" if cap else self.d["palette"]["primary_text"]
             label = key["label"]
-            if label:
+            if label and key["id"] not in ("units", "fraction"):
                 self._label(g, "main-" + key["id"], label,
                             cx-5 if key["id"] == "power" else cx,
                             cy-16, primary_color,
@@ -250,12 +267,35 @@ class PrimeRenderer(Renderer):
             self._label(g, "power-exponent", "y", cx+19, cy-33,
                         "#272731", 20, "GSI", role="primary")
         elif kid == "units":
-            for rx, ry, side in [
-                (cx-30, cy-17, 16), (cx+9, cy-17, 14), (cx+33, cy-17, 15),
-            ]:
-                self.rect(g, rx-side/2, ry-side/2, side, side, 0,
-                          fill="none", stroke="#34353a", stroke_width=1.2,
-                          stroke_dasharray="3,2")
+            # Compound matrix / radical / determinant legends in vector geometry.
+            icons = self.group(g, "units-symbols", fill="none",
+                               stroke="#34353a", stroke_width=1.75)
+            for ox in (cx-39, cx-31):
+                for oy in (cy-29, cy-17):
+                    self.rect(icons, ox, oy, 6.7, 7.5, 0,
+                              fill="none", stroke_dasharray="2.3,1.4")
+            self.path(icons, f"M{cx-20} {cy-11} h-3 V{cy-34} h3", fill="none")
+            self.path(icons, f"M{cx-7} {cy-11} h3 V{cy-34} h-3", fill="none")
+            self.path(icons, f"M{cx-1} {cy-21} l5 8 6 -19 h12",
+                      fill="none", stroke_width=2.8)
+            self.path(icons, f"M{cx+9} {cy-31} h15", fill="none")
+            self.path(icons, f"M{cx+29} {cy-34} h-4 v23 h4", fill="none")
+            self.path(icons, f"M{cx+46} {cy-34} h4 v23 h-4", fill="none")
+            for ox in (cx+32, cx+39):
+                for oy in (cy-28, cy-20):
+                    self.rect(icons, ox, oy, 5, 5, 0,
+                              fill="none", stroke_dasharray="1.4,1.2")
+        elif kid == "fraction":
+            # Compose the numerator, slash and denominator as separate glyphs.
+            ink = self.d["palette"]["primary_text"]
+            self._label(g, "fraction-whole", "a", cx-31, cy-16, ink, 34,
+                        "GSI", role="primary")
+            self._label(g, "fraction-num", "b", cx+2, cy-29, ink, 26,
+                        "GSI", role="primary")
+            self._label(g, "fraction-den", "c", cx+25, cy-7, ink, 25,
+                        "GSI", role="primary")
+            self.path(g, f"M{cx+17} {cy-34} l-11 30", fill="none",
+                      stroke=ink, stroke_width=2.3)
         elif kid == "dot":
             self.circle(g, cx, cy-17, 5.8, fill="#292a30")
         elif kid == "negate":
@@ -270,11 +310,19 @@ class PrimeRenderer(Renderer):
         if secondary:
             font = key.get("secondary_font", "JM")
             centered = key.get("secondary_center", False)
+            secondary_size = 23.0 if len(secondary) < 7 else 21.0
+            if not centered and key.get("alpha"):
+                # Keep shift ink out of the reserved right-hand ALPHA letter lane.
+                alpha_width = self.ink_width(self.parts(key["alpha"], "JS", 23))
+                available = w - 26 - alpha_width - 9
+                while secondary_size > 14 and self.ink_width(
+                    self.parts(secondary, font, secondary_size)
+                ) > available:
+                    secondary_size -= .5
             self._label(g, "secondary-" + key["id"], secondary,
                         cx if centered else x+10, cy+26,
-                        self.d["palette"]["legend_blue"],
-                        23 if len(secondary)<7 else 21, font,
-                        "center" if centered else "left", "shift-legend")
+                        self.d["palette"]["legend_blue"], secondary_size,
+                        font, "center" if centered else "left", "shift-legend")
         blue = self.d["palette"]["legend_blue"]
         if kid == "power":
             self._label(g, "root-degree", "n", x+10, cy+15,
@@ -294,6 +342,11 @@ class PrimeRenderer(Renderer):
             self._label(g, "alpha-" + key["id"], key["alpha"], x+w-10, cy+26,
                         self.d["palette"]["legend_orange"], 23,
                         "JS", "right", "alpha-legend")
+            if secondary and not key.get("secondary_center"):
+                shift_ink = self.bounds["secondary-" + key["id"]]
+                alpha_ink = self.bounds["alpha-" + key["id"]]
+                if shift_ink[2] + 2 > alpha_ink[0]:
+                    raise ValueError(f"Crowded HP Prime shift/alpha legends: {key['id']}")
 
     def _keys(self) -> None:
         top = self.group(self.scene, "upper-keyboard")
