@@ -551,7 +551,7 @@
           },
           {
             "id": "9",
-            "cx": 713,
+            "cx": 693,
             "width": 150,
             "kind": "light",
             "label": "9",
@@ -614,7 +614,7 @@
           },
           {
             "id": "6",
-            "cx": 713,
+            "cx": 693,
             "width": 150,
             "kind": "light",
             "label": "6",
@@ -675,7 +675,7 @@
           },
           {
             "id": "3",
-            "cx": 713,
+            "cx": 693,
             "width": 150,
             "kind": "light",
             "label": "3",
@@ -736,7 +736,7 @@
           },
           {
             "id": "negate",
-            "cx": 713,
+            "cx": 693,
             "width": 150,
             "kind": "light",
             "label": "",
@@ -759,6 +759,15 @@
           }
         ]
       }
-    ]
+    ],
+    "light_key_profile": {
+      "geometry": "side-elevation",
+      "top_edge_highlight_opacity": 0.63,
+      "front_slope_start_ratio": 0.65,
+      "front_slope_end_ratio": 0.94,
+      "front_facade_opacity": 0.48,
+      "left_bevel_width": 2,
+      "right_bevel_width": 2
+    }
   }
 }
