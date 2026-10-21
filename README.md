@@ -48,6 +48,12 @@ Built svg and png files are hosted on the [`artifact`](https://github.com/zyf722
       <strong>HP 50g (blue)</strong>
     </td>
   </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <a href="https://github.com/zyf722/hp-calcs-svg/blob/artifact/hpprime/HPPrime_outlined.svg"><img src="https://media.githubusercontent.com/media/zyf722/hp-calcs-svg/artifact/hpprime/HPPrime_preview.png" width="260" alt="HP Prime"></a><br>
+      <strong>HP Prime</strong>
+    </td>
+  </tr>
 </table>
 </div>
 
@@ -78,8 +84,11 @@ design/
 ├── hp48gii.json
 ├── hp49gplus.json
 ├── hp50g.json
-└── hp50g-blue.json
+├── hp50g-blue.json
+└── hpprime.json
 ```
+
+HP Prime uses the same `build` command and artifact names, with a separate `PrimeRenderer` for its touchscreen, rotary navigation control, brushed metal lower housing and 47 keys. Its design is measured in a 1023×2048 reference coordinate system; the LCD native resolution is 320×240.
 
 Derived models use `extends` plus targeted `path_overrides`, `path_remove`, and keyboard `key_overrides` instead of copying parent geometry. Pydantic validates source descriptors and resolved designs before rendering.
 
