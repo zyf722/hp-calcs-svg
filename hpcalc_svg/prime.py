@@ -300,7 +300,7 @@ class PrimeRenderer(Renderer):
         else:
             primary_color = "#fafaf9" if cap else self.d["palette"]["primary_text"]
             label = key["label"]
-            if label and key["id"] not in ("units", "fraction"):
+            if label and key["id"] not in ("units", "fraction", "define"):
                 self._label(g, "main-" + key["id"], label,
                             cx-5 if key["id"] == "power" else cx,
                             cy-16, primary_color,
@@ -308,11 +308,23 @@ class PrimeRenderer(Renderer):
                             key.get("main_font", "JS"), role="primary")
         kid = key["id"]
         if kid == "square":
-            self._label(g, "square-exponent", "2", cx+17, cy-37,
-                        "#272731", 24, "JM", role="primary")
+            # Font-derived superscript; position relative to the x's actual
+            # ink center rather than treating "x²" as one unshaped text string.
+            self._label(g, "square-exponent", "2", cx+17, cy-27,
+                        "#272731", 22, "JM", role="primary")
         elif kid == "power":
-            self._label(g, "power-exponent", "y", cx+19, cy-33,
+            self._label(g, "power-exponent", "y", cx+19, cy-27,
                         "#272731", 20, "GSI", role="primary")
+        elif kid == "define":
+            # Separate optically spaced italic variables, including theta.
+            for name, char, dx, size, font in (
+                ("x", "x", -30, 26.0, "GSI"),
+                ("t", "t", -10, 25.5, "GSI"),
+                ("theta", "θ", 10, 27.0, "GSI"),
+                ("n", "n", 31, 26.0, "GSI"),
+            ):
+                self._label(g, "define-" + name, char, cx+dx, cy-16,
+                            "#272731", size, font, role="primary")
         elif kid == "units":
             # Compound matrix / radical / determinant legends in vector geometry.
             icons = self.group(g, "units-symbols", fill="none",
@@ -350,11 +362,24 @@ class PrimeRenderer(Renderer):
                       fill="none", stroke="#272731", stroke_width=4.3,
                       stroke_linejoin="round", stroke_linecap="square")
         elif kid == "parentheses":
-            self.rect(g, x+12, cy+18, 16, 14, 0,
-                      fill="none", stroke="#005092", stroke_width=1.4,
-                      stroke_dasharray="3,2")
+            # Dotted placeholder with surrounding printer-like prime marks.
+            self.rect(g, x+16, cy+19, 15, 12, 0,
+                      fill="none", stroke="#005092", stroke_width=1.35,
+                      stroke_dasharray="2.4,1.8")
+            self.path(g, f"M{x+10} {cy+13} v7 m-3 -4 v5 M{x+35} {cy+13} v7",
+                      fill="none", stroke="#005092", stroke_width=1.7)
+        elif kid == "comma":
+            # Expand/contract symbol alongside the printed comma, missing
+            # from the original approximate SVG.
+            tx, ty = cx+32, cy-19
+            self.path(g, f"M{tx-9} {ty+8} L{tx} {ty-1} H{tx-5} "
+                         f"M{tx} {ty-1} V{ty+4} "
+                         f"M{tx+8} {ty-7} L{tx+1} {ty} H{tx+6} "
+                         f"M{tx+1} {ty} V{ty-5}",
+                      fill="none", stroke="#2b2c31", stroke_width=1.8,
+                      stroke_linecap="round", stroke_linejoin="round")
         secondary = key.get("secondary")
-        if secondary:
+        if secondary and kid not in ("ln", "log", "divide"):
             font = key.get("secondary_font", "JM")
             centered = key.get("secondary_center", False) or kid == "del"
             secondary_size = 23.0 if len(secondary) < 7 else 21.0
@@ -372,14 +397,32 @@ class PrimeRenderer(Renderer):
                         font, "center" if centered else "left", "shift-legend")
         blue = self.d["palette"]["legend_blue"]
         if kid == "power":
-            self._label(g, "root-degree", "n", x+10, cy+15,
-                        blue, 14, "JM", "left")
+            self._label(g, "root-degree", "n", x+11, cy+13,
+                        blue, 13, "JM", "left")
+            # Native √ in the math font is overdrawn with a connected bar.
+            self.path(g, f"M{x+27} {cy+17} H{x+49}",
+                      fill="none", stroke=blue, stroke_width=1.4)
+        elif kid == "square":
+            self.path(g, f"M{x+27} {cy+18} H{x+48}",
+                      fill="none", stroke=blue, stroke_width=1.4)
         elif kid in ("ln", "log", "divide"):
-            x_start = x+10+(14 if kid == "ln" else 29 if kid == "log" else 12)
-            self._label(g, "raised-exponent-" + kid,
-                        "x" if kid != "divide" else "-1",
-                        x_start, cy+17, blue, 15,
-                        "NM" if kid == "divide" else "JM", "left")
+            # Three composite superscript typesets with distinct baselines.
+            # The glyphs are still emitted by the production font outliner.
+            if kid == "ln":
+                base, exp, font = "e", "x", "GSI"
+                offset, size = 30, 15
+            elif kid == "log":
+                base, exp, font = "10", "x", "JM"
+                offset, size = 36, 15
+            else:
+                base, exp, font = "x", "−1", "GSI"
+                offset, size = 30, 14
+            self._label(g, "secondary-" + kid, base,
+                        x+10, cy+26, blue, 23, font, "left", "shift-legend")
+            self._label(g, "raised-exponent-" + kid, exp,
+                        x+offset, cy+14, blue, size,
+                        "NM" if kid == "divide" else "GSI",
+                        "left", "shift-exponent")
         elif kid == "eex":
             self.path(g, f"M{x+57} {cy+20} l10 6 -10 6 Z", fill=blue)
         elif kid == "fraction":
